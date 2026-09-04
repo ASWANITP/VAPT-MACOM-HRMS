@@ -1,0 +1,1232 @@
+﻿<%@ Master Language="VB" CodeFile="m_hrm.master.vb" Inherits="mis_hrm" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins";
+            overflow: hidden;
+            background-color: whitesmoke;
+        }
+
+        /* Top Navigation Container */
+        .center-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 12px 0;
+            background-color: midnightblue;
+            border-radius: 5px;
+        }
+
+            /* Menu Items */
+            .center-menu .menu-item {
+                flex: 1;
+                position: relative;
+                padding: 5px;
+                text-align: center;
+                background-color: midnightblue;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background 0.2s;
+            }
+
+            .center-menu .menu-item_click {
+                flex: 1;
+                position: relative;
+                padding: 5px;
+                text-align: center;
+                background-color: midnightblue;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background 0.2s;
+            }
+
+            .center-menu .menu-item:hover {
+                background: rgba(255, 255, 255, 0.15);
+            }
+
+        /* Dropdown Modal (for regular items) */
+        .menu-item:hover > .modal {
+            display: block;
+        }
+
+        .modal {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 209px;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border-radius: 5px;
+            margin-top: 31px;
+        }
+
+        .modal-content {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+            .modal-content a {
+                display: block;
+                padding: 5px;
+                background-color: whitesmoke;
+                color: #626477;
+                text-decoration: none;
+                text-align: left;
+                border-radius: 5px;
+            }
+
+                .modal-content a:hover {
+                    background-color: #C3D9EF;
+                    color: #626477;
+                }
+
+        /* Submenu (for "Reports" menu) */
+        .submenu {
+            display: none;
+            position: fixed;
+            min-width: 150px;
+            background-color: whitesmoke;
+            overflow-y: auto;
+            z-index: 9999;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+            .reports-menu:hover > .submenu,
+            .submenu:hover {
+                display: block;
+            }
+
+        /* Styling Overrides for Reports Menu Item */
+        .menu-item.reports-menu {
+            background-color: whitesmoke;
+            color: #626477;
+            text-align: left;
+        }
+
+            .menu-item.reports-menu a {
+                text-align: left;
+            }
+
+            .menu-item.reports-menu:hover {
+                background-color: #C3D9EF;
+                color: #626477;
+            }
+
+
+        .scroll-box {
+            display: none;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: left;
+            line-height: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #555;
+            user-select: none;
+            border-radius: 5px;
+        }
+
+            .scroll-box:hover {
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .scroll-box[data-direction="-1"] {
+                top: 0;
+            }
+
+            .scroll-box[data-direction="1"] {
+                bottom: 0;
+            }
+    </style>
+    <script>
+        function updateTime() {
+            var now = new Date();
+            // Format hours, minutes, seconds as you wish.
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var formattedTime = hours + ":" + minutes + ":" + seconds;
+
+            // Assuming your label has rendered an element with the ID 'lbl_time'
+            document.getElementById("lbl_time").innerText = formattedTime;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateTime(); // update immediately on DOM ready
+            setInterval(updateTime, 1000); // then update every second
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            debugger;
+            document.querySelectorAll(".reports-menu").forEach(menu => {
+                const submenu = menu.querySelector(".submenu");
+
+                menu.addEventListener("mouseenter", function () {
+                    debugger;
+                    const rect = menu.getBoundingClientRect();
+                    submenu.style.display = "block";
+
+                    let availableSpaceBelow = window.innerHeight - rect.bottom;
+                    let availableSpaceAbove = rect.top;
+                    let submenuHeight = submenu.scrollHeight;
+                    let modalContent = submenu.querySelector(".modal-content");
+                    let scrollBoxes = submenu.querySelectorAll(".scroll-box");
+                    let totalScrollBoxHeight = 0;
+
+                    scrollBoxes.forEach(box => {
+                        totalScrollBoxHeight += box.offsetHeight; // Use offsetHeight to get the visible height
+                    });
+                    submenuHeight = submenuHeight - totalScrollBoxHeight;
+                    if (submenuHeight > availableSpaceBelow && availableSpaceAbove > submenuHeight) {
+                        // Open submenu upwards
+                        submenu.style.top = `${rect.top - submenuHeight}px`;
+                    } else {
+                        // Default to opening downwards
+                        submenu.style.top = `${rect.top}px`;
+
+                    }
+
+                    // Prevent submenu from overflowing the viewport horizontally
+                    let availableSpaceRight = window.innerWidth - rect.right;
+                    if (availableSpaceRight < submenu.offsetWidth) {
+                        submenu.style.left = `${rect.left - submenu.offsetWidth}px`; // Move left if needed
+                    } else {
+                        submenu.style.left = `${rect.right}px`; // Default position
+                    }
+
+
+
+                    if (modalContent.scrollHeight > modalContent.clientHeight) {
+                        scrollBoxes.forEach(box => box.style.display = "block");
+                    } else {
+                        scrollBoxes.forEach(box => box.style.display = "none");
+                    }
+                });
+
+                menu.addEventListener("mouseleave", function () {
+                    setTimeout(() => {
+                        if (!submenu.matches(":hover")) {
+                            submenu.style.display = "none";
+                        }
+                    }, 200);
+                });
+
+                submenu.addEventListener("mouseleave", function () {
+                    submenu.style.display = "none";
+                });
+            });
+        });
+
+
+
+
+        function showModal(modal, parent) {
+            debugger;
+            modal.style.display = "block";
+            let rect = parent.getBoundingClientRect();
+            let modalRect = modal.getBoundingClientRect();
+            let windowWidth = window.innerWidth;
+            let windowHeight = window.innerHeight;
+            modal.style.top = `${rect.bottom}px`;
+            if (rect.top - modalRect.height != 0 || rect.top - modalRect.height < 0) {
+                modal.style.top = "0";
+            }
+
+
+            let modalContent = modal.querySelector(".modal-content");
+            let availableHeight = windowHeight - rect.bottom; // Space from menu to bottom
+            modalContent.style.maxHeight = `${availableHeight}px`;
+            modalContent.style.overflowY = "auto"; // Enable scrolling if needed
+
+
+
+            // Adjust bottom scroll-box position
+            let bottomScrollBox = modal.querySelector('.scroll-box[data-direction="1"]');
+            if (bottomScrollBox) {
+                bottomScrollBox.style.position = "absolute";
+                bottomScrollBox.style.bottom = "0px"; // Fix it at the bottom
+                bottomScrollBox.style.width = "100%";
+                bottomScrollBox.style.display = modalContent.scrollHeight > modalContent.clientHeight ? "block" : "none";
+            }
+
+            // Add padding to prevent overlap with last menu item
+            let lastMenuItem = modalContent.lastElementChild;
+            if (lastMenuItem) {
+                lastMenuItem.style.marginBottom = bottomScrollBox.style.display === "block" ? "0px" : "0px";
+            }
+
+            let scrollBoxes = modal.querySelectorAll(".scroll-box");
+            if (modalContent.scrollHeight > modalContent.clientHeight) {
+                scrollBoxes.forEach(box => box.style.display = "block");
+            } else {
+                scrollBoxes.forEach(box => box.style.display = "none");
+            }
+        }
+
+        function closeModal(modal) {
+            modal.style.display = "none";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            debugger;
+            document.querySelectorAll(".menu-item").forEach(menuItem => {
+                let modal = menuItem.querySelector(".modal");
+                if (modal) {
+                    menuItem.addEventListener("mouseenter", function () {
+                        showModal(modal, menuItem);
+                    });
+                    menuItem.addEventListener("mouseleave", function () {
+                        setTimeout(() => {
+                            if (!menuItem.matches(":hover") && !modal.matches(":hover")) {
+                                closeModal(modal);
+                            }
+                        }, 200);
+                    });
+                    modal.addEventListener("mouseleave", function () {
+                        closeModal(modal);
+                    });
+
+                }
+            });
+
+            // For each menu item that should trigger the modal on click.
+            document.querySelectorAll(".menu-item_click").forEach(menuItem => {
+                let modal = menuItem.querySelector(".modal");
+
+                if (modal) {
+                    // Toggle the modal when clicking on the menu item
+                    menuItem.addEventListener("click", function (e) {
+                        // Prevent the click from bubbling up so it doesn't trigger the document's click event.
+                        e.stopPropagation();
+
+                        // Close all other modals before toggling the current one.
+                        document.querySelectorAll(".menu-item_click .modal").forEach(otherModal => {
+                            if (otherModal !== modal) {
+                                closeModal(otherModal);
+                            }
+                        });
+
+                        // Toggle the clicked modal's visibility.
+                        if (modal.style.display === "block") {
+                            closeModal(modal);
+                        } else {
+                            showModal(modal, menuItem);
+                        }
+                    });
+
+                    // Prevent clicks inside the modal from closing it
+                    modal.addEventListener("click", function (e) {
+                        e.stopPropagation();
+                    });
+                }
+            });
+
+            // Clicking anywhere outside the menu item/modal will close all modals.
+            document.addEventListener("click", function () {
+                document.querySelectorAll(".menu-item_click .modal").forEach(modal => {
+                    closeModal(modal);
+                });
+            });
+
+            /*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+            document.querySelectorAll(".scroll-box").forEach(scrollBox => {
+                debugger;
+                let interval;
+                function startScrolling(modalContent, direction, speed) {
+                    stopScrolling();
+                    interval = setInterval(() => {
+                        modalContent.scrollTop += direction * speed;
+                    }, 50);
+                }
+                function stopScrolling() {
+                    clearInterval(interval);
+                }
+                scrollBox.addEventListener("mouseenter", function () {
+                    let modalContent = this.parentElement.querySelector(".modal-content");
+                    if (modalContent) {
+                        startScrolling(modalContent, parseInt(this.dataset.direction), 5);
+                    }
+                });
+                scrollBox.addEventListener("mouseleave", stopScrolling);
+                scrollBox.addEventListener("mousedown", function () {
+                    let modalContent = this.parentElement.querySelector(".modal-content");
+                    if (modalContent) {
+                        startScrolling(modalContent, parseInt(this.dataset.direction), 5);
+                    }
+                });
+                scrollBox.addEventListener("mouseup", stopScrolling);
+            });
+        });
+    </script>
+</head>
+<body bgcolor="whitesmoke">
+    <form id="form1" runat="server">
+        <div>
+            <table width="100%">
+                <tr>
+                    <td colspan="3" style="height: 5px">
+                        <table style="width:100%;background-color:#C3D9EF;">
+                            <tr style="background-color:#17508A;">
+                                <td align="center" colspan="3" style="background-color:#17508A; padding:10px;"><img src="Assets/Images/logo/mlogo.png" alt="Icon" style="vertical-align:middle; margin-right:8px; width:70px; height:auto;" /><asp:Label ID="lbl_head" runat="server" style="display:inline-block; vertical-align:middle; font-size:28px; color:white; font-weight:bold; width:auto;" Text="Manappuram Group of Companies,AO Valapad" /></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="width: 30%; height: 21px">
+                                    <asp:Button ID="Button1" runat="server" BackColor="#17508A" Font-Bold="True" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="White" Text="Home"   style="border-radius:5px;" />
+                                </td>
+                                <td style="text-align: center; height: 21px">
+                                    <asp:Label ID="lbl_user" runat="server" Font-Bold="True" ForeColor="#626477"></asp:Label>
+                                </td>
+                                <td align="right" style="height: 21px">
+                                    <asp:Button ID="Button2" runat="server" BackColor="#17508A" Font-Bold="True" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="White" Text="Sign Out" style="border-radius:5px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="width: 201px; height: 21px" color:#626477;>Date:
+                                        <asp:Label ID="lbl_date" runat="server" Font-Bold="True" Width="152px" ForeColor="#626477"></asp:Label>
+                                </td>
+                                <td align="center" style="width: 525px; height: 21px" ></td>
+                                <td align="right" style="height: 21px" color:#626477;>Time:
+                                        <asp:Label ID="lbl_time" runat="server" Font-Bold="True" ForeColor="#626477"  ClientIDMode="Static"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="3" style="height: 24px">
+                                    <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="#626477" Text="News Room      :" Width="93px"></asp:Label>
+                                    <asp:Label ID="lbl_news" runat="server" Font-Bold="True" ForeColor="white" Width="89%"></asp:Label>
+                                </td>
+                                <%--okkk--%>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="center-menu" style="background-color:#C3D9EF;">
+                                        <div class="menu-item_click">
+                                            <span style="font-weight: bold;"> <i class="fas fa-users" style="width: 20px; height: 20px; margin-right: 10px;"></i>HRM</span>
+                                            <div class="modal">
+                                                <div class="scroll-box" data-direction="-1">▼</div>
+                                                <div class="modal-content">
+                                                    <%--<div class="menu-item reports-menu">
+                                                        Weekly Off
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./weeklyoff/hrm_emp_off_updt.aspx">Weekly Off Updation</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>--%>
+                                                    <div class="menu-item reports-menu">
+                                                        Leave Entry At AO<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/LeaveEntryAtAO.aspx">Leave Entry</a>
+                                <a href="./leave/hrm_PenaltyLeave.aspx">Penalty Leave Entry</a>
+                                <!--<a href="./leave/Pay_ Leave_cancel.aspx">Leave Cancellation</a>-->
+                                <a href="./leave/Pay_ Lop_cancel_macom.aspx">LOP Cancellation</a>
+                                <a href="./attendance/Declare_Holiday.aspx">Add Common Holiday</a>
+                                <a href="./leave/leave_updation.aspx">Add Leave Reason</a>
+                                <a href="./leave/long_leaveaplln.aspx?l_id=1">Long Leave</a>
+                                <a href="./leave/long_leaveaplln.aspx?l_id=2">Return After Long Leave</a>
+                                <a href="./leave/querygive.aspx">Long Leave Report</a>
+                                <a href="./leave/hrm_CompulsaryLeave.aspx">Compulsory Leave</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Leave<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <div class="menu-item reports-menu">
+                                    Leave<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./leave/leave_appli_to.aspx">Application</a>
+                                            <a href="./leave/leav_canc_to.aspx">Cancellation</a>
+                                            <a href="./leave/Leave_sanction_to.aspx">Recommend/Sanction</a>
+                                            <a href="./leave/Leave Application/leave_apply_report.aspx">Application Form(Manual)</a>
+                                            <a href="./leave/leave_applied_status.aspx">Applied Status</a>
+                                            <a href="./leave/leave_applied_status_indi.aspx">Applied Status Individual</a>
+                                            <a href="./leave/leave_enquiry.aspx">Enquiry</a>
+                                            <a href="./leave/LeaveRegisterCover.aspx">Register</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Early Going<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./leave/early going/earlygoing_apply.aspx">Application</a>
+                                            <a href="./leave/early going/earlygoing_cancel.aspx">Cancellation</a>
+                                            <a href="./leave/early going/earlygoing_sanc.aspx">Recommend/Sanction</a>
+                                            <a href="./leave/early going/Hrm_Earlygoing_status_rpt.aspx?case=1">Status Report</a>
+                                            <a href="./leave/early going/Hrm_Earlygoing_status_rpt.aspx?case=2">Sanctioned Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./attendance/leave_sele.aspx">View Report</a>
+                                            <a href="./payroll/emp_leave_select.aspx">Employee Wise Report</a>
+                                            <a href="./payroll/division_leave_percent.aspx">Leave Percentage Report</a>
+                                            <a href="./payroll/leave_morethan_2_d.aspx">Leave Per Month Report</a>
+                                            <a href="./attendance/DRILL DOWN/date_select.aspx">Period Wise Report</a>
+                                            <a href="./payroll/reports/Employee_Leave_Rpt.aspx">Department Wise Report</a>
+                                            <a href="./leave/hrm_Rpt_Leave_Cancel.aspx">Cancellation Report</a>
+                                            <a href="./leave/NewLeaveReports/leaveRptDateSelect.aspx">Daily Status Report</a>
+                                            <a href="./leave/Leavebalance report.aspx">Balance As On Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Assign Authority<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./leave/AssignLeave_authority.aspx">Leave Authority</a>
+                                            <a href="./payroll/ADDSUPERIOR.aspx">Add Superior</a>
+                                            <a href="./attendance/Dep_Head_Updation.aspx?key=175">Department Head</a>
+                                            <a href="./leave/hrm_holodayChange.aspx">Holiday Change</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Intimation<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./leave/leave_intimation_tech.aspx">Intimation By TL</a>
+                                            <a href="./leave/leave_intimation_dephead.aspx">Intimation Report</a>
+                                            <a href="./leave/leave_intimation_ceo.aspx">Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Sunday Lop Cancellation<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./SUNDAY/Sunday_Lop_Cancel.aspx">Application</a>
+                                            <a href="./SUNDAY/Sunday_lopCancellationRequest.aspx">Recommend/Sanction</a>
+                                            <a href="./SUNDAY/lop_cancel_report.aspx">Report</a>
+                                            <a href="./SUNDAY/Sunday_conso.aspx">Official Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Compensatory<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./leave/Compensatory/comp_new_add.aspx">Add/Assign</a>
+                                <a href="./leave/Compensatory/compensatory_apply.aspx">Application</a>
+                                <a href="./leave/Compensatory/Compensatory_display.aspx">Enquiry</a>
+                                <a href="./leave/Compensatory/new_compen_sanction.aspx">Recommend/Sanction</a>
+                                <a href="./leave/Compensatory/compensat_cancel.aspx?key=1">Cancel By Employee</a>
+                                <a href="./leave/Compensatory/compensat_cancel.aspx?key=2">Cancel By HR</a>
+                                <a href="./leave/Compensatory/date_select_report.aspx">Status Report</a>
+                                <a href="./leave/Compensatory/CompLeaveList.aspx">Extend Compensatory</a>
+                                <a href="./leave/Compensatory/Compenastory_date.aspx">Compensatory Report</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Tour<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./tour/Tour_apply.aspx">Application(Individual)</a>
+                                <a href="./tour/Ho_tour_apply.aspx">Application</a>
+                                <a href="./tour/tour_display.aspx">Enquiry</a>
+                                <a href="./tour/new_tour_sanction_wform.aspx">Recommend/Sanction</a>
+                                <a href="./tour/tour_cancellation.aspx">Cancel</a>
+                                <a href="./tour/Call_feedback_frm.aspx">Call Feedback Form</a>
+                                <a href="./tour/tour_branchwise_rptselect.aspx">Tour Report</a>
+                                <a href="./tour/tour_new _applied_sattus.aspx">Status Report</a>
+                                <a href="./tour/hrm_tour_status_rpt.aspx">Sanctioned Report</a>
+                                <a href="./payroll/MUSTER/attertour.aspx">Special Tour Report</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+
+
+                                                    <div class="menu-item reports-menu">
+                                                        Movement<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                                        <div class="submenu">
+                                                            <div class="scroll-box" data-direction="-1">▼</div>
+                                                            <div class="modal-content">
+                                                                <a href="./Employee Punching/Movementslip_macom.aspx">Request</a>
+                                                                <a href="./Employee Punching/Movement_Recommend_Macom.aspx">Recommendation</a>
+                                                                <a href="./Employee Punching/Movement_Approval_Macom.aspx">Approval</a>
+                                                                <a href="./Employee Punching/movement_cancel_macom.aspx">Cancel</a>
+                                                                <a href="./Employee Punching/Movement_change_authority.aspx">Change Authority</a>
+                                                                <div class="menu-item reports-menu">
+                                                                    Report<i class="fa-solid fa-caret-right" style="float:right"></i>
+            <div class="submenu">
+                <div class="scroll-box" data-direction="-1">▼</div>
+                <div class="modal-content">
+                    <a href="./Employee Punching/Movement Report.aspx">Official</a>
+                    <a href="./Employee Punching/myreport.aspx">Individual</a>
+                    <a href="./Employee Punching/BAmovementreport.aspx">BA Movement Report</a>
+                </div>
+                <div class="scroll-box" data-direction="1">▲</div>
+            </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="scroll-box" data-direction="1">▲</div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="menu-item reports-menu">
+                                                        Employee Profile<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <div class="menu-item reports-menu">
+                                    Pancard
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./Pan Card/PancardUpdate.aspx">Updation</a>
+                                            <a href="./Pan Card/PancardApproval.aspx">Approval</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Resignation<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/newresign/resignation_enter.aspx">Apply</a>
+                                <a href="./payroll/macom_resign/rec_resign_mac.aspx">Recommend</a>
+                                <a href="./payroll/newresign/approve_resign.aspx">Approval</a>
+                                <a href="./payroll/macom_resign/Cancel_resign_Macom.aspx">Cancellation</a>
+                                <div class="menu-item reports-menu">
+                                    Report<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./payroll/newresign/resign_new_report.aspx">View Report</a>
+                                            <a href="./payroll/Hrm_Relv_order.aspx">Relieving Order</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Notice Period<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./payroll/macom_resign/Notice_period_updation.aspx">Updation</a>
+                                            <a href="./payroll/macom_resign/resign_report.aspx">Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Employee Photo<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/emp_image.aspx">Add Photo/Certificate</a>
+                                <a href="./payroll/view_emp_photo.aspx?iid=1">View Employee Photo</a>
+                                <a href="./Photo_upload/Emp_Photo_Upload.aspx">Upload New Photo</a>
+                                <a href="./Photo_upload/Photo_verify.aspx">Verify Photo</a>
+                                <div class="menu-item reports-menu">
+                                    Report<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./Photo_upload/Photo Upload View New.aspx">Upload Report</a>
+                                            <a href="./Photo_upload/Photo_Status_Report.aspx">Status Report</a>
+                                            <a href="./Photo_upload/Photo_StatusUpdate_Report.aspx">Consolidated Status Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <%--              <div class="menu-item reports-menu">Regularization
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./Regularisation/Regularisation_Request.aspx">Request</a>
+                                <a href="./Regularisation/Regularise_Recommend.aspx">Recommendation</a>
+                                <a href="./Regularisation/Regularisation_Approval.aspx">Approval</a>
+                                <a href="./Regularisation/Ho_Employees_reg_status.aspx">Report</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                    </div>--%>
+                                                    <div class="menu-item reports-menu">
+                                                        Staff Norms<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                                        <div class="submenu">
+                                                            <div class="scroll-box" data-direction="-1">▼</div>
+                                                            <div class="modal-content">
+                                                                <a href="./attendance/staffnorms/add_norm.aspx">Add</a>
+                                                                <a href="./attendance/staffnorms/staffnreport.aspx">Report</a>
+                                                            </div>
+                                                            <div class="scroll-box" data-direction="1">▲</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-item reports-menu">
+                                                        Virtual Movement<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./Employee Punching/Movement_Recommend_MacomV.aspx">Recommend</a>
+                                <a href="./Employee Punching/Movement_Approval_MacomV.aspx">Approval</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="scroll-box" data-direction="1">▲</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-item_click"><span style="font-weight: bold;"><i class="fas fa-user-clock" style="width: 20px; height: 20px; margin-right: 10px;"></i>PUNCHING</span>
+                                            <div class="modal">
+                                                <div class="scroll-box" data-direction="-1">▼</div>
+                                                <div class="modal-content">
+                                                    <div class="menu-item reports-menu">
+                                                        Punching Block<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/punch_block.aspx">Block Punching</a>
+                                <a href="./BlockALert/BlockDtlsCancel.aspx">Block Release</a>
+                                <a href="./payroll/punch_block_remove.aspx">Block Removal From HO</a>
+                                <a href="./payroll/BlockDtlsCancel.aspx">Block Removal</a>
+                                <div class="menu-item reports-menu">
+                                    Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./BlockALert/BlockAlertReport.aspx">My Punch Blocks Today</a>
+                                            <a href="./attendance/Block rpt/Block_1.aspx">View Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Shift Change<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./attendance/hrm_shiftChange.aspx">Todays Shift Change</a>
+                                <a href="./payroll/change_shift_press.aspx">Shift Change</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <%--                                <a href="./attendance/DRILL DOWN/Present.aspx">Summary</a>--%>
+                                <%--                                <a href="./attendance/Present.aspx">Consolidated</a>--%>
+                                <%--                                <a href="./attendance/new/newReportAO.aspx">View Report</a>--%>
+                                <a href="./attendance/new/newdee_repo.aspx">Summary(All)</a>
+                                <a href="./attendance/INDIVIDUAL/Individual.aspx">Detailed</a>
+                                <a href="./attendance/attdepwise.aspx">Department-Wise</a>
+                                <%--                                <a href="./attendance/departmentwise_pl3.aspx">Department-Wise PL3</a>--%>
+                                <a href="./attendance/DRILL DOWN/atterepo.aspx">Individual Punching</a>
+                                <a href="./attendance/Induvidual Photo Report/Induvidual_Photo.aspx">Individual Photo Punching</a>
+                                <a href="./attendance/view_punch_report.aspx">Photo Punching</a>
+                                <%--                                <a href="./payroll/employ_not_punch.aspx">Employ Not Punch</a>--%>
+                                <%--                                <a href="./payroll/Punching Report Firm Wise/hrm_punch_firmwise_Report.aspx">Firm-Wise Attendance</a>--%>
+                                <a href="./payroll/MUSTER/MusterCover_page.aspx">Muster Roll</a>
+                                <a href="./payroll/date_sele_conso.aspx">Consolidated Attendance</a>
+                                <a href="./payroll/MUSTER/atterepo.aspx">Branch Visit Punch</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <a href="./ImageDraw40CroppingVB/Default.aspx">Generate ID Card</a>
+                                                </div>
+                                                <div class="scroll-box" data-direction="1">▲</div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item_click"><span style="font-weight: bold;"><i class="fa-solid fa-sack-dollar" style="width: 20px; height: 20px; margin-right: 10px;"></i>SALARY</span>
+                                            <div class="modal">
+                                                <div class="scroll-box" data-direction="-1">▼</div>
+                                                <div class="modal-content">
+                                                    <a href="./payroll/new_da.aspx">Change DA</a>
+                                                    <a href="./salary/hrm_salIns_AddtionDeduction.aspx">Arrear/Deduction</a>
+                                                    <a href="./payroll/DeleteExcess.aspx">Delete Allowances</a>
+                                                    <div class="menu-item reports-menu">
+                                                        RD<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./salary/hrm_rd_Add_Delete.aspx">Add/Delete</a>
+                                <a href="./HRM Reports/RdSelection.aspx">Payable Report</a>
+                                <%--                                <a href="./payroll/rdjoinselect.aspx">RD Deduction</a>--%>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <%--<div class="menu-item reports-menu">
+                                                        Salary/TA Leave Details
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/salary_lop_live.aspx">Salary Leave Details</a>
+                                <a href="./payroll/TA_lop_live3.aspx">TA Leave Details</a>
+                                <a href="./salary/LOP_Arrear_Allow.aspx">LOP Arrear On TA</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>--%>
+                                                    <div class="menu-item reports-menu">
+                                                        Salary Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/sal_wage_rpt.aspx">Salary Statement</a>
+                                <%--                                <a href="./payroll/rpt_consolidated_salary_statement.aspx">Consolidated Monthly Statement</a>--%>
+                                <a href="./payroll/rpt_individual_salary_report.aspx">Annual Salary Statement</a>
+                                <a href="./payroll/reports/EmployeeInc.aspx">Increment Data</a>
+                                <%--                                <a href="./payroll/rpt_annual_salary_report.aspx">Consolidated Annual Salary Statement</a>--%>
+                                <%--                                <a href="./payroll/salary_leave_details.aspx">Salary Leave Details</a>--%>
+                                <a href="./payroll/wage_slip.aspx">Wage Slip</a>
+                                <a href="./payroll/sal_individ_HO_select.aspx">Register Of Wages</a>
+                                <%--                                <a href="./payroll/salary_total_report.aspx">Salary Total Report</a>--%>
+                                <a href="./payroll/Firmwise_salary_new.aspx">Salary Data</a>
+                                <a href="./salary/wage_slip_Emp.aspx">Individual Wage Slip</a>
+                                <div class="menu-item reports-menu">
+                                    Bulk Upload<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./bulk upload/esi_bulk_upload.aspx">ESI</a>
+                                <a href="./bulk upload/uan_bulk_upload.aspx">UAN</a>
+                                <a href="./bulk upload/tds_Ded.aspx">TDS</a>
+                                <a href="./bulk upload/ta_allowa_bulk.aspx">TA</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                </div>
+                                <a href="./bulk upload/Approval_bulk.aspx">Bulk Approval</a>
+                                <a href="./bulk upload/Bulk_Reject_Status.aspx">Bulk Reject Status</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <a href="./Salary Process Macom/Salary_master.aspx?mid=0">Salary Processing</a>
+                                                    <a href="./payroll/Posting/add_vda.aspx">VDA Add/Delete</a>
+                                                </div>
+                                                <div class="scroll-box" data-direction="1">▲</div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item_click"><span style="font-weight: bold;"><i class="fas fa-gift" style="width: 20px; height: 20px; margin-right: 10px;"></i>INCENTIVES</span>
+                                            <div class="modal">
+                                                <div class="scroll-box" data-direction="-1">▼</div>
+                                                <div class="modal-content">
+                                                    <%--                                                    <a href="./salary/hrm_incentive_edit.aspx">Incentive Edit</a>--%>
+                                                    <a href="./payroll/incentive_allowance_select.aspx">TA Updation</a>
+                                                    <a href="./payroll/HRM_AllowanceUpdation.aspx">New TA &amp; Allowance</a>
+                                                    <%--                                                      <a href="./salary/hrm_Incentive_authEmpAdd.aspx">Authorized Employ Add</a>
+
+                                                    <div class="menu-item reports-menu" >
+                                                        Reports
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+
+                                TA statement already Commented out
+                                <a href="./payroll/outstation_branch.aspx">TA Statement</a>
+
+                                <div class="menu-item reports-menu">
+                                    Special Allowance
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./special allowance/special_empwise_main.aspx">Employee-Wise</a>
+                                            <a href="./special allowance/special_all_consolidated.aspx">Consolidated</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Fixed TA
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./fixed TA New/fixed_ta_select.aspx">Fixed TA All</a>
+                                            <a href="./fixed TA New/fixed_ta_report.aspx">Fixed TA Individual</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>--%>
+
+                                                    <div class="menu-item reports-menu">
+                                                        Travel Allowance<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/HRM_TA_UPDATE_NEW.aspx">Request</a>
+                                <a href="./payroll/HRM_TA_RECC_SANC.aspx">Recommend</a>
+                                <a href="./payroll/HRM_TA_SANCTION.aspx">Sanction</a>
+                                <a href="./payroll/HRM_TA_DATE_SELE.aspx">Applied Status</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="scroll-box" data-direction="1">▲</div>
+                                            </div>
+                                        </div>
+                                         <div class="menu-item_click"><span style="font-weight: bold;"><i class="fa-regular fa-clipboard" style="width: 20px; height: 20px; margin-right: 10px;"></i>POSTING</span>
+                                            <div class="modal">
+                                                <div class="scroll-box" data-direction="-1">▼</div>
+                                                <div class="modal-content">
+                                                    <div class="menu-item reports-menu">
+                                                        Interview<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/Posting/emp_appln1new.aspx">Add/Edit Personal Details</a>
+                                <a href="./payroll/Posting/appln_conf.aspx">Short List Individual</a>
+                                <div class="menu-item reports-menu">
+                                    Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <%--                                            <a href="./payroll/Posting/selectcandidate.aspx">Interview Short List</a>--%>
+                                            <a href="./payroll/Posting/select.aspx">Application Form</a>
+                                            <a href="./payroll/appln_received_shortlisted.aspx">Application Recieved &amp; Shortlisted</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <div class="menu-item reports-menu">
+                                    Add Employee Details<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <%--<a href="./payroll/Posting/emp_appln1new.aspx">Personal Details</a>--%>
+                                            <a href="./payroll/Posting/hrm_qualification_add.aspx">Qualification Details</a>
+                                            <a href="./payroll/Posting/appl_other_detail.aspx?appln_no=0">Other Details</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <%--<a href="./payroll/Posting/editpersonal_interview.aspx">Edit Personal Details</a>--%>
+                                <%--<a href="./payroll/Posting/newappln1.aspx">Personal Details</a>--%>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <a href="./payroll/Posting/emp_enrollment.aspx">Enrollment</a>
+                                                    <a href="./payroll/Posting/appointmentorder.aspx">Appointment Order</a>
+                                                    <div class="menu-item reports-menu">
+                                                        Transfer<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/Posting/emp_transfer.aspx">Transfer</a>
+                                <a href="./payroll/prev_transferreport/br_select_traansfer.aspx">Transfer Report</a>
+                                <a href="./payroll/Transfer_cancel.aspx">Transfer Cancel</a>
+                                <a href="./payroll/hrm_transBranchChange.aspx">Transfer Branch/Date Change</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Promotion<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./promotion/promotion_frm.aspx">Promotion</a>
+                                <a href="./PromotionTfr1/promotion_with_tfr_frm1.aspx">Promotion With Transfer</a>
+                                <a href="./payroll/Posting/increment.aspx">Increment</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <%--<a href="./payroll/Posting/discipline.aspx">Employee Descipline</a>--%>
+                                                    <div class="menu-item reports-menu">
+                                                        Resignation/Termination<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/Posting/Py_Sus_Revo.aspx">Resignation/Termination</a>
+                                <a href="./payroll/Posting/hrm_ResigTermi_DtChange.aspx">Change Termination Date</a>
+                                <a href="./payroll/Make_Employ_to_live.aspx">Live The Resigned Employee</a>
+                                <a href="./payroll/Posting/PayRoll_SuspRevok/Py_Sus_Revo.aspx">Suspension/Revocation</a>
+                                <div class="menu-item reports-menu">
+                                    Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1"></div>
+                                        <div class="modal-content">
+                                            <a href="./payroll/Posting/terminate/suspended_employ.aspx">Suspened Employees</a>
+                                            <a href="./payroll/Posting/terminate/revocated_employ.aspx">Termination/Revocation</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Edit Employee Details<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/hrm_Add_Post.aspx">Employment</a>
+                                <a href="./payroll/editempaddresshrm.aspx">Personal</a>
+                                <%--<a href="./payroll/editaddress.aspx">Address</a>--%>
+                                <a href="./Photo_upload/edit_sslc_ form.aspx">SSLC/DOB</a>
+                                <div class="menu-item reports-menu">
+                                    Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./payroll/view_emp_addresst.aspx">View Employee Address</a>
+                                            <a href="./payroll/view_emp_photo.aspx?iid=2">View Final Degree Certificate</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <a href="./payroll/Posting/Additional_emp_details.aspx">Additional Employee Details</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        H.O Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <%--                                <a href="./payroll/reports/daily_join1.aspx">Daily Join</a>--%>
+                                <a href="./payroll/reports/Daily_Transfer_Dtl.aspx">Daily Transfer</a>
+                                <a href="./payroll/Posting/ServiceRecord Cover.aspx">Service Record</a>
+                                <a href="./payroll/Posting/hrm_formbb.aspx">Form BB</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Reports<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <%--<div class="scroll-box" data-direction="-1">▼</div>--%>
+                            <div class="scroll-box" data-direction="-1"></div>
+
+                            <div class="modal-content">
+                                <div class="menu-item reports-menu">
+                                    Employ Search<i class="fa-solid fa-caret-right" style="float:right"></i>
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./payroll/empsearch.aspx">By Name Or Code</a>
+                                            <a href="./payroll/employ_employment_details.aspx">Detailed</a>
+                                            <a href="./payroll/empsearch_location.aspx">By Location</a>
+                                            <a href="./payroll/search_employment_details.aspx">By Join Date</a>
+                                            <a href="./payroll/emprep.aspx">Qualification Wise</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                                <a href="./payroll/joinrpt.aspx">Joining</a>
+                                <a href="./payroll/transfer_report.aspx">Transfer Detail</a>
+                                <a href="./payroll/promotion_report.aspx">Promotion Detail</a>
+                                <a href="./payroll/resigned_emp.aspx">Resigned Employees</a>
+                                <a href="./payroll/daily_transfer_promo_incre.aspx">Daily Transfer/Promotion/Increment</a>
+                                <a href="./payroll/Emp_Current_select.aspx">Employee Current Status</a>
+                                <a href="./payroll/emp_status_Select.aspx">Employee Joining Status</a>
+                                <a href="./payroll/typeselect.aspx">Employee Status</a>
+                                <a href="./promotion/br_select_promo.aspx">Promotion Order</a>
+                                <%--                                <a href="./payroll/Resign.aspx">Resigning Employees</a>--%>
+                                <a href="./HRM/Resigned Emp Report/hrm_resignemp_data.aspx">Resigned Employ Search</a>
+                                <a href="./HRM/Resigned Emp Report/hrm_resined_emp_report.aspx">Resigned Employ Report</a>
+                                <a href="./payroll/employee_br_dtls/employ_dtl_first.aspx">Employee Other Details</a>
+                                <a href="./payroll/reports/jewel_exp.aspx">Employee Experience Details</a>
+                                <a href="./payroll/EmployeeList_Search.aspx">Employee Contact Details</a>
+                                <a href="./payroll/Posting/master/repo.aspx">Employee Master</a>
+                                <a href="./payroll/Posting/master/emp_report.aspx">Date Wise Master Report</a>
+                                <a href="./payroll/Posting/master/master_data_checkar.aspx">Employee Master Data/Approval</a>
+                                <%--                                <a href="./payroll/myreport.aspx">Attrition Percentage</a>--%>
+                                <%--                                <a href="./payroll/myreportm.aspx">Attrition Percentage Quaterly</a>--%>
+                            </div>
+<%--                            <div class="scroll-box" data-direction="1">▲</div>--%>
+                                                        <div class="scroll-box" data-direction="1"></div>
+
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Department Structure<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./leave/rpt_depheadnew.aspx">View Structure</a>
+                                <a href="./leave/department_updation.aspx">Update</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <%-- <div class="menu-item reports-menu">
+                                                        Disciplinary Action
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./Disciplinary/disc.aspx">Register</a>
+                                <div class="menu-item reports-menu">
+                                    Report
+                                    <div class="submenu">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="./Disciplinary/discwhole.aspx">All</a>
+                                            <a href="./Disciplinary/discemp.aspx">Employ-Wise</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>--%>
+                                                    <div class="menu-item reports-menu">
+                                                        Certificates<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/Automisation of Promotion,Transfer,Salary Certific/transfer_mac.aspx">Transfer</a>
+                                <a href="./payroll/Automisation of Promotion,Transfer,Salary Certific/promotion_mac.aspx">Promotion</a>
+                                <a href="./payroll/Automisation of Promotion,Transfer,Salary Certific/certificate_mac.aspx">Salary</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                    <div class="menu-item reports-menu">
+                                                        Department Head Change<i class="fa-solid fa-caret-right" style="float:right"></i>
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./payroll/posting/master/DepatmtHeadChnge.aspx">Request</a>
+                                <a href="./payroll/posting/master/DepatmtHeadApprove.aspx">Approval</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="scroll-box" data-direction="1">▲</div>
+                                            </div>
+                                        </div>
+                                         <div class="menu-item_click"><span style="font-weight: bold;"><i class="fas fa-briefcase" style="width: 20px; height: 20px; margin-right: 10px;"></i>OTHERS</span>
+                                            <div class="modal">
+                                                <div class="scroll-box" data-direction="-1">▼</div>
+                                                <div class="modal-content">
+
+                                                    <a href="./payroll/reports/BloodGroupReport.aspx">Blood Group Details</a>
+                                                    <a href="./payroll/Posting/hrm_qualification_add.aspx">Add New Qualification</a>
+                                                    <a href="./payroll/hrm_dept_post_des.aspx">Add Post/Dep/Desig</a>
+                                                    <a href="./payroll/add_qualification.aspx">Add Qualification</a>
+                                                    <%--                    <div class="menu-item reports-menu">NEFT
+                        <div class="submenu">
+                            <div class="scroll-box" data-direction="-1">▼</div>
+                            <div class="modal-content">
+                                <a href="./neft employee/neft_acc.aspx">Add Deatils</a>
+                                <a href="./neft employee/neftmodify.aspx">Verification</a>
+                                <a href="./neft employee/neft_report_detail.aspx">Report</a>
+                            </div>
+                            <div class="scroll-box" data-direction="1">▲</div>
+                        </div>
+                    </div>--%>
+                                                </div>
+                                                <div class="scroll-box" data-direction="1">▲</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                           
+                        </table>
+                      <tr>
+    <td align="center" colspan="3" style="height: 22px;background-color:whitesmoke">
+        <asp:Label ID="lbl_subhead" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#293D6B" Width="372px"></asp:Label>
+    </td>
+</tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" style="height: 119%">
+                        <asp:ContentPlaceHolder ID="cph_edp" runat="server">
+                            &nbsp;
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+  <tr style="color:white;background-color:#C3D9EF;">
+                        <td align="center" colspan="2" style="color:white;background-color:#17508A;display:block;">
+                            <asp:Label ID="Label1" runat="server" BackColor="#17508A" ForeColor="White" Width="100%" Font-Bold="True" Font-Italic="True">Manappuram e Business Suite ver 4.0</asp:Label>
+                        </td>
+                    
+                  
+                        <td align="center" colspan="2" style="color:white;background-color:#17508A;display:block;" >
+                            Designed &amp; Developed by MACOM</td>
+                    </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

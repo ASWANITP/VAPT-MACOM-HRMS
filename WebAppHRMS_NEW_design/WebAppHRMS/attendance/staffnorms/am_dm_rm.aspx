@@ -1,0 +1,19 @@
+<%@ Page Language="VB" AutoEventWireup="false" CodeBehind="am_dm_rm.aspx.vb" Inherits="WebAppHRMS.staffnorms_am_dm_rm_c96291c31630" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>A.Ms,D.Ms and RMs</title>
+</head>
+
+<body style="text-align: center">
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel_AMDMRM" runat="server" Height="50px" Width="825px">
+        </asp:Panel>
+    
+    </div>
+    </form>
+</body>
+</html>

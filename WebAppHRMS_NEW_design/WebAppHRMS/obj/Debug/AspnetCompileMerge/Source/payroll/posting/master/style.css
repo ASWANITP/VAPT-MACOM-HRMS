@@ -1,0 +1,72 @@
+section {
+  position: relative;
+  border: 1px solid #000;
+  padding-top: 37px;
+  background: #500;
+}
+
+section.positioned {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  box-shadow: 0 0 15px #333;
+}
+
+.container {
+  overflow-y: auto;
+  height: 525px;
+  overflow-x: hidden;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td,
+th {
+  border-bottom: 1px solid #eee;
+  background: #ddd;
+  color: #000;
+  padding: 15px 25px;
+}
+
+th {
+  height: 0;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+
+th div {
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  padding: 9px 25px;
+  top: 0;
+  margin-left: -25px;
+  line-height: normal;
+  border-left: 1px solid #800;
+}
+
+th:first-child div {
+  border: none;
+}
+
+
+
+.animated-button1 {
+  background: #500;
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #f7d4d4;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}

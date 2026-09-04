@@ -1,0 +1,1765 @@
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\customSettings.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\GemBox.Document.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Helper.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\log4net.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PHelper.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Buffers.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Memory.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Text.Json.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.ValueTuple.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\WholeHelper.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\GemBox.Document.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Helper.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\log4net.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\PHelper.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.pdb
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Buffers.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Memory.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Text.Json.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\System.ValueTuple.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CopyComplete
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\OneDrive_1_3-10-2025\WebAppHRMS\WebAppHRMS5apr2025\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\libSkiaSharp.dylib
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\x86\libSkiaSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\x64\libSkiaSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.dll.config
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.Web.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\GemBox.Document.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Helper.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\log4net.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Snippets.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PHelper.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Buffers.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Formats.Asn1.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Memory.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Numerics.Vectors.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Text.Json.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.ValueTuple.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\GemBox.Document.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\log4net.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.pdb
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Buffers.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Formats.Asn1.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Memory.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Numerics.Vectors.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Text.Json.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\System.ValueTuple.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\de\PdfSharp.resources.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+E:\LOCAL--SOLUTIONS\conversion\hrms-web\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\WebAppHRMS\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\WebAppHRMS\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.dll
+D:\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\WebAppHRMS.xml
+D:\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+D:\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\WebAppHRMS\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\WebAppHRMS\WebAppHRMS\bin\GemBox.Document.dll
+D:\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.dll
+D:\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\log4net.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\WebAppHRMS\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.dll
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Buffers.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Memory.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Text.Json.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\WebAppHRMS\WebAppHRMS\bin\System.ValueTuple.dll
+D:\WebAppHRMS\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+D:\WebAppHRMS\WebAppHRMS\bin\GemBox.Document.xml
+D:\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\log4net.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\WebAppHRMS\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.xml
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.System.xml
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.pdb
+D:\WebAppHRMS\WebAppHRMS\bin\SkiaSharp.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Buffers.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Memory.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Text.Json.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\WebAppHRMS\WebAppHRMS\bin\System.ValueTuple.xml
+D:\WebAppHRMS\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\WebAppHRMS\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\WebAppHRMS\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+E:\LOCAL--SOLUTIONS\NEW_HRM_SOLUTION_AFTER_CONV\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\MACOM_HRMS_PUBLISH_SOLN\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\FINAL_MACOM_HRMS\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+C:\Users\101309\Desktop\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+C:\Users\101309\Desktop\DESKTOP_IN\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+E:\MY--WORKS\BUGS--CONV\TEST_FOR_NAME\70014040\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Block rpt\Block_datewise.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Branchdisplay_punch_report.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\branchre_attend.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\br_attend.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptdepartmentwisepl3.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptevenotpunching.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\depwiseatt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\display_punch_report.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\DRILL DOWN\leave_rep_period.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\INDIVIDUAL\empatte.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Induvidual Photo Report\display_punch_report1.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\new\br_attends.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3absent.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3rep.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\punchingblock_details.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\tour.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\12late_block.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_atten_reg_late_non_rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_blockRel_req_rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Employee Punching\MOVRPT.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt_mac.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\TPA_Crystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_pl28.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_supportings.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\HolidayRegisterCrystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\leave_crystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\Manual_leave_crystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\leave_authrpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave_excRpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\App_order.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\block_punch_details.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crptproposaltran.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crpt_bcstaff.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_live.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_newjoined.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_resigned.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_emp_image.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_esi_form6.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form3arpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form6a.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_live.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_newjoin.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_resigned.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\dept_short.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Division_leave_percentage_report.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\employ_area_branch.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\IDrpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\leave_morethan_2day_per_month.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\macom_resign\resign_attach.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal2.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal3.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\display_resign_report.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\new_resign_report.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_branch.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_report.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\appln.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_dtls.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_resign.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystaljwel.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\revocat_emp.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\suspend_emp.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\terminate.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\punching report firm wise\hrm_punch_firmwise_rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Reliv_Order.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\h.o_jewel.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\jewel_dtls.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\joinCrystalReport.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\maj_exp_prev.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\other2_dtls.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\others_jewel.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\Transfer_dtl.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Resign_rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\SD_TA_SALARY_DETAILS.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoCrystalReport.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoUpdateCrystalReport.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport1.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\Photo_Status_CrystalReport.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\visitemployCrystalReport.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\hrm_esi_rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\Register_Of_Wages_Crystal.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\tour\Tour_Br_report_display.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Reports\Weekoff_Status_Rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Reports\Week_Off_Exchg_Rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Reports\Week_Off_Rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Weekoff_Status_Rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Week_Off_Rpt.rpt
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Block rpt\Block_datewise.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Branchdisplay_punch_report.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\branchre_attend.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\br_attend.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptdepartmentwisepl3.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptevenotpunching.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\depwiseatt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\display_punch_report.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\DRILL DOWN\leave_rep_period.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\INDIVIDUAL\empatte.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Induvidual Photo Report\display_punch_report1.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\new\br_attends.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3absent.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3rep.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\punchingblock_details.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\tour.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\12late_block.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_atten_reg_late_non_rpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_blockRel_req_rpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Employee Punching\MOVRPT.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt_mac.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\TPA_Crystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_pl28.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_supportings.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\HolidayRegisterCrystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\leave_crystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\Manual_leave_crystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\leave_authrpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave_excRpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\App_order.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\block_punch_details.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crptproposaltran.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crpt_bcstaff.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_live.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_newjoined.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_resigned.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_emp_image.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_esi_form6.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form3arpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form6a.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_live.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_newjoin.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_resigned.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\dept_short.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Division_leave_percentage_report.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\employ_area_branch.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\IDrpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\leave_morethan_2day_per_month.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\macom_resign\resign_attach.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal2.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal3.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\display_resign_report.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\new_resign_report.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_branch.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_report.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\appln.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_dtls.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_resign.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystaljwel.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\revocat_emp.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\suspend_emp.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\terminate.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\punching report firm wise\hrm_punch_firmwise_rpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Reliv_Order.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\h.o_jewel.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\jewel_dtls.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\joinCrystalReport.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\maj_exp_prev.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\other2_dtls.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\others_jewel.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\Transfer_dtl.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Resign_rpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\SD_TA_SALARY_DETAILS.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoCrystalReport.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoUpdateCrystalReport.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport1.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\Photo_Status_CrystalReport.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\visitemployCrystalReport.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\hrm_esi_rpt.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\Register_Of_Wages_Crystal.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\tour\Tour_Br_report_display.vb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\MACOM HRMS\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Block rpt\Block_datewise.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Branchdisplay_punch_report.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\branchre_attend.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\br_attend.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptdepartmentwisepl3.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptevenotpunching.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\depwiseatt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\display_punch_report.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\DRILL DOWN\leave_rep_period.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\INDIVIDUAL\empatte.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Induvidual Photo Report\display_punch_report1.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\new\br_attends.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3absent.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3rep.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\punchingblock_details.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\tour.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\12late_block.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_atten_reg_late_non_rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_blockRel_req_rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Employee Punching\MOVRPT.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt_mac.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\TPA_Crystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_pl28.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_supportings.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\HolidayRegisterCrystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\leave_crystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\Manual_leave_crystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\leave_authrpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave_excRpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\App_order.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\block_punch_details.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crptproposaltran.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crpt_bcstaff.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_live.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_newjoined.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_resigned.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_emp_image.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_esi_form6.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form3arpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form6a.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_live.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_newjoin.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_resigned.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\dept_short.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Division_leave_percentage_report.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\employ_area_branch.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\IDrpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\leave_morethan_2day_per_month.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\macom_resign\resign_attach.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal2.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal3.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\display_resign_report.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\new_resign_report.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_branch.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_report.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\appln.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_dtls.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_resign.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystaljwel.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\revocat_emp.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\suspend_emp.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\terminate.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\punching report firm wise\hrm_punch_firmwise_rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Reliv_Order.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\h.o_jewel.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\jewel_dtls.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\joinCrystalReport.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\maj_exp_prev.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\other2_dtls.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\others_jewel.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\Transfer_dtl.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Resign_rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\SD_TA_SALARY_DETAILS.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoCrystalReport.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoUpdateCrystalReport.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport1.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\Photo_Status_CrystalReport.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\visitemployCrystalReport.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\hrm_esi_rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\Register_Of_Wages_Crystal.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\tour\Tour_Br_report_display.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Reports\Weekoff_Status_Rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Reports\Week_Off_Exchg_Rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Reports\Week_Off_Rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Weekoff_Status_Rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\weeklyoff\Week_Off_Rpt.rpt
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Block rpt\Block_datewise.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Branchdisplay_punch_report.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\branchre_attend.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\br_attend.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptdepartmentwisepl3.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Crptevenotpunching.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\depwiseatt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\display_punch_report.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\DRILL DOWN\leave_rep_period.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\INDIVIDUAL\empatte.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\Induvidual Photo Report\display_punch_report1.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\new\br_attends.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3absent.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\pl3rep.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\punchingblock_details.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\attendance\tour.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\12late_block.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_atten_reg_late_non_rpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Attend_Regularisation\hrm_blockRel_req_rpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Employee Punching\MOVRPT.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\Resigned Emp Report\hrm_resined_emp_rpt_mac.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HRM\TPA_Crystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_pl28.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\crpt_leave_supportings.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\HolidayRegisterCrystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\leave_crystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave Application\Manual_leave_crystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\leave_authrpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\leave\Leave_excRpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\App_order.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\block_punch_details.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crptproposaltran.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Crpt_bcstaff.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_live.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_newjoined.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_edli_resigned.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_emp_image.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_esi_form6.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form3arpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_form6a.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_live.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_newjoin.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\crpt_gratuity_resigned.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\dept_short.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Division_leave_percentage_report.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\employ_area_branch.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\IDrpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\leave_morethan_2day_per_month.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\macom_resign\resign_attach.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal2.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\MUSTER\MusterRollCrystal3.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\display_resign_report.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\newresign\new_resign_report.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_branch.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\new_block_report.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\appln.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_dtls.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\Emp_resign.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\ServiceRecordCrystaljwel.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\revocat_emp.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\suspend_emp.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\posting\terminate\terminate.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\punching report firm wise\hrm_punch_firmwise_rpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Reliv_Order.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\h.o_jewel.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\jewel_dtls.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\joinCrystalReport.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\maj_exp_prev.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\other2_dtls.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\others_jewel.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\reports\Transfer_dtl.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\Resign_rpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\payroll\SD_TA_SALARY_DETAILS.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoCrystalReport.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoUpdateCrystalReport.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\photoviewCrystalReport1.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\Photo_Status_CrystalReport.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\photo_upload\visitemployCrystalReport.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\hrm_esi_rpt.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\salary\Register_Of_Wages_Crystal.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\tour\Tour_Br_report_display.vb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+C:\GIT_CLONE_PATH\MACOM\WEB_HRM_NEW\MACOM\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Helper.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\PHelper.pdb
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+E:\Git Web Clone\VAPT FINAL\macom_hrms\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Cryptography.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\VAPT HRMS MODULE\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\libHarfBuzzSharp.dylib
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libHarfBuzzSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libHarfBuzzSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libHarfBuzzSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\libSkiaSharp.dylib
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\x86\libSkiaSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\x64\libSkiaSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\arm64\libSkiaSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Assets\css\crypto-js.min.js
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Assets\Scripts\crypto-js.min.js
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll.config
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\WebAppHRMS.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\BouncyCastle.Crypto.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportSource.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Shared.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.Web.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Oracle.ManagedDataAccess.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\GemBox.Document.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HarfBuzzSharp.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\HtmlRenderer.PdfSharp.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\log4net.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Bcl.Numerics.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Options.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\Microsoft.Extensions.Primitives.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Charting.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Quality.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.Snippets.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.System.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\PdfSharp.WPFonts.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.pdb
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\SkiaSharp.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Buffers.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Diagnostics.DiagnosticSource.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Formats.Asn1.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Memory.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Numerics.Vectors.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Encodings.Web.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Text.Json.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.Threading.Tasks.Extensions.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\System.ValueTuple.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.resources.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\bin\de\PdfSharp.Charting.resources.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.AssemblyReference.cache
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.Resources.resources
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.GenerateResource.cache
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.CoreCompileInputs.cache
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.vbproj.Up2Date
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.dll
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.xml
+D:\HRMS\hrmsP\WebAppHRMS_NEW_design\WebAppHRMS\obj\Debug\WebAppHRMS.pdb

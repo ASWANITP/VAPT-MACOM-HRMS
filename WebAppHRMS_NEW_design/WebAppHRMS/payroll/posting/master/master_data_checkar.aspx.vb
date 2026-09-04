@@ -1,0 +1,255 @@
+Imports System.Data
+Imports System.Data.OracleClient
+Partial Class Auction_Listed_pledges_6d02a6ba1950
+    Inherits System.Web.UI.Page
+    Implements System.Web.UI.ICallbackEventHandler
+    Dim oh As New Helper.Oracle.OracleHelper
+    Dim CbResult As String = Nothing
+    Dim dt, dt1 As New DataTable
+    Dim a1 As Integer = 0
+    Dim s As Integer = 1
+    Dim dr As DataRow
+    Dim str_tkn As New System.Text.StringBuilder
+    Dim sql, sf() As String
+    Dim total1, total2, total3, total4, total5, total6, total7, total8, total9, total10, total11, total12, total13, total14, total15, total16, total17, total18, total19, total20, total21, total22, total23, total24, total25, total26, total27, total28, total29 As String
+    Dim date1 As Date
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Me.Session("user_id") = "" Then
+            Dim cl_script1 As New StringBuilder
+            cl_script1.Append(" alert('Please Login Again and Retry....!! ');")
+            cl_script1.Append("    window.open('../main.aspx?key=75872','_self');")
+            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "inv", cl_script1.ToString, True)
+            Exit Sub
+        End If
+        Dim user() As String
+        user = Session("user_id").ToString.Split("!")
+        dt1 = oh.ExecuteDataSet("select count(*) from mactech.form_accessibility t WHERE T.EMP_ID=" & User(0) & " and t.form_id=2027").Tables(0)
+        If dt1.Rows(0)(0) = 0 Then
+            Server.Transfer("~/show_err.aspx")
+        End If
+        Dim cbref As String = Page.ClientScript.GetCallbackEventReference(Me, "arg", "FromServer", "context", True)
+        Dim cbscript As String = "function ToServer (arg,context) {" & cbref & ";}"
+        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "ToServer", cbscript, True)
+        'Me.drop_auth.Attributes.Add("onchange", "fill_data()")
+        'If Not IsPostBack Then
+        '    sql = "select '---Select---',0 from dual union all select 'Recommendation',1 from dual union all select 'Sanction',2 from dual"
+        '    dt = oh.ExecuteDataSet(sql).Tables(0)
+        '    Me.drop_auth.DataSource = dt
+        '    Me.drop_auth.DataTextField = dt.Columns(0).ColumnName
+        '    Me.drop_auth.DataValueField = dt.Columns(1).ColumnName
+        '    Me.drop_auth.DataBind()
+        'End If
+    End Sub
+    Public Sub RaiseCallbackEvent(ByVal eventArgument As String) Implements System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent
+        Dim cal_data = eventArgument
+        Dim menu() As String = cal_data.ToString.Split("$")
+        If Me.Session("user_id") = "" Then
+            CbResult = "L"
+        Else
+            sf = Session("user_id").ToString.Split("!")
+            Try
+                If menu(0) = 1 Then
+                    If menu(1) = 1 Then
+                        a1 = 1
+                        sql = "select t.emp_code || '*' || m.emp_name || '*' || T.COMPONENT || '*' ||T.EFF_DATE || '*' || t.backup || '*' || T.CHANGE || '*' ||em.emp_name || '*' ||t.edited_user||'*'|| t.compon_id from mactech.master_tracer t left outer join mactech.employee_master em on em.emp_code = t.edited_user,mactech.employee_master m where t.emp_code = m.emp_code and t.status = 0 order by T.EFF_DATE"
+
+                    End If
+                    dt = oh.ExecuteDataSet(sql).Tables(0)
+                    Dim drw As DataRow
+                    For Each drw In dt.Rows
+                        str_tkn.Append(drw(0))
+                        str_tkn.Append("`")
+                    Next
+                    str_tkn.Append("@")
+                    CbResult = str_tkn.ToString + a1.ToString
+                ElseIf menu(0) = 2 Then
+                    If menu(2) = "APP" Then
+                        Dim str() As String = menu(1).ToString.Split("*")
+                        sf = Session("user_id").ToString.Split("!")
+                        For i As Integer = 0 To str.Length - 2
+                            Dim opt() As String = str(i).ToString.Split("|")
+                            Dim parameter(6) As OracleParameter
+
+                            parameter(0) = New OracleParameter("ecode", OracleType.Number, 500)
+                            parameter(0).Direction = ParameterDirection.Input
+                            parameter(0).Value = opt(0)
+
+                            parameter(1) = New OracleParameter("options", OracleType.Number, 500)
+                            parameter(1).Direction = ParameterDirection.Input
+                            parameter(1).Value = opt(1)
+
+                            parameter(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+                            parameter(2).Direction = ParameterDirection.Input
+                            parameter(2).Value = opt(2)
+
+                            parameter(3) = New OracleParameter("newdata", OracleType.VarChar, 500)
+                            parameter(3).Direction = ParameterDirection.Input
+                            parameter(3).Value = opt(3)
+
+                            parameter(4) = New OracleParameter("userid", OracleType.Number, 500)
+                            parameter(4).Direction = ParameterDirection.Input
+                            parameter(4).Value = sf(0)
+
+                            parameter(5) = New OracleParameter("eff_dt", OracleType.DateTime, 500)
+                            parameter(5).Direction = ParameterDirection.Input
+                            parameter(5).Value = opt(4)
+
+
+                            parameter(6) = New OracleParameter("msg", OracleType.Char, 500)
+                            parameter(6).Direction = ParameterDirection.Output
+                            oh.ExecuteNonQuery("mactech.master_update_checker", parameter)
+                            'Dim name As DataTable = oh.ExecuteDataSet("select emp_name from employee_master where emp_code=" & ptr(0) & "").Tables(0)
+                            'If Not parameter(4).Value.ToString.StartsWith("Block") And Not parameter(4).Value.ToString.StartsWith("Sanctioned") And Not parameter(4).Value.ToString.StartsWith("Recommended") And Not parameter(4).Value.ToString.StartsWith("Sanction") And Not parameter(4).Value.ToString.StartsWith("Reccomentation") And Not parameter(4).Value.ToString.StartsWith("Reccomended") And Not parameter(4).Value.ToString.StartsWith("Cancelled") Then
+                            '    str_tkn.Append("0~")
+                            '    str_tkn.Append(ptr(0) + " " + "(" + name.Rows(0)(0) + ")")
+                            '    str_tkn.Append("~" + parameter(4).Value.ToString + "#")
+                            'Else
+                            '    str_tkn.Append("1~")
+                            '    str_tkn.Append(ptr(0) + " " + "(" + name.Rows(0)(0) + ")")
+                            '    str_tkn.Append("~" + parameter(4).Value.ToString + "#")
+                            'End If
+                        Next
+                        CbResult = str_tkn.ToString + "@APP"
+
+                    End If
+
+
+
+
+                ElseIf menu(0) = 3 Then
+                    If menu(2) = "REJ" Then
+                        Dim str() As String = menu(1).ToString.Split("*")
+                        sf = Session("user_id").ToString().Split("!")
+                        For i As Integer = 0 To str.Length - 2
+                            'For Each record As String In str
+                            Dim opt() As String = str(i).ToString.Split("|")
+                            'If opt.Length >= 2 Then ' Check if there are enough elements
+                            Dim parameter(6) As OracleParameter
+
+                            parameter(0) = New OracleParameter("ecode", OracleType.Number, 500)
+                            parameter(0).Direction = ParameterDirection.Input
+                            parameter(0).Value = opt(0)
+
+                            parameter(1) = New OracleParameter("options", OracleType.Number, 500)
+                            parameter(1).Direction = ParameterDirection.Input
+                            parameter(1).Value = opt(1)
+
+                            parameter(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+                            parameter(2).Direction = ParameterDirection.Input
+                            parameter(2).Value = opt(2)
+
+                            parameter(3) = New OracleParameter("newdata", OracleType.VarChar, 500)
+                            parameter(3).Direction = ParameterDirection.Input
+                            parameter(3).Value = opt(3)
+
+                            parameter(4) = New OracleParameter("userid", OracleType.Number, 500)
+                            parameter(4).Direction = ParameterDirection.Input
+                            parameter(4).Value = sf(0)
+
+                            parameter(5) = New OracleParameter("eff_dt", OracleType.DateTime, 500)
+                            parameter(5).Direction = ParameterDirection.Input
+                            parameter(5).Value = opt(4)
+
+
+                            parameter(6) = New OracleParameter("msg", OracleType.Char, 500)
+                            parameter(6).Direction = ParameterDirection.Output
+                            oh.ExecuteNonQuery("mactech.master_update_rjct", parameter)
+                            'Dim name As DataTable = oh.ExecuteDataSet("select emp_name from employee_master where emp_code=" & ptr(0) & "").Tables(0)
+                            'If Not parameter(4).Value.ToString.StartsWith("Block") And Not parameter(4).Value.ToString.StartsWith("Sanctioned") And Not parameter(4).Value.ToString.StartsWith("Recommended") And Not parameter(4).Value.ToString.StartsWith("Sanction") And Not parameter(4).Value.ToString.StartsWith("Reccomentation") And Not parameter(4).Value.ToString.StartsWith("Reccomended") And Not parameter(4).Value.ToString.StartsWith("Cancelled") Then
+                            '    str_tkn.Append("0~")
+                            '    str_tkn.Append(ptr(0) + " " + "(" + name.Rows(0)(0) + ")")
+                            '    str_tkn.Append("~" + parameter(4).Value.ToString + "#")
+                            'Else
+                            '    str_tkn.Append("1~")
+                            '    str_tkn.Append(ptr(0) + " " + "(" + name.Rows(0)(0) + ")")
+                            '    str_tkn.Append("~" + parameter(4).Value.ToString + "#")
+                            'End If
+                            'End If
+                        Next
+                        CbResult = str_tkn.ToString + "@REJ" ' Changed to @REJ to reflect rejection End If
+
+                    End If
+                End If
+
+            Catch ex As Exception
+                CbResult = "E"
+            End Try
+        End If
+
+    End Sub
+    Public Function GetCallbackResult() As String Implements System.Web.UI.ICallbackEventHandler.GetCallbackResult
+        Return CbResult
+    End Function
+
+
+    'Protected Sub b1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles b1.Click
+    '    Dim cl_script1 As New StringBuilder
+    '    cl_script1.Append("    window.open('../home.aspx','_self');")
+    '    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "inv", cl_script1.ToString, True)
+    'End Sub
+
+    'Protected Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
+    '    Me.Server.Transfer("../home.aspx")
+    'End Sub
+
+    Protected Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Response.Redirect("~/home.aspx")
+    End Sub
+
+   
+    'Protected Sub Button3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+    '    Dim st As New StringBuilder
+    '    Dim datas As String = ""
+    '    Dim item As String = ""
+    '    Dim elem As String = ""
+    '    Dim tr(4) As OracleParameter
+    '    Dim user() As String
+    '    user = Session("user_id").ToString.Split("!")
+    '    Try
+    '        Dim dts() As String = datas.Split("$")
+    '        'If datas = "" Then
+    '        '    Dim cl_script021 As New System.Text.StringBuilder
+    '        '    cl_script021.Append("         alert('Please Select Any Category!!!');")
+    '        '    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+    '        '    Exit Sub
+    '        'End If
+    '        For Each elem In dts
+    '            Dim opt As String = elem.Split("%")(0)
+    '            Dim str As String = elem.Split("%")(1)
+    '            tr(0) = New OracleParameter("ecode", OracleType.VarChar, 500)
+    '            tr(0).Direction = ParameterDirection.Input
+    '            tr(0).Value = Request.QueryString("code")
+    '            tr(1) = New OracleParameter("options", OracleType.Number, 500)
+    '            tr(1).Direction = ParameterDirection.Input
+    '            tr(1).Value = opt
+    '            tr(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+    '            tr(2).Direction = ParameterDirection.Input
+    '            tr(2).Value = str.ToString
+    '            tr(3) = New OracleParameter("userid", OracleType.Number, 500)
+    '            tr(3).Direction = ParameterDirection.Input
+    '            tr(3).Value = user(0)
+    '            tr(4) = New OracleParameter("msg", OracleType.Char, 500)
+    '            tr(4).Direction = ParameterDirection.Output
+    '            oh.ExecuteNonQuery("master_update_rjct", tr)
+    '        Next
+    '        Dim cl_script01 As New System.Text.StringBuilder
+    '        cl_script01.Append("         alert('" & tr(4).Value & "');")
+    '        cl_script01.Append("       window.open('master_data_checker.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+    '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+    '    Catch ex As Exception
+    '        Response.Write(ex.ToString)
+    '    End Try
+
+
+
+
+
+
+
+
+
+
+
+    'End Sub
+End Class

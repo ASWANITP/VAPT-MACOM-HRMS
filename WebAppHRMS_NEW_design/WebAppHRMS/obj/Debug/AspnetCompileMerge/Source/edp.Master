@@ -1,0 +1,144 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="edp.Master.vb" Inherits="WebAppHRMS.edp" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+
+    <style type="text/css">
+        body {
+            font-family: "Poppins";
+        }
+
+        .level1 {
+            float: none !important;
+        }
+
+        table {
+            margin: 0 auto;
+            border: unset;
+        }
+    </style>
+
+    <script type="text/javascript">
+        String.prototype.lpad = function (num, cpad) {
+            var i;
+            var a = this.split('');
+            for (i = 0; i < num - this.length; i++) {
+                a.unshift(cpad)
+            }
+            return a.join('')
+        }
+        function show() {
+
+            var msg = "****** " + msg_str + " *******"
+            var disp = "<MARQUEE SCROLLDELAY=150 style=WIDTH: 608px; HEIGHT: 19px bgColor=#C3D9EF><STRONG><FONT color=#17508A>" + msg + "</FONT></STRONG></MARQUEE>"
+            document.getElementById("lbl_news").innerHTML = disp
+            showtime();
+        }
+
+        function showtime() {
+            var dt, t
+            dt = new Date()
+            var a_p = ""
+            var curr_hour = dt.getHours()
+            if (curr_hour < 12) {
+                a_p = "AM"
+            }
+            else {
+                a_p = "PM"
+            }
+            if (curr_hour == 0) {
+                curr_hour = 12
+            }
+            if (curr_hour > 12) {
+                curr_hour = curr_hour - 12
+            }
+            t = "<align=center><STRONG>" + curr_hour.toString().lpad(2, '0') + ":" + dt.getMinutes().toString().lpad(2, '0') + ":" + dt.getSeconds().toString().lpad(2, '0') + ":" + a_p + "</STRONG>"
+            window.setTimeout("showtime()", 60000)
+            document.getElementById("lbl_time").innerHTML = t;
+        }
+
+        function updateTime() {
+            var now = new Date();
+            // Format hours, minutes, seconds as you wish.
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var formattedTime = hours + ":" + minutes + ":" + seconds;
+
+            // Assuming your label has rendered an element with the ID 'lbl_time'
+            document.getElementById("lbl_time").innerText = formattedTime;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateTime(); // update immediately on DOM ready
+            setInterval(updateTime, 1000); // then update every second
+        });
+
+    </script>
+    <title>Welcome To Manappuram</title>
+</head>
+<body onload="show()" bgcolor="#C3D9EF">
+    <form id="form1" runat="server">
+        <div>
+            <table border="1" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td colspan="2" style="height: 5px">
+                        <table width="100%" style="background-color: #C3D9EF">
+                            <tr>
+                                <td align="center" colspan="3" style="background-color: #17508A">
+                                    <asp:Label ID="lbl_head" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="white"
+                                        Text="Manappuram Group of Companies,AO Valapad" BackColor="#17508A" Width="100%"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="3" style="height: 21px">
+                                    <asp:Label ID="lbl_user" runat="server" Font-Bold="True" ForeColor="#626477" Width="249px"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="width: 201px; height: 21px; color: #626477;">Date:
+                                    <asp:Label ID="lbl_date" runat="server" Font-Bold="True" Width="152px"></asp:Label></td>
+                                <td align="center" style="width: 525px; height: 21px;"></td>
+                                <td align="right" style="height: 21px; color: #626477;">Time:
+                                    <asp:Label ID="lbl_time" runat="server" Font-Bold="True" ClientIDMode="Static"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="3" style="height: 24px">
+                                    <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="#626477" Text="News Room      :"
+                                        Width="93px"></asp:Label>
+                                    <asp:Label ID="lbl_news" runat="server" Font-Bold="True" ForeColor="Black" Width="89%"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="3">&nbsp;<asp:Label ID="Label3" runat="server" BackColor="Red" ForeColor="White" Width="100%"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="3">
+                                    <asp:Label ID="lbl_subhead" runat="server" Font-Bold="True" Font-Size="Large" Width="372px" ForeColor="#293D6B"></asp:Label></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <asp:ContentPlaceHolder ID="cph_edp" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </td>
+                </tr>
+                <tr style="color: white; background-color: #C3D9EF;">
+                    <td align="center" colspan="2" style="color: white; background-color: #17508A; display: block;">
+                        <asp:Label ID="Label1" runat="server" BackColor="#17508A" ForeColor="White" Width="100%" Font-Bold="True" Font-Italic="True">Manappuram e Business Suite ver 4.0</asp:Label>
+                    </td>
+
+                    <tr>
+                        <td align="center" colspan="2" style="color: white; background-color: #17508A; display: block;">
+                        Designed &amp; Developed by MACTECH 
+                    </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

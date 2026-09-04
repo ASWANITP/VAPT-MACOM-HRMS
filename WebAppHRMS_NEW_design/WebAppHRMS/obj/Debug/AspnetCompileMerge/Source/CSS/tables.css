@@ -1,0 +1,80 @@
+/* -- Data Table ------------------------------------------------------------------------------------------ */
+/*-- pt109V1.0 dated 18082006 --*/
+div.dataTableWrapper {
+	padding:0 0 8px;
+	margin:0 0 5px;
+	background:url(../Images/tbfooter1x8.gif) repeat-x left bottom transparent;
+}
+div.dataTableWrapper table.data {
+	margin:0;
+}
+table.data {
+	border-collapse:collapse;
+	margin:0 0 5px;
+	padding:0;
+	font-size:1em;
+}
+table.data th, 
+table.data td {
+	padding:0 5px 0 10px;
+	vertical-align:middle;
+	height:30px;
+	text-align:left;
+}
+table.data th {
+	background:url(../Images/tbhead1x30_nostrip.gif) repeat-x #ddd left top;
+	border-top:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+}
+table.data td {
+	background:url(../Images/row_separator.gif) repeat-x transparent left bottom;
+}
+table.data tr.last td {
+	background-image:none;
+}
+/* -- Sortable Data Table --------------------------------------------------------------------------------- */
+table.sortable th {
+	background-image:url(../Images/tbhead1x30.gif);
+}
+table.sortable th.first {
+	background-image:url(../Images/tbhead1x30_nostrip.gif);
+}
+table.sortable th.selected {
+	background-image:url(../Images/tbhead_blue1x30.gif);
+}
+table.sortable th.firstselected {
+	background-image:url(../Images/tbhead_blue1x30_nostrip.gif);
+}
+table.sortable th.selected span, table.sortable th.firstselected span {
+	font-weight:bold;
+	color:Black;
+	display:block;
+	padding-right:12px;
+	background:url(../Images/tbhead_arrow_down.gif) no-repeat right center;
+}
+table.sortable td, 
+table.sortable tr.last td,
+table.collapsable td,
+table.collapsable tr.last td {
+	background-image:url(../Images/tbcol_expandable_back.gif);
+	background-color:#ffffff; /*#fbfbfb;*/
+	border-color:#D8D8D8;
+	border-width:1px 0;
+	border-style:solid;
+}
+/* -- Collapsing tables -------------------------------------------------------------- */
+table tr.collapsed {
+	display:none;
+}
+table.collapsable tr.open td, 
+table.collapsable tr.open th {
+	background-image:none;
+	background-color:White;
+}
+table tr a.arrow {
+	padding-left:12px;
+	background:url(../Images/arrowsmall.gif) no-repeat left center;
+}
+table tr.childExpanded a.arrow {
+	background-image:url(../Images/arrowsmall_down.gif);
+}

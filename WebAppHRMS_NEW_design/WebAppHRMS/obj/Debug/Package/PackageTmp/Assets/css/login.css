@@ -1,0 +1,49 @@
+
+.bg-light11 {
+    background-color: rgb(30, 51, 74, 0.90) !important; /* Bootstrap blue with 60% opacity */
+    border-radius: 8px; /* optional rounded corners */
+    padding: 20px; /* optional spacing */
+    color: #fff;
+    box-shadow: rgb(73, 94, 117, 0.80) 0px 1px 4px, rgb(73, 94, 117, 0.80) 0px 0px 0px 3px !important;
+   
+}
+input.pw {
+    
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(20px);
+    }
+}
+.captcha-outline {
+    border: 2px solid #162083;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-inline: 18px;
+    padding: 15px;
+    background: linear-gradient(135deg, #171b42, #053a87, #0d6efd);
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+.btn-ref {
+    border: 2px solid #053a87;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: white !important;
+    transition: transform 0.4s ease, color 0.4s ease;
+    font-weight: 600;
+    font-family: 'Courier New', monospace;
+}
+
+
+.btn-login{
+    background-color:rgb(4, 43, 87, 0.90) !important;
+    border-color:darkgray;
+}

@@ -1,0 +1,46 @@
+﻿.groovybutton
+{
+	
+	font-size: 12px;
+	font-family: 'Courier New';
+	font-weight: bold;
+	color:Black  ;
+	background-color:Transparent ;
+	border-top-style: double;
+	border-top-color: #EE7777;
+	border-top-width: 4px;
+	border-bottom-style: double;
+	border-bottom-color: #EE7777;
+	border-bottom-width: 4px;
+	border-left-style: solid;
+	border-left-color: #EE7777;
+	border-left-width: 4px;
+	border-right-style: solid;
+	border-right-color: #EE7777;
+	border-right-width: 4px;
+	cursor: hand;
+}
+.groovybutton1
+{
+   font-size:16px;
+   font-family: 'Courier New';
+   height:26px;
+   background-color:#779999;
+   background-image:url(back03.gif);
+   border-style:solid;
+   border-color:#DDDDDD;
+   border-width:1px;
+   cursor: hand;
+}
+.FirstButton
+{
+	font-weight: bold;
+	color: #000000;
+	background-color:Transparent ;
+	border-style: double;
+	border-color: #000000;
+	cursor: hand;
+	font-family: 'Courier New';
+}
+
+

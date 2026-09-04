@@ -1,0 +1,130 @@
+.bsb-btn-xl{--bs-btn-padding-y:0.625rem;--bs-btn-padding-x:1.25rem;--bs-btn-font-size:calc(1.26rem + 0.12vw);--bs-btn-border-radius:var(--bs-border-radius-lg)}@media(min-width:1200px){.bsb-btn-xl{--bs-btn-font-size:1.35rem}}.bsb-btn-2xl{--bs-btn-padding-y:0.75rem;--bs-btn-padding-x:1.5rem;--bs-btn-font-size:calc(1.27rem + 0.24vw);--bs-btn-border-radius:var(--bs-border-radius-lg)}@media(min-width:1200px){.bsb-btn-2xl{--bs-btn-font-size:1.45rem}}.bsb-btn-3xl{--bs-btn-padding-y:0.875rem;--bs-btn-padding-x:1.75rem;--bs-btn-font-size:calc(1.28rem + 0.36vw);--bs-btn-border-radius:var(--bs-border-radius-lg)}@media(min-width:1200px){.bsb-btn-3xl{--bs-btn-font-size:1.55rem}}.bsb-btn-4xl{--bs-btn-padding-y:1rem;--bs-btn-padding-x:2rem;--bs-btn-font-size:calc(1.29rem + 0.48vw);--bs-btn-border-radius:var(--bs-border-radius-lg)}@media(min-width:1200px){.bsb-btn-4xl{--bs-btn-font-size:1.65rem}}.bsb-btn-5xl{--bs-btn-padding-y:1.125rem;--bs-btn-padding-x:2.25rem;--bs-btn-font-size:calc(1.3rem + 0.6vw);--bs-btn-border-radius:var(--bs-border-radius-lg)}@media(min-width:1200px){.bsb-btn-5xl{--bs-btn-font-size:1.75rem}}
+
+.log-footer {
+    font-size: x-small;
+    text-decoration-color: green;
+}
+
+.mt-large{ padding-top: 12% !important;}
+
+@media (max-width: 1366px) {
+    .col-lg-4 {
+        width: 28% !important;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: 10px !important;
+        color: var(--bs-card-color);
+    }
+    .mt-large {
+        padding-top: 9% !important;
+    }
+    .row > * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right:calc(var(--bs-gutter-x)* .2);
+        padding-left: calc(var(--bs-gutter-x)* .2);
+        margin-top: var(--bs-gutter-y);
+    }
+
+    .log-footer {
+        font-size: xx-small !important;
+        text-decoration-color: green;
+    }
+
+    .bsb-btn-xl {
+        --bs-btn-font-size: 0.7rem;}
+
+    .form-floating > label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        pointer-events: none;
+        border: 1px solid transparent;
+        transform-origin: 0 0;
+        transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+
+    form-floating > .form-control:not(:-moz-placeholder-shown)    {
+        padding-top:1rem;
+        padding-bottom:0.8rem;
+    }
+    .form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > .form-select {
+        /*height: calc(3.5rem + 2px);*/
+        line-height: 1.25
+    }
+
+    .form-control {
+        margin-bottom: 0px !important;
+        font-size: 1rem;
+    }
+
+    .form-select {
+        font-size: 0.8rem
+    }
+
+
+    .form-floating > .form-select {
+        padding-top: 1rem;
+        /* padding-bottom: .625rem; */
+    }
+    .col-lg-4 {
+        width: 28% !important;
+    }
+    }
+
+/* (1366x768) WXGA Display */
+@media (min-width:768px) {
+
+    .form-floating > label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        pointer-events: none;
+        border: 1px solid transparent;
+        transform-origin: 0 0;
+        transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+
+    form-floating > .form-control:not(:-moz-placeholder-shown) {
+        padding-top: 1rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > .form-select {
+        /*height: calc(3.5rem + 2px);*/
+        line-height: 1.25
+    }
+
+    .form-control {       
+        margin-bottom: 0px !important;
+        font-size:1rem;
+    }
+    .form-select{ font-size:0.8rem}
+
+    .form-floating > .form-select {
+        padding-top: 1rem;
+        /* padding-bottom: .625rem; */    }
+
+    .col-12{padding-top:0px!important;}
+    .form-floating > .form-select {    
+        font-size: 0.8vw;
+    }
+    .col-lg-4 {
+        width: 28% !important;
+    }
+}

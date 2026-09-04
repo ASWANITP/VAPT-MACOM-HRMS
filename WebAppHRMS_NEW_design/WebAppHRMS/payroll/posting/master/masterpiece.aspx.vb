@@ -1,0 +1,3717 @@
+'Imports System.Data
+'Imports System.Data.OracleClient
+'Imports System.Text.RegularExpressions
+
+'Partial Class emp_transfer_0011b6051410
+'    Inherits System.Web.UI.Page
+'    Dim oh As New helper.oracle.OracleHelper
+'    Dim dt, dt1, dt2, dt3, dt4, dt5, dt6, dt7, dt8, dt9 As New DataTable
+'    Dim sql, sql1, sql2, sql3, sql7, res As String
+'    Dim st1() As String
+'    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+'        If Not IsPostBack Then
+'            Me.Hiddate.Value = Request.QueryString("code")
+'            Me.pnl.Visible = False
+'            Me.Button1.Visible = False
+'            Me.caldob.Enabled = False
+'            Me.caldoj.Enabled = False
+'            Me.dropblood.Visible = False
+'            dropgender.Visible = False
+'            dropmari.Visible = False
+'            dropid.Visible = False
+'            dropdesig.Visible = False
+'            Droppost.Visible = False
+'            DropDep.Visible = False
+'            'Dropdh.Visible = False
+'            Droptlm.Visible = False
+'            DropDownList1.Visible = False
+'            calepd.Enabled = False
+'            caldrs.Enabled = False
+'            CalendarExtender1.Enabled = False
+'            CalendarExtender2.Enabled = False
+'            CalendarExtender3.Enabled = False
+'            Dropsts.Visible = False
+'            Me.resig_sub_dt.Visible = False
+'            Me.prop_exit_dt.Visible = False
+'            Me.startdt.Visible = False
+'            Me.enddt.Visible = False
+'            Me.reason.Visible = False
+'            Me.mylab1.Visible = False
+'            Me.mylab2.Visible = False
+'            Me.mylab3.Visible = False
+'            Me.mylab4.Visible = False
+'            Me.mylab5.Visible = False
+'            Calenstart.Enabled = False
+'            Calenresub.Enabled = False
+'            Calend.Enabled = False
+'            Calenproex.Enabled = False
+'            Dim pin As String = Request.QueryString("pin")
+
+'            dt3 = oh.ExecuteDataSet("select po.post_office||', '||dst.district_name||', '||st.state_name||', '||po.sr_number  from mactech.post_master po, mactech.district_master dst, mactech.state_master st where po.district_id = dst.district_id and dst.state_id = st.state_id and po.pin_code=" & pin & "").Tables(0)
+'            Me.cmb_dist_select.DataSource = dt3
+'            Me.cmb_dist_select.DataTextField = dt3.Columns(0).ColumnName
+'            Me.cmb_dist_select.DataBind()
+'            Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+'            Me.textpost.Text = Trim(mystr(0))
+'            Me.textdistrict.Text = Trim(mystr(1))
+'            Me.Textstate.Text = Trim(mystr(2))
+
+'            dt = oh.ExecuteDataSet("select t.query from mactech.hrm_report_master t where t.query_id=126 and t.firm_id=99").Tables(0)
+'            Dim vysh() As String = dt.Rows(0)(0).ToString.Split("$")
+'            dt1 = oh.ExecuteDataSet(vysh(2).Replace("mycode", Request.QueryString("code"))).Tables(0)
+'            Dim dc As DataColumn
+'            Dim dr As DataRow
+'            Dim all As String = ""
+'            Dim cnt As Integer = 0
+'            For Each dr In dt1.Rows
+'                For Each dc In dt1.Columns
+'                    If IsDBNull(dr(dc.ColumnName)) Then
+'                        all += "#"
+'                    Else
+'                        all += dr(dc.ColumnName).ToString + "#"
+'                    End If
+'                Next
+'            Next
+'            Dim alls() As String = all.Split("#")
+'            Me.textname.Text = alls(0)
+'            Me.texthouse.Text = alls(1)
+'            Me.textpin.Text = alls(2)
+'            Me.Textstate.Text = alls(3)
+'            Me.textdistrict.Text = alls(4)
+'            Me.textpost.Text = alls(5)
+'            Me.textland.Text = alls(6)
+'            Me.textdob.Text = alls(7)
+'            Me.txtcontno.Text = alls(8)
+'            Me.txtblood.Text = alls(9)
+'            Me.textgender.Text = alls(10)
+'            Me.textmarital.Text = alls(11)
+'            Me.textidpoorf.Text = alls(12)
+'            Me.textepmail.Text = alls(13)
+'            Me.textidname.Text = alls(14)
+'            Me.textdesignation.Text = alls(15)
+'            Me.textpostname.Text = alls(16)
+'            Me.textdep.Text = alls(17)
+'            Me.textdoj.Text = alls(18)
+'            'Me.textdh.Text = alls(19)
+'            Me.textsclm.Text = alls(19)
+'            Me.texttlm.Text = alls(20)
+'            Me.textpc.Text = alls(26)
+'            Me.textoffmail.Text = alls(23)
+'            Me.textbpay.Text = alls(24)
+'            Me.textctcadj.Text = alls(25)
+'            Me.textlvl.Text = alls(46)
+'            Me.textesino.Text = alls(46)
+'            Me.Textuan.Text = alls(28)
+'            Me.Textpan.Text = alls(46)
+'            Me.textbkname.Text = alls(30)
+'            Me.Textbkaccont.Text = alls(31)
+'            Me.textifsc.Text = alls(32)
+'            Me.textexit.Text = alls(46)
+'            Me.textrfr.Text = alls(34)
+'            Me.Textdrs.Text = alls(46)
+'            Me.Textskils.Text = alls(36)
+'            Me.Textoec.Text = alls(35)
+'            Me.Textincrement.Text = alls(37)
+'            Me.Textpos.Text = alls(39)
+'            Me.Textdoj1.Text = alls(38)
+'            Me.Textsource.Text = alls(41)
+'            Me.textsts.Text = alls(42)
+'            Me.Textres.Text = alls(44)
+'            Me.Textqul.Text = alls(45)
+
+'            Me.cjsdte.Text = alls(43)
+
+
+
+'        End If
+'    End Sub
+
+'    Protected Sub cmd_confirm_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_confirm.Click
+'        Dim st As New StringBuilder
+'        Dim datas As String = ""
+'        Dim item As String = ""
+'        Dim elem As String = ""
+'        Dim tr(4) As OracleParameter
+'        Dim user() As String
+'        user = Session("user_id").ToString.Split("!")
+'        Try
+
+'            'Dim regex As Regex = New Regex("^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$")
+'            'Dim isValid As Boolean = (regex.IsMatch(textepmail.Text.Trim) Or regex.IsMatch(textoffmail.Text.Trim))
+'            'If Not isValid Then
+'            '    Dim cl_script021 As New System.Text.StringBuilder
+'            '    cl_script021.Append("        alert('Please Enter Valid Email ID!!');")
+'            '    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            'End If
+
+
+
+'            'If Me.Checkname.Checked = True Then
+'            '    If Me.textname.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+
+'            'If Me.Checkhouse.Checked = True Then
+'            '    If Me.texthouse.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+
+'            'If Me.Checkpin.Checked = True Then
+'            '    If Me.textpin.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checland.Checked = True Then
+'            '    If Me.textland.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkdob.Checked = True Then
+'            '    If Me.textdob.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkcontno.Checked = True Then
+'            '    If Me.txtcontno.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkblood.Checked = True Then
+'            '    If Me.txtblood.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkgender.Checked = True Then
+'            '    If Me.textgender.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkcontno.Checked = True Then
+'            '    If Me.te.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkmarital.Checked = True Then
+'            '    If Me.textmarital.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkidpoorf.Checked = True Then
+'            '    If Me.textidpoorf.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkdesignation.Checked = True Then
+'            '    If Me.textdesignation.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkpostname.Checked = True Then
+'            '    If Me.textpostname.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkdep.Checked = True Then
+'            '    If Me.textdep.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkdoj.Checked = True Then
+'            '    If Me.textdoj.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkoffmail.Checked = True Then
+'            '    If Me.textoffmail.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checktlm.Checked = True Then
+'            '    If Me.texttlm.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkpc.Checked = True Then
+'            '    If Me.textpc.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checksts.Checked = True Then
+'            '    If Me.textsts.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            If Me.Checkbpay.Checked = True Then
+'                If Me.textbpay.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill check box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkctcadj.Checked = True Then
+'                If Me.textctcadj.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checklvl.Checked = True Then
+'                If Me.textlvl.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkesino.Checked = True Then
+'                If Me.textesino.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkuan.Checked = True Then
+'                If Me.Textuan.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkpan.Checked = True Then
+'                If Me.Textpan.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkbkname.Checked = True Then
+'                If Me.textname.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkbkaccont.Checked = True Then
+'                If Me.Textbkaccont.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            If Me.Checkifsc.Checked = True Then
+'                If Me.textifsc.Text = "" Then
+
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("        alert('Please fill text box!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'            End If
+'            'If Me.Checkexit.Checked = True Then
+'            '    If Me.textexit.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkrfr.Checked = True Then
+'            '    If Me.textrfr.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkdrs.Checked = True Then
+'            '    If Me.Checkdrs.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkskils.Checked = True Then
+'            '    If Me.Checkskils.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkoec.Checked = True Then
+'            '    If Me.Checkoec.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkincrement.Checked = True Then
+'            '    If Me.Checkincrement.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkpos.Checked = True Then
+'            '    If Me.Checkpos.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checkofdoj.Checked = True Then
+'            '    If Me.Checkofdoj.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+'            'If Me.Checksource.Checked = True Then
+'            '    If Me.Textsource.Text = "" Then
+
+'            '        Dim cl_script021 As New System.Text.StringBuilder
+'            '        cl_script021.Append("        alert('Please fill check box!!');")
+'            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'            '        Exit Sub
+'            '    End If
+'            'End If
+
+'            If Me.Checkname.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "1" + "%" + textname.Text
+'                Else
+'                    datas = datas + "$" + "1" + "%" + textname.Text
+'                End If
+'            End If
+
+
+
+'            If Me.Checkhouse.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+
+'                    datas = "2" + "%" + texthouse.Text
+'                Else
+'                    datas = datas + "$" + "2" + "%" + texthouse.Text
+'                End If
+'            End If
+'            If Me.Checkpin.Checked = True Then
+'                Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "3" + "%" + mystr(3)
+'                Else
+'                    datas = datas + "$" + "3" + "%" + mystr(3)
+'                End If
+'            End If
+'            If Me.Checland.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "4" + "%" + textland.Text
+'                Else
+'                    datas = datas + "$" + "4" + "%" + textland.Text
+'                End If
+'            End If
+'            If Me.Checkdob.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "5" + "%" + Format(CDate(textdob.Text), "dd-MMM-yyyy")
+'                Else
+'                    datas = datas + "$" + "5" + "%" + Format(CDate(textdob.Text), "dd-MMM-yyyy")
+'                End If
+'            End If
+'            If Me.Checkcontno.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "6" + "%" + txtcontno.Text
+'                Else
+'                    datas = datas + "$" + "6" + "%" + txtcontno.Text
+'                End If
+'            End If
+'            If Me.Checkblood.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "7" + "%" + dropblood.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "7" + "%" + dropblood.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkgender.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "8" + "%" + dropgender.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "8" + "%" + dropgender.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkmarital.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "9" + "%" + dropmari.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "9" + "%" + dropmari.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkidpoorf.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "10" + "%" + textidpoorf.Text
+'                Else
+'                    datas = datas + "$" + "10" + "%" + textidpoorf.Text
+'                End If
+'            End If
+'            If Me.Checkepmail.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "11" + "%" + textepmail.Text
+'                Else
+'                    datas = datas + "$" + "11" + "%" + textepmail.Text
+'                End If
+'            End If
+'            If Me.Checkidname.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "12" + "%" + dropid.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "12" + "%" + dropid.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkdesignation.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "13" + "%" + dropdesig.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "13" + "%" + dropdesig.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkpostname.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "14" + "%" + Droppost.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "14" + "%" + Droppost.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkdep.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "15" + "%" + DropDep.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "15" + "%" + DropDep.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkdoj.Checked = True Then
+'                If CDate(Me.Textdoj1.Text) > CDate(Me.textdoj.Text) Then
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("         alert('macom join date must be greater than other firm join date');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "16" + "%" + Format(CDate(textdoj.Text), "dd-MMM-yyyy")
+'                Else
+'                    datas = datas + "$" + "16" + "%" + Format(CDate(textdoj.Text), "dd-MMM-yyyy")
+'                End If
+'            End If
+'            If Me.Checktlm.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "17" + "%" + Droptlm.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "17" + "%" + Droptlm.SelectedValue.ToString
+'                End If
+'            End If
+'            If Me.Checkpc.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "18" + "%" + textpc.Text
+'                Else
+'                    datas = datas + "$" + "18" + "%" + textpc.Text
+'                End If
+'            End If
+'            If Me.Checkoffmail.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "19" + "%" + textoffmail.Text
+'                Else
+'                    datas = datas + "$" + "19" + "%" + textoffmail.Text
+'                End If
+'            End If
+'            If Me.Checkbpay.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "20" + "%" + textbpay.Text
+'                Else
+'                    datas = datas + "$" + "20" + "%" + textbpay.Text
+'                End If
+'            End If
+'            If Me.Checkctcadj.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "21" + "%" + textctcadj.Text
+'                Else
+'                    datas = datas + "$" + "21" + "%" + textctcadj.Text
+'                End If
+'            End If
+'            If Me.Checklvl.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "22" + "%" + datas + textlvl.Text
+'                Else
+'                    datas = datas + "$" + "22" + "%" + textlvl.Text
+'                End If
+'            End If
+'            If Me.Checkesino.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "23" + "%" + textesino.Text
+'                Else
+'                    datas = datas + "$" + "23" + "%" + textesino.Text
+'                End If
+'            End If
+'            If Me.Checkuan.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "24" + "%" + Textuan.Text
+'                Else
+'                    datas = datas + "$" + "24" + "%" + Textuan.Text
+'                End If
+'            End If
+'            If Me.Checkpan.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "25" + "%" + Textpan.Text
+'                Else
+'                    datas = datas + "$" + "25" + "%" + Textpan.Text
+'                End If
+'            End If
+'            If Me.Checkbkname.Checked = True Or Me.Checkbkaccont.Checked = True Or Me.Checkifsc.Checked = True Then
+'                Dim arr() As String = {")", "(", "!", "@", "#", "$", "%", "^", "&", "*", "<", ">", "/", "\"}
+'                Dim pass As String = Me.textifsc.Text
+'                For Each gh As String In arr
+'                    If pass.Contains(gh) Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("         alert('Special Characters Are Not Allowed In IFSC!!!');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    End If
+'                Next
+'                If Me.Checkbkname.Checked = True Then
+'                    textbkname.Text = textbkname.Text + "+"
+'                ElseIf Me.Checkbkaccont.Checked = True Then
+'                    Me.Textbkaccont.Text = Textbkaccont.Text + "+"
+'                ElseIf Me.Checkifsc.Checked = True Then
+'                    Me.textifsc.Text = textifsc.Text + "+"
+'                End If
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "26" + "%" + textbkname.Text + "^" + Me.Textbkaccont.Text + "^" + Me.textifsc.Text
+'                Else
+'                    datas = datas + "$" + "26" + "%" + textbkname.Text + "^" + Me.Textbkaccont.Text + "^" + Me.textifsc.Text
+
+'                End If
+'            End If
+'            'If Me.Checkbkaccont.Checked = True Then
+'            '    If IsDBNull(datas) Or datas = "" Then
+'            '        datas = "27" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+'            '    Else
+'            '        datas = datas + "$" + "27" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+'            '    End If
+'            'End If
+'            'If Me.Checkifsc.Checked = True Then
+'            '    If IsDBNull(datas) Or datas = "" Then
+'            '        datas = "28" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+'            '    Else
+'            '        datas = datas + "$" + "28" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+'            '    End If
+'            'End If
+'            If Me.Checkexit.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "29" + "%" + Format(CDate(textexit.Text), "dd-MMM-yyyy")
+'                Else
+'                    datas = datas + "$" + "29" + "%" + Format(CDate(textexit.Text), "dd-MMM-yyyy")
+'                End If
+'            End If
+'            If Me.Checkrfr.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "30" + "%" + textrfr.Text
+'                Else
+'                    datas = datas + "$" + "30" + "%" + textrfr.Text
+'                End If
+'            End If
+'            If Me.Checkdrs.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "31" + "%" + Format(CDate(Textdrs.Text), "dd-MMM-yyyy")
+'                Else
+'                    datas = datas + "$" + "31" + "%" + Format(CDate(Textdrs.Text), "dd-MMM-yyyy")
+'                End If
+'            End If
+'            If Me.Checkskils.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "32" + "%" + Textskils.Text
+'                Else
+'                    datas = datas + "$" + "32" + "%" + Textskils.Text
+'                End If
+'            End If
+'            If Me.Checkoec.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "33" + "%" + Textoec.Text
+'                Else
+'                    datas = datas + "$" + "33" + "%" + Textoec.Text
+'                End If
+'            End If
+'            If Me.Checkincrement.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "34" + "%" + Textincrement.Text
+'                Else
+'                    datas = datas + "$" + "34" + "%" + Textincrement.Text
+'                End If
+'            End If
+'            If Me.Checkpos.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "35" + "%" + Textpos.Text
+'                Else
+'                    datas = datas + "$" + "35" + "%" + Textpos.Text
+'                End If
+'            End If
+'            If Me.Checkofdoj.Checked = True Then
+'                If CDate(Me.Textdoj1.Text) > CDate(Me.textdoj.Text) Then
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("         alert('other firm join date must be less than macom join date');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                End If
+
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "36" + "%" + Textdoj1.Text
+'                Else
+'                    datas = datas + "$" + "36" + "%" + Textdoj1.Text
+'                End If
+'            End If
+'            If Me.Checksource.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "37" + "%" + Textsource.Text
+'                Else
+'                    datas = datas + "$" + "37" + "%" + Textsource.Text
+'                End If
+'            End If
+
+
+'            If Me.cjstdte.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "41" + "%" + cjsdte.Text
+'                Else
+'                    datas = datas + "$" + "41" + "%" + cjsdte.Text
+'                End If
+'            End If
+
+
+'            If Me.checksclma.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "42" + "%" + DropDownList1.SelectedValue.ToString
+'                Else
+'                    datas = datas + "$" + "42" + "%" + DropDownList1.SelectedValue.ToString
+'                End If
+'            End If
+
+
+
+'            If Me.Checkres.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "39" + "%" + Textres.Text
+'                Else
+'                    datas = datas + "$" + "39" + "%" + Textres.Text
+'                End If
+'            End If
+'            If Me.Checkqul.Checked = True Then
+'                If IsDBNull(datas) Or datas = "" Then
+'                    datas = "40" + "%" + Textqul.Text
+'                Else
+'                    datas = datas + "$" + "40" + "%" + Textqul.Text
+'                End If
+'            End If
+
+
+
+'            If Me.cjstdte.Checked = True Then
+
+
+
+'                If CDate(cjsdte.Text) > CDate(Date.Now) Or CDate(cjsdte.Text) > CDate(Date.Now) Then
+'                    Dim cl_script1 As New System.Text.StringBuilder
+'                    cl_script1.Append("         alert('Future Date Not Allowed for Current Job Role Start Date!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script1.ToString, True)
+'                    Exit Sub
+
+
+'                End If
+
+'            End If
+
+
+
+
+
+
+'            If Me.Checksts.Checked = True Then
+'                If Me.textsts.Text = "" Or IsDBNull(Me.textsts.Text) Or Me.Dropsts.SelectedValue = 0 Then
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("         alert('Please Select Status Of Employee!!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+'                Else
+'                    dt2 = oh.ExecuteDataSet("select nvl(sum(status),0) from hrm_emp_status fg where fg.emp_code=" & Request.QueryString("code") & " and fg.enter_dt=(select max(tr.enter_dt) from mactech.hrm_emp_status tr where tr.emp_code=" & Request.QueryString("code") & ")").Tables(0)
+'                    If Dropsts.SelectedValue = 2 And (Me.resig_sub_dt.Text = "" Or Me.prop_exit_dt.Text.ToString = "" Or Me.reason.Text = "") Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("         alert('You Must Enter Resignation submit Date, Proposed or Exit Date And Also Reason');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 2 And Me.resig_sub_dt.Text <> "" And Me.prop_exit_dt.Text.ToString <> "" And Me.reason.Text <> "" Then
+'                        If (CDate(Me.resig_sub_dt.Text) > CDate(Me.prop_exit_dt.Text.ToString)) Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("         alert('Proposed or Exit Date Must Be Greater Than Resgination Submitted Date');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        End If
+'                    ElseIf Dropsts.SelectedValue = 1 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("mywin=window.open('rec_res_ho.aspx?code=" & Request.QueryString("code") & "', 'WinC', 'width=300,height=300,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=no,copyhistory=no');")
+'                        cl_script021.Append("mywin.moveTo(200,300);")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 2 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("mywin=window.open('rec_res_ho.aspx?code=" & Request.QueryString("code") & "', 'WinC', 'width=300,height=300,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=no,copyhistory=no');")
+'                        cl_script021.Append("mywin.moveTo(200,300);")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+
+'                    ElseIf Dropsts.SelectedValue = 3 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        If dt2.Rows(0)(0) = 3 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("         alert('The employee already in long leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        ElseIf dt2.Rows(0)(0) = 4 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("         alert('The employee already in maternity leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        End If
+'                    ElseIf Dropsts.SelectedValue = 4 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        If dt2.Rows(0)(0) = 3 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("         alert('The employee already in long leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        ElseIf dt2.Rows(0)(0) = 4 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("         alert('The employee already in maternity leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        End If
+'                    ElseIf Dropsts.SelectedValue = 5 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("mywin=window.open('rec_res_ho.aspx?code=" & Request.QueryString("code") & "', 'WinC', 'width=300,height=300,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=no,copyhistory=no');")
+'                        cl_script021.Append("mywin.moveTo(200,300);")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                        '-----------
+'                    ElseIf Dropsts.SelectedValue = 3 And (Me.startdt.Text = "") Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("         alert('You Must Enter Start Date');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 4 And (Me.startdt.Text = "") Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("          alert('You Must Enter Start Date');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 5 And (Me.resig_sub_dt.Text = "" Or Me.prop_exit_dt.Text.ToString = "" Or Me.reason.Text = "") Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("         alert('You Must Enter Resignation submit Date, Proposed or Exit Date And Also Reason');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 5 And Me.resig_sub_dt.Text <> "" And Me.prop_exit_dt.Text.ToString <> "" And Me.reason.Text <> "" Then
+'                        If (CDate(Me.resig_sub_dt.Text) > CDate(Me.prop_exit_dt.Text.ToString)) Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("         alert('Proposed or Exit Date Must Be Greater Than Resgination Submitted Date');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        End If
+'                    End If
+'                End If
+
+
+'                If IsDBNull(datas) Or datas = "" Then
+'                    If Dropsts.SelectedValue = 1 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + ""
+'                    ElseIf Dropsts.SelectedValue = 2 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+'                    ElseIf Dropsts.SelectedValue = 3 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+'                    ElseIf Dropsts.SelectedValue = 4 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+'                    ElseIf Dropsts.SelectedValue = 5 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+'                    End If
+'                Else
+'                    If Dropsts.SelectedValue = 1 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + ""
+'                    ElseIf Dropsts.SelectedValue = 2 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+'                    ElseIf Dropsts.SelectedValue = 3 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+'                    ElseIf Dropsts.SelectedValue = 4 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+'                    ElseIf Dropsts.SelectedValue = 5 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+'                    End If
+'                End If
+'            End If
+'            'If Me.Checkres.Checked = True Then
+'            '    If IsDBNull(datas) Or datas = "" Then
+'            '        datas = "39" + "%" + Textres.Text
+'            '    Else
+'            '        datas = datas + "$" + "39" + "%" + Textres.Text
+'            '    End If
+'            'End If
+'            'If Me.Checkqul.Checked = True Then
+'            '    If IsDBNull(datas) Or datas = "" Then
+'            '        datas = "40" + "%" + Textqul.Text
+'            '    Else
+'            '        datas = datas + "$" + "40" + "%" + Textqul.Text
+'            '    End If
+'            'End If
+'            Dim dts() As String = datas.Split("$")
+'            If datas = "" Then
+'                Dim cl_script021 As New System.Text.StringBuilder
+'                cl_script021.Append("         alert('Please Select Any Category!!!');")
+'                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                Exit Sub
+'            End If
+'            For Each elem In dts
+'                Dim opt As String = elem.Split("%")(0)
+'                Dim str As String = elem.Split("%")(1)
+'                tr(0) = New OracleParameter("ecode", OracleType.VarChar, 500)
+'                tr(0).Direction = ParameterDirection.Input
+'                tr(0).Value = Request.QueryString("code")
+'                tr(1) = New OracleParameter("options", OracleType.Number, 500)
+'                tr(1).Direction = ParameterDirection.Input
+'                tr(1).Value = opt
+'                tr(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+'                tr(2).Direction = ParameterDirection.Input
+'                tr(2).Value = str.ToString
+'                tr(3) = New OracleParameter("userid", OracleType.Number, 500)
+'                tr(3).Direction = ParameterDirection.Input
+'                tr(3).Value = user(0)
+'                tr(4) = New OracleParameter("msg", OracleType.Char, 500)
+'                tr(4).Direction = ParameterDirection.Output
+'                oh.ExecuteNonQuery("master_update_maker", tr)
+'            Next
+'            Dim cl_script01 As New System.Text.StringBuilder
+'            cl_script01.Append("         alert('" & tr(4).Value & "');")
+'            cl_script01.Append("       window.open('repo.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+'            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+'        Catch ex As Exception
+'            Response.Write(ex.ToString)
+'        End Try
+'    End Sub
+
+'    Protected Sub Checkname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkname.CheckedChanged
+'        If Me.Checkname.Checked = True Then
+'            Me.textname.ReadOnly = False
+'            'Me.textname.Text = ""
+'        Else
+'            Me.textname.ReadOnly = True
+'        End If
+'    End Sub
+'    Protected Sub Checkres_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkres.CheckedChanged
+'        If Me.Checkres.Checked = True Then
+'            Me.Textres.ReadOnly = False
+'            'Me.textname.Text = ""
+'        Else
+'            Me.Textres.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkhouse_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkhouse.CheckedChanged
+'        If Me.Checkhouse.Checked = True Then
+'            Me.texthouse.ReadOnly = False
+'            'Me.texthouse.Text = ""
+'        Else
+'            Me.texthouse.ReadOnly = True
+'        End If
+
+'    End Sub
+
+
+'    Protected Sub Checland_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checland.CheckedChanged
+'        If Me.Checland.Checked = True Then
+'            Me.textland.ReadOnly = False
+'            'Me.textland.Text = ""
+'        Else
+'            Me.textland.ReadOnly = True
+'        End If
+'    End Sub
+
+
+'    Protected Sub Checkpin_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpin.CheckedChanged
+'        If Me.Checkpin.Checked = True Then
+'            Me.textpin.ReadOnly = False
+'            'Me.textpin.Text = ""
+'            Me.Button1.Visible = True
+'        Else
+'            Me.textpin.ReadOnly = True
+'            Me.Button1.Visible = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkdob_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdob.CheckedChanged
+'        If Me.Checkdob.Checked = True Then
+'            Me.textdob.ReadOnly = False
+'            Me.caldob.Enabled = True
+'        Else
+'            Me.textdob.ReadOnly = True
+'            Me.caldob.Enabled = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkdoj_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdoj.CheckedChanged
+'        If Me.Checkdoj.Checked = True Then
+'            Me.textdoj.ReadOnly = False
+'            Me.caldoj.Enabled = True
+'        Else
+'            Me.textdoj.ReadOnly = True
+'            Me.caldoj.Enabled = False
+'        End If
+'    End Sub
+'    Protected Sub Checkqul_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkqul.CheckedChanged
+'        If Me.Checkqul.Checked = True Then
+'            Me.Textqul.ReadOnly = False
+
+'        Else
+'            Me.Textqul.ReadOnly = True
+
+'        End If
+'    End Sub
+
+'    Protected Sub Checkgender_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkgender.CheckedChanged
+'        If Me.Checkgender.Checked = True Then
+'            Me.textgender.ReadOnly = False
+'            dropgender.Visible = True
+'        Else
+'            Me.textgender.ReadOnly = True
+'            dropgender.Visible = False
+'        End If
+'    End Sub
+'    Protected Sub Checksts_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checksts.CheckedChanged
+'        If Me.Checksts.Checked = True Then
+'            Me.textsts.ReadOnly = False
+'            Dropsts.Visible = True
+'            Me.textsts.Text = "---SELECT---"
+'        Else
+'            Me.textgender.ReadOnly = True
+'            Dropsts.Visible = False
+'            Me.textsts.Text = ""
+'        End If
+'    End Sub
+
+'    Protected Sub Checkmarital_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkmarital.CheckedChanged
+'        If Me.Checkmarital.Checked = True Then
+'            Me.textmarital.ReadOnly = False
+'            dropmari.Visible = True
+'        Else
+'            Me.textmarital.ReadOnly = True
+'            dropmari.Visible = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkblood_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkblood.CheckedChanged
+'        If Me.Checkblood.Checked = True Then
+'            dropblood.Visible = True
+'            Me.txtblood.ReadOnly = True
+'            bloodfill()
+'        Else
+'            Me.txtblood.ReadOnly = True
+'            dropblood.Visible = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkdesignation_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdesignation.CheckedChanged
+'        If Me.Checkdesignation.Checked = True Then
+'            Me.textdesignation.ReadOnly = False
+'            dropdesig.Visible = True
+'            desigfill()
+'        Else
+'            Me.textdesignation.ReadOnly = True
+'            dropdesig.Visible = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkpostname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpostname.CheckedChanged
+'        If Me.Checkpostname.Checked = True Then
+'            Me.textpostname.ReadOnly = False
+'            Droppost.Visible = True
+'            postfill()
+'        Else
+'            Me.textpostname.ReadOnly = True
+'            Droppost.Visible = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkdep_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdep.CheckedChanged
+'        If Me.Checkdep.Checked = True Then
+'            Me.textdep.ReadOnly = False
+'            DropDep.Visible = True
+'            depfill()
+'        Else
+'            Me.textdep.ReadOnly = True
+'            DropDep.Visible = False
+'        End If
+'    End Sub
+
+
+'    Protected Sub Checktlm_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checktlm.CheckedChanged
+'        If Me.Checktlm.Checked = True Then
+'            Me.texttlm.ReadOnly = False
+'            Droptlm.Visible = True
+'            tlmfill()
+'        Else
+'            Me.texttlm.ReadOnly = True
+'            Droptlm.Visible = False
+'        End If
+'    End Sub
+
+
+
+'    Protected Sub Checksclm_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checksclma.CheckedChanged
+'        If Me.checksclma.Checked = True Then
+'            Me.textsclm.ReadOnly = False
+'            DropDownList1.Visible = True
+'            sclmfill()
+'        Else
+'            Me.textsclm.ReadOnly = True
+'            DropDownList1.Visible = False
+'        End If
+'    End Sub
+'    Protected Sub Checkepmail_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkepmail.CheckedChanged
+'        If Me.Checkepmail.Checked = True Then
+'            Me.textepmail.ReadOnly = False
+'            'Me.textepmail.Text = ""
+'        Else
+'            Me.textepmail.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkoffmail_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkoffmail.CheckedChanged
+'        If Me.Checkoffmail.Checked = True Then
+'            Me.textoffmail.ReadOnly = False
+'            'Me.textoffmail.Text = ""
+'        Else
+'            Me.textoffmail.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkcontno_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkcontno.CheckedChanged
+'        If Me.Checkcontno.Checked = True Then
+'            Me.txtcontno.ReadOnly = False
+'            'Me.txtcontno.Text = ""
+'        Else
+'            Me.txtcontno.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkbpay_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkbpay.CheckedChanged
+'        If Me.Checkbpay.Checked = True Then
+'            Me.textbpay.ReadOnly = False
+'            'Me.textbpay.Text = ""
+'        Else
+'            Me.textbpay.ReadOnly = True
+'        End If
+
+
+'    End Sub
+'    Protected Sub Checkbkname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkbkname.CheckedChanged
+'        If Me.Checkbkname.Checked = True Then
+'            Me.textbkname.ReadOnly = False
+'            'Me.textbkname.Text = ""
+'        Else
+'            Me.textbkname.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkifsc_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkifsc.CheckedChanged
+'        If Me.Checkifsc.Checked = True Then
+'            Me.textifsc.ReadOnly = False
+'            'Me.textifsc.Text = ""
+'        Else
+'            Me.textifsc.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkesino_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkesino.CheckedChanged
+'        If Me.Checkesino.Checked = True Then
+'            Me.textesino.ReadOnly = False
+'            'Me.textesino.Text = ""
+'        Else
+'            Me.textesino.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkuan_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkuan.CheckedChanged
+'        If Me.Checkuan.Checked = True Then
+'            Me.Textuan.ReadOnly = False
+'            'Me.textuan.Text = ""
+'        Else
+'            Me.Textuan.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checklvl_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checklvl.CheckedChanged
+'        If Me.Checklvl.Checked = True Then
+'            Me.textlvl.ReadOnly = False
+'            'Me.textlvl.Text = ""
+'        Else
+'            Me.textlvl.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkidpoorf_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkidpoorf.CheckedChanged
+'        If Me.Checkidpoorf.Checked = True Then
+'            Me.textidpoorf.ReadOnly = False
+'            'Me.textidpoorf.Text = ""
+'        Else
+'            Me.textidpoorf.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkidname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkidname.CheckedChanged
+'        If Me.Checkidname.Checked = True Then
+'            Me.textidname.ReadOnly = False
+'            idfill()
+'            dropid.Visible = True
+'        Else
+'            Me.textidname.ReadOnly = True
+'            dropid.Visible = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkpan_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpan.CheckedChanged
+'        If Me.Checkpan.Checked = True Then
+'            Me.Textpan.ReadOnly = False
+'            'Me.textpan.Text = ""
+'        Else
+'            Me.Textpan.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkdrs_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdrs.CheckedChanged
+'        If Me.Checkdrs.Checked = True Then
+'            Me.Textdrs.ReadOnly = False
+'            caldrs.Enabled = True
+'        Else
+'            Me.Textdrs.ReadOnly = True
+'            caldrs.Enabled = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkbkaccont_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkbkaccont.CheckedChanged
+'        If Me.Checkbkaccont.Checked = True Then
+'            Me.Textbkaccont.ReadOnly = False
+'            'Me.textbkaccount.Text = ""
+'        Else
+'            Me.Textbkaccont.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkpc_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpc.CheckedChanged
+'        If Me.Checkpc.Checked = True Then
+'            Me.textpc.ReadOnly = False
+'            'Me.textpc.Text = ""
+'        Else
+'            Me.textpc.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkexit_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkexit.CheckedChanged
+'        If Me.Checkexit.Checked = True Then
+'            Me.textexit.ReadOnly = False
+'            Me.calepd.Enabled = True
+'        Else
+'            Me.textexit.ReadOnly = True
+'            Me.calepd.Enabled = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkrfr_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkrfr.CheckedChanged
+'        If Me.Checkrfr.Checked = True Then
+'            Me.textrfr.ReadOnly = False
+'            'Me.textkfr.Text = ""
+'        Else
+'            Me.textrfr.ReadOnly = True
+'        End If
+'    End Sub
+
+'    Protected Sub Checkctcadj_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkctcadj.CheckedChanged
+'        If Me.Checkctcadj.Checked = True Then
+'            Me.textctcadj.ReadOnly = False
+'            'Me.textctcadj.Text = ""
+'        Else
+'            Me.textctcadj.ReadOnly = True
+'        End If
+'    End Sub
+'    Protected Sub Checkskils_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkskils.CheckedChanged
+'        If Me.Checkskils.Checked = True Then
+'            Me.Textskils.ReadOnly = False
+'            'Me.textctcadj.Text = ""
+'        Else
+'            Me.Textskils.ReadOnly = True
+'        End If
+'    End Sub
+'    Protected Sub Checkoec_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkoec.CheckedChanged
+'        If Me.Checkoec.Checked = True Then
+'            Me.Textoec.ReadOnly = False
+'            'Me.textctcadj.Text = ""
+'        Else
+'            Me.Textoec.ReadOnly = True
+'        End If
+'    End Sub
+'    Protected Sub Checkincrement_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkincrement.CheckedChanged
+'        If Me.Checkincrement.Checked = True Then
+'            Me.Textincrement.ReadOnly = False
+'            Me.CalendarExtender2.Enabled = True
+'        Else
+'            Me.Textincrement.ReadOnly = True
+'            Me.CalendarExtender2.Enabled = False
+'        End If
+'    End Sub
+
+'    Protected Sub Checkpos_Checkepos(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpos.CheckedChanged
+'        If Me.Checkpos.Checked = True Then
+'            Me.Textpos.ReadOnly = False
+'            'Me.textctcadj.Text = ""
+'        Else
+'            Me.Textpos.ReadOnly = True
+'        End If
+'    End Sub
+'    Protected Sub Checkofdoj_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkofdoj.CheckedChanged
+'        If Me.Checkofdoj.Checked = True Then
+'            Me.Textdoj1.ReadOnly = False
+'            Me.CalendarExtender1.Enabled = True
+'        Else
+'            Me.Textdoj1.ReadOnly = True
+'            Me.CalendarExtender1.Enabled = False
+'        End If
+'    End Sub
+'    Protected Sub Checksource_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checksource.CheckedChanged
+'        If Me.Checksource.Checked = True Then
+'            Me.Textsource.ReadOnly = False
+'            'Me.textctcadj.Text = ""
+'        Else
+'            Me.Textsource.ReadOnly = True
+'        End If
+'    End Sub
+
+
+'    Protected Sub Checkcurrentjbstrtdte_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkincrement.CheckedChanged
+'        If Me.cjstdte.Checked = True Then
+'            Me.cjsdte.ReadOnly = False
+'            Me.CalendarExtender3.Enabled = True
+'        Else
+'            Me.cjsdte.ReadOnly = True
+'            Me.CalendarExtender3.Enabled = False
+'        End If
+'    End Sub
+
+
+'    'Protected Sub Checkstate_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkstate.CheckedChanged
+'    '    If Me.Checkstate.Checked = True Then
+'    '        Me.Textstate.ReadOnly = False
+'    '        'Me.Textstate.Text = ""
+'    '    Else
+'    '        Me.Textstate.ReadOnly = True
+'    '    End If
+'    'End Sub
+
+'    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+'        If Me.textpin.Text = "" Then
+'            'mylabel.Text = "Please enter a valid pincode"
+'            Me.textpost.Text = ""
+'            Me.textdistrict.Text = ""
+'            Me.Textstate.Text = ""
+'            'mylabel.ForeColor = Drawing.Color.Red
+'            Exit Sub
+'        End If
+'        Dim dt As DataTable
+'        dt = oh.ExecuteDataSet("select po.post_office||', '||dst.district_name||', '||st.state_name||', '||po.sr_number  from mactech.post_master po, mactech.district_master dst, mactech.state_master st where po.district_id = dst.district_id and dst.state_id = st.state_id and po.pin_code=" & Me.textpin.Text & "").Tables(0)
+'        If dt.Rows.Count = 1 Then
+'            Me.pnl.Visible = False
+'            'mylabel.Text = ""
+'            Me.cmb_dist_select.DataSource = dt
+'            Me.cmb_dist_select.DataTextField = dt.Columns(0).ColumnName
+'            Me.cmb_dist_select.DataBind()
+'            Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+'            Me.textpost.Text = Trim(mystr(0))
+'            Me.textdistrict.Text = Trim(mystr(1))
+'            Me.Textstate.Text = Trim(mystr(2))
+'            'Me.HiddenField1.Value = Trim(mystr(3))
+'        ElseIf dt.Rows.Count = 0 Then
+'            'mylabel.Text = "Invalid Pin"
+'            'mylabel.ForeColor = Drawing.Color.Red
+'            Me.textpost.Text = ""
+'            Me.textdistrict.Text = ""
+'            Me.Textstate.Text = ""
+'            Exit Sub
+'        ElseIf dt.Rows.Count > 1 Then
+'            Me.pnl.Visible = True
+'            'mylabel.Text = ""
+'            Me.cmb_dist_select.DataSource = dt
+'            Me.cmb_dist_select.DataTextField = dt.Columns(0).ColumnName
+'            Me.cmb_dist_select.DataBind()
+'            Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+'            Me.textpost.Text = Trim(mystr(0))
+'            Me.textdistrict.Text = Trim(mystr(1))
+'            Me.Textstate.Text = Trim(mystr(2))
+'            'Me.HiddenField1.Value = Trim(mystr(3))
+'        End If
+'    End Sub
+'    Protected Sub cmb_dist_select_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmb_dist_select.SelectedIndexChanged
+'        Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+'        Me.textpost.Text = Trim(mystr(0))
+'        Me.textdistrict.Text = Trim(mystr(1))
+'        Me.Textstate.Text = Trim(mystr(2))
+'    End Sub
+'    Sub bloodfill()
+'        dt = oh.ExecuteDataSet("select blood_type,blood_id from bloodgroup_master order by blood_id").Tables(0)
+'        Me.dropblood.DataSource = dt
+'        Me.dropblood.DataTextField = dt.Columns(0).ColumnName
+'        Me.dropblood.DataValueField = dt.Columns(1).ColumnName
+'        Me.dropblood.DataBind()
+'    End Sub
+'    Sub idfill()
+'        dt = oh.ExecuteDataSet("select identity_name,identity_id,mass_length from identity_gl4 t where t.identity_id in (8,1,2,3)").Tables(0)
+'        Me.dropid.DataSource = dt
+'        Me.dropid.DataTextField = dt.Columns(0).ColumnName
+'        Me.dropid.DataValueField = dt.Columns(1).ColumnName
+'        Me.dropid.DataBind()
+'    End Sub
+'    Sub desigfill()
+'        dt = oh.ExecuteDataSet("select designation,designation_id from designation_master order by designation").Tables(0)
+'        Me.dropdesig.DataSource = dt
+'        Me.dropdesig.DataTextField = dt.Columns(0).ColumnName
+'        Me.dropdesig.DataValueField = dt.Columns(1).ColumnName
+'        Me.dropdesig.DataBind()
+'    End Sub
+'    Sub postfill()
+'        dt = oh.ExecuteDataSet("select post_name,post_id from post_mst order by post_name").Tables(0)
+'        Me.Droppost.DataSource = dt
+'        Me.Droppost.DataTextField = dt.Columns(0).ColumnName
+'        Me.Droppost.DataValueField = dt.Columns(1).ColumnName
+'        Me.Droppost.DataBind()
+'    End Sub
+'    Sub depfill()
+'        dt = oh.ExecuteDataSet("select dep_name,dep_id from department_mst order by dep_name").Tables(0)
+'        Me.DropDep.DataSource = dt
+'        Me.DropDep.DataTextField = dt.Columns(0).ColumnName
+'        Me.DropDep.DataValueField = dt.Columns(1).ColumnName
+'        Me.DropDep.DataBind()
+'    End Sub
+'    Sub tlmfill()
+'        dt = oh.ExecuteDataSet("select '---SELECT EMPLOYEE---', -1 emp_code FROM DUAL UNION select h.emp_code || ' --- ' || s.emp_name,s.emp_code from employ_firm h, employee_master s where h.emp_code = s.emp_code and h.firm_id = 8 and s.status_id = 1 order by emp_code").Tables(0)
+'        Me.Droptlm.DataSource = dt
+'        Me.Droptlm.DataTextField = dt.Columns(0).ColumnName
+'        Me.Droptlm.DataValueField = dt.Columns(1).ColumnName
+'        Me.Droptlm.DataBind()
+'    End Sub
+
+'    Sub sclmfill()
+'        dt = oh.ExecuteDataSet("select '---SELECT EMPLOYEE---', -1 emp_code FROM DUAL UNION select h.emp_code || ' --- ' || s.emp_name,s.emp_code from employ_firm h, employee_master s where h.emp_code = s.emp_code and h.firm_id = 8 and s.status_id = 1 order by emp_code").Tables(0)
+'        Me.DropDownList1.DataSource = dt
+'        Me.DropDownList1.DataTextField = dt.Columns(0).ColumnName
+'        Me.DropDownList1.DataValueField = dt.Columns(1).ColumnName
+'        Me.DropDownList1.DataBind()
+'    End Sub
+'    Protected Sub dropblood_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropblood.SelectedIndexChanged
+'        Me.txtblood.Text = dropblood.SelectedItem.Text
+'    End Sub
+'    Protected Sub dropgender_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropgender.SelectedIndexChanged
+'        Me.textgender.Text = dropgender.SelectedItem.Text
+'    End Sub
+'    Protected Sub dropmari_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropmari.SelectedIndexChanged
+'        Me.textmarital.Text = dropmari.SelectedItem.Text
+'    End Sub
+'    Protected Sub dropid_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropid.SelectedIndexChanged
+'        Me.textidname.Text = dropid.SelectedItem.Text
+'    End Sub
+'    Protected Sub dropdesig_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropdesig.SelectedIndexChanged
+'        Me.textdesignation.Text = dropdesig.SelectedItem.Text
+'    End Sub
+'    Protected Sub droppost_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Droppost.SelectedIndexChanged
+'        Me.textpostname.Text = Droppost.SelectedItem.Text
+'    End Sub
+'    Protected Sub dropdep_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDep.SelectedIndexChanged
+'        Me.textdep.Text = DropDep.SelectedItem.Text
+'    End Sub
+'    Protected Sub droptlm_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Droptlm.SelectedIndexChanged
+'        Me.texttlm.Text = Droptlm.SelectedItem.Text
+'    End Sub
+'    Protected Sub dropsts_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Dropsts.SelectedIndexChanged
+'        Me.textsts.Text = Dropsts.SelectedItem.Text
+'        Me.resig_sub_dt.Visible = False
+'        Me.prop_exit_dt.Visible = False
+'        Me.startdt.Visible = False
+'        Me.enddt.Visible = False
+'        Me.reason.Visible = False
+'        Me.mylab1.Visible = False
+'        Me.mylab2.Visible = False
+'        Me.mylab3.Visible = False
+'        Me.mylab4.Visible = False
+'        Me.mylab5.Visible = False
+'        Calenstart.Enabled = False
+'        Calenresub.Enabled = False
+'        Calend.Enabled = False
+'        Calenproex.Enabled = False
+'        If Dropsts.SelectedValue = 1 Then
+'            Me.resig_sub_dt.Visible = False
+'            Me.prop_exit_dt.Visible = False
+'            Me.startdt.Visible = False
+'            Me.enddt.Visible = False
+'            Me.reason.Visible = False
+'            Me.mylab1.Visible = False
+'            Me.mylab2.Visible = False
+'            Me.mylab3.Visible = False
+'            Me.mylab4.Visible = False
+'            Me.mylab5.Visible = False
+'            Calenstart.Enabled = False
+'            Calenresub.Enabled = False
+'            Calend.Enabled = False
+'            Calenproex.Enabled = False
+'        ElseIf Dropsts.SelectedValue = 2 Then
+'            Me.resig_sub_dt.Visible = True
+'            Me.prop_exit_dt.Visible = True
+'            Me.reason.Visible = True
+'            Me.mylab2.Visible = True
+'            Me.mylab4.Visible = True
+'            Me.mylab5.Visible = True
+'            Calenresub.Enabled = True
+'            Calenproex.Enabled = True
+'        ElseIf Dropsts.SelectedValue = 3 Then
+'            Me.startdt.Visible = True
+'            'Me.enddt.Visible = True
+'            Me.mylab1.Visible = True
+'            'Me.mylab3.Visible = True
+'            Calend.Enabled = True
+'            Calenstart.Enabled = True
+'        ElseIf Dropsts.SelectedValue = 4 Then
+'            Me.startdt.Visible = True
+'            'Me.enddt.Visible = True
+'            Me.mylab1.Visible = True
+'            'Me.mylab3.Visible = True
+'            Calend.Enabled = True
+'            Calenstart.Enabled = True
+'        ElseIf Dropsts.SelectedValue = 5 Then
+'            Me.resig_sub_dt.Visible = True
+'            Me.prop_exit_dt.Visible = True
+'            Me.reason.Visible = True
+'            Me.mylab2.Visible = True
+'            Me.mylab4.Visible = True
+'            Me.mylab5.Visible = True
+'            Calenresub.Enabled = True
+'            Calenproex.Enabled = True
+'        Else
+'            Me.resig_sub_dt.Visible = False
+'            Me.prop_exit_dt.Visible = False
+'            Me.startdt.Visible = False
+'            Me.enddt.Visible = False
+'            Me.reason.Visible = False
+'            Me.mylab1.Visible = False
+'            Me.mylab2.Visible = False
+'            Me.mylab3.Visible = False
+'            Me.mylab4.Visible = False
+'            Me.mylab5.Visible = False
+'            Calenstart.Enabled = False
+'            Calenresub.Enabled = False
+'            Calend.Enabled = False
+'            Calenproex.Enabled = False
+'        End If
+'    End Sub
+
+'    Protected Sub cmd_confirm1_ServerClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_confirm1.ServerClick
+'        Dim st As New StringBuilder
+'        Dim datas As String = ""
+'        Dim item As String = ""
+'        Dim elem As String = ""
+'        Dim tr(3) As OracleParameter
+'        Dim user() As String
+'        user = Session("user_id").ToString.Split("!")
+'        Try
+
+
+'            '' Assume selectedDate is the date picked by the user
+'            'Dim selectedDate As DateTime = DateTime.Parse(cjsdte.Text) ' Example selected date
+'            '' Get the current system date
+'            'Dim sysdate As DateTime = DateTime.Now
+
+'            '' Compare the selected date with the system date
+'            'If selectedDate > sysdate Then
+'            '    ' The selected date is greater than the system date
+'            '    MsgBox("The selected date is greater than the system date.")
+
+'            'End If
+
+
+
+'            If CDate(cjsdte.Text) > CDate(Date.Now) Or CDate(cjsdte.Text) > CDate(Date.Now) Then
+'                Dim cl_script1 As New System.Text.StringBuilder
+'                cl_script1.Append("         alert('Future Date Not Allowed');")
+'                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script1.ToString, True)
+
+
+'            End If
+
+
+
+
+
+
+
+
+
+'            If Me.Checkname.Checked = True Then
+
+'                Dim cl_script021 As New System.Text.StringBuilder
+'                cl_script021.Append("        alert('Please fill all Reason details!!');")
+'                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                Exit Sub
+'            End If
+
+'            If Me.Checksts.Checked = True Then
+'                If Me.textsts.Text = "" Or IsDBNull(Me.textsts.Text) Or Me.Dropsts.SelectedValue = 0 Then
+'                    Dim cl_script021 As New System.Text.StringBuilder
+'                    cl_script021.Append("alert('Please Select Status Of Employee!!!');")
+'                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                    Exit Sub
+
+
+
+
+'                Else
+'                    dt2 = oh.ExecuteDataSet("select status from hrm_emp_status fg where fg.emp_code=" & Me.hid_rej.Value & " and fg.enter_dt=(select max(tr.enter_dt) from mactech.hrm_emp_status tr where tr.emp_code=" & Me.hid_rej.Value & ")").Tables(0)
+'                    If Dropsts.SelectedValue = 1 And Me.Hiddate.Value = "" Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("alert('End Date Couldn't Found');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 2 And Me.Hiddate.Value = "" Then
+'                        Dim cl_script021 As New System.Text.StringBuilder
+'                        cl_script021.Append("End Date Couldn't Found');")
+'                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                        Exit Sub
+'                    ElseIf Dropsts.SelectedValue = 3 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        If dt2.Rows(0)(0) = 3 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("alert('The employee already in long leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        ElseIf dt2.Rows(0)(0) = 4 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("alert('The employee already in maternity leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+
+'                        End If
+'                    ElseIf Dropsts.SelectedValue = 4 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+'                        If dt2.Rows(0)(0) = 3 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("alert('The employee already in long leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        ElseIf dt2.Rows(0)(0) = 4 Then
+'                            Dim cl_script021 As New System.Text.StringBuilder
+'                            cl_script021.Append("alert('The employee already in maternity leave');")
+'                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                            Exit Sub
+'                        End If
+'                    End If
+'                End If
+'                If IsDBNull(datas) Or datas = "" Then
+'                    If Dropsts.SelectedValue = 1 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 2 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 3 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 4 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 5 Then
+'                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+'                    End If
+'                Else
+'                    If Dropsts.SelectedValue = 1 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 2 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 3 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 4 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+'                    ElseIf Dropsts.SelectedValue = 5 Then
+'                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+'                    End If
+'                End If
+'            End If
+'            Dim dts() As String = datas.Split("$")
+'            If datas = "" Then
+'                Dim cl_script021 As New System.Text.StringBuilder
+'                cl_script021.Append("alert('Please Select Any Category!!!');")
+'                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+'                Exit Sub
+'            End If
+'            For Each elem In dts
+'                Dim opt As String = elem.Split("%")(0)
+'                Dim str As String = elem.Split("%")(1)
+'                tr(0) = New OracleParameter("ecode", OracleType.Number, 500)
+'                tr(0).Direction = ParameterDirection.Input
+'                tr(0).Value = Me.hid_rej.Value
+'                tr(1) = New OracleParameter("options", OracleType.Number, 500)
+'                tr(1).Direction = ParameterDirection.Input
+'                tr(1).Value = opt
+'                tr(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+'                tr(2).Direction = ParameterDirection.Input
+'                tr(2).Value = str
+'                tr(3) = New OracleParameter("userid", OracleType.Number, 500)
+'                tr(3).Direction = ParameterDirection.Input
+'                tr(3).Value = user(0)
+'                tr(4) = New OracleParameter("msg", OracleType.Char, 500)
+'                tr(4).Direction = ParameterDirection.Output
+'                oh.ExecuteNonQuery("master_update_maker", tr)
+'            Next
+'            Dim cl_script01 As New System.Text.StringBuilder
+'            cl_script01.Append("         alert('" & tr(4).Value & "');")
+'            cl_script01.Append("       window.open('repo.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+'            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+'        Catch ex As Exception
+'            Response.Write(ex.ToString)
+'        End Try
+'    End Sub
+
+'    Protected Sub cmd_exit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_exit.Click
+'        Response.Redirect("../../../home.aspx")
+'    End Sub
+
+'    'Protected Sub textidpoorf_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles textidpoorf.TextChanged
+'    '    Dim a As Integer
+'    '    Dim i As String = dropid.SelectedValue.ToString
+'    '    Dim qry As String = "select g.mass_length from identity_gl4 g where g.identity_id=" + i
+'    '    Dim q As String
+'    '    dt = oh.ExecuteDataSet(qry).Tables(0)
+'    '    a = Int32.Parse(dt.Rows(0)(0).ToString())
+'    '    If Me.textidpoorf.Text.Length > a Then
+'    '        Dim cl_script01 As New System.Text.StringBuilder
+'    '        cl_script01.Append("         alert('Please enter Correct Id Proof');")
+'    '        cl_script01.Append("       window.open('repo.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+'    '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+
+'    '    End If
+'    'End Sub
+
+'    Protected Sub dropsclm_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
+
+'        Me.textsclm.Text = DropDownList1.SelectedItem.Text
+
+'    End Sub
+'End Class
+
+
+Imports System.Data
+Imports System.Data.OracleClient
+Imports System.Text.RegularExpressions
+
+Partial Class emp_transfer_0011b6051410
+    Inherits System.Web.UI.Page
+    Dim oh As New helper.oracle.OracleHelper
+    Dim dt, dt1, dt2, dt3, dt4, dt5, dt6, dt7, dt8, dt9 As New DataTable
+    Dim sql, sql1, sql2, sql3, sql7, res As String
+    Dim st1() As String
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not IsPostBack Then
+            Me.Hiddate.Value = Request.QueryString("code")
+            Me.pnl.Visible = False
+            Me.Button1.Visible = False
+            Me.caldob.Enabled = False
+            Me.caldoj.Enabled = False
+            Me.dropblood.Visible = False
+            dropgender.Visible = False
+            dropmari.Visible = False
+            dropid.Visible = False
+            dropdesig.Visible = False
+            Droppost.Visible = False
+            DropDep.Visible = False
+            'Dropdh.Visible = False
+            Droptlm.Visible = False
+            DropDownList1.Visible = False
+            dropcategory.Visible = False
+            'dropdphd.Visible = False
+            calepd.Enabled = False
+            caldrs.Enabled = False
+            CalendarExtender1.Enabled = False
+            CalendarExtender2.Enabled = False
+            CalendarExtender3.Enabled = False
+            Dropsts.Visible = False
+            Me.resig_sub_dt.Visible = False
+            Me.prop_exit_dt.Visible = False
+            Me.startdt.Visible = False
+            Me.enddt.Visible = False
+            Me.reason.Visible = False
+            Me.mylab1.Visible = False
+            Me.mylab2.Visible = False
+            Me.mylab3.Visible = False
+            Me.mylab4.Visible = False
+            Me.mylab5.Visible = False
+            Calenstart.Enabled = False
+            Calenresub.Enabled = False
+            Calend.Enabled = False
+            Calenproex.Enabled = False
+            Dim pin As String = Request.QueryString("pin")
+
+            dt3 = oh.ExecuteDataSet("select po.post_office||', '||dst.district_name||', '||st.state_name||', '||po.sr_number  from mactech.post_master po, mactech.district_master dst, mactech.state_master st where po.district_id = dst.district_id and dst.state_id = st.state_id and po.pin_code=" & pin & "").Tables(0)
+            Me.cmb_dist_select.DataSource = dt3
+            Me.cmb_dist_select.DataTextField = dt3.Columns(0).ColumnName
+            Me.cmb_dist_select.DataBind()
+            Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+            Me.textpost.Text = Trim(mystr(0))
+            Me.textdistrict.Text = Trim(mystr(1))
+            Me.Textstate.Text = Trim(mystr(2))
+
+            dt = oh.ExecuteDataSet("select t.query from mactech.hrm_report_master t where t.query_id=126 and t.firm_id=99").Tables(0)
+            Dim vysh() As String = dt.Rows(0)(0).ToString.Split("$")
+            dt1 = oh.ExecuteDataSet(vysh(2).Replace("mycode", Request.QueryString("code"))).Tables(0)
+            Dim dc As DataColumn
+            Dim dr As DataRow
+            Dim all As String = ""
+            Dim cnt As Integer = 0
+            For Each dr In dt1.Rows
+                For Each dc In dt1.Columns
+                    If IsDBNull(dr(dc.ColumnName)) Then
+                        all += "#"
+                    Else
+                        all += dr(dc.ColumnName).ToString + "#"
+                    End If
+                Next
+            Next
+            Dim alls() As String = all.Split("#")
+            Me.textname.Text = alls(0)
+            Me.texthouse.Text = alls(1)
+            Me.textpin.Text = alls(2)
+            Me.Textstate.Text = alls(3)
+            Me.textdistrict.Text = alls(4)
+            Me.textpost.Text = alls(5)
+            Me.textland.Text = alls(6)
+            Me.textdob.Text = alls(7)
+            Me.txtcontno.Text = alls(8)
+            Me.txtblood.Text = alls(9)
+            Me.textgender.Text = alls(10)
+            Me.textmarital.Text = alls(11)
+            Me.textidpoorf.Text = alls(12)
+            Me.textepmail.Text = alls(13)
+            Me.textidname.Text = alls(14)
+            Me.textdesignation.Text = alls(15)
+            Me.textpostname.Text = alls(16)
+            Me.textdep.Text = alls(17)
+            Me.textdoj.Text = alls(18)
+            'Me.textdh.Text = alls(19)
+            'Me.texttlm.Text = alls(20)
+            'Me.textpc.Text = alls(21)
+            'Me.textoffmail.Text = alls(22)
+            'Me.textbpay.Text = alls(23)
+            'Me.textctcadj.Text = alls(24)
+            'Me.textlvl.Text = alls(25)
+            'Me.textesino.Text = alls(26)
+            'Me.Textuan.Text = alls(27)
+            'Me.Textpan.Text = alls(28)
+            'Me.textbkname.Text = alls(29)
+            'Me.Textbkaccont.Text = alls(30)
+            'Me.textifsc.Text = alls(31)
+            'Me.textexit.Text = alls(32)
+            'Me.textrfr.Text = alls(33)
+            'Me.Textdrs.Text = alls(34)
+            'Me.Textskils.Text = alls(35)
+            'Me.Textoec.Text = alls(36)
+            'Me.Textincrement.Text = alls(37)
+            'Me.Textpos.Text = alls(38)
+            'Me.Textdoj1.Text = alls(39)
+            'Me.Textsource.Text = alls(40)
+            'Me.textsts.Text = alls(41)
+            'Me.Textres.Text = alls(42)
+            'Me.Textqul.Text = alls(43)
+            Me.textsclm.Text = alls(21)
+            Me.texttlm.Text = alls(20)
+            Me.textpc.Text = alls(22)
+            Me.textoffmail.Text = alls(23)
+            Me.textbpay.Text = alls(24)
+            Me.textctcadj.Text = alls(25)
+            'Me.textlvl.Text = alls(46)
+            'Me.textesino.Text = alls(46)
+
+
+            Me.textlvl.Text = alls(26)
+            Me.textesino.Text = alls(27)
+
+
+            Me.Textuan.Text = alls(28)
+            'Me.Textpan.Text = alls(46)
+
+            Me.Textpan.Text = alls(29)
+
+
+            Me.textbkname.Text = alls(30)
+            Me.Textbkaccont.Text = alls(31)
+            Me.textifsc.Text = alls(32)
+            'Me.textexit.Text = alls(46)
+
+            Me.textexit.Text = alls(33)
+
+
+            Me.textrfr.Text = alls(34)
+            'Me.Textdrs.Text = alls(46)
+
+
+            Me.Textdrs.Text = alls(35)
+
+            Me.Textskils.Text = alls(36)
+            Me.Textoec.Text = alls(40)
+            Me.Textincrement.Text = alls(37)
+            Me.Textpos.Text = alls(39)
+            Me.Textdoj1.Text = alls(38)
+            Me.Textsource.Text = alls(41)
+            Me.textsts.Text = alls(42)
+            Me.Textres.Text = alls(44)
+            Me.Textqul.Text = alls(45)
+
+            Me.cjsdte.Text = alls(43)
+
+
+
+
+        End If
+    End Sub
+
+    Protected Sub cmd_confirm_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_confirm.Click
+        Dim st As New StringBuilder
+        Dim datas As String = ""
+        Dim item As String = ""
+        Dim elem As String = ""
+        Dim tr(4) As OracleParameter
+        Dim user() As String
+        user = Session("user_id").ToString.Split("!")
+        Try
+
+            'Dim regex As Regex = New Regex("^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$")
+            'Dim isValid As Boolean = (regex.IsMatch(textepmail.Text.Trim) Or regex.IsMatch(textoffmail.Text.Trim))
+            'If Not isValid Then
+            '    Dim cl_script021 As New System.Text.StringBuilder
+            '    cl_script021.Append("        alert('Please Enter Valid Email ID!!');")
+            '    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            'End If
+
+
+
+            'If Me.Checkname.Checked = True Then
+            '    If Me.textname.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+
+            'If Me.Checkhouse.Checked = True Then
+            '    If Me.texthouse.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+
+            'If Me.Checkpin.Checked = True Then
+            '    If Me.textpin.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checland.Checked = True Then
+            '    If Me.textland.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkdob.Checked = True Then
+            '    If Me.textdob.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkcontno.Checked = True Then
+            '    If Me.txtcontno.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkblood.Checked = True Then
+            '    If Me.txtblood.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkgender.Checked = True Then
+            '    If Me.textgender.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkcontno.Checked = True Then
+            '    If Me.te.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkmarital.Checked = True Then
+            '    If Me.textmarital.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkidpoorf.Checked = True Then
+            '    If Me.textidpoorf.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkdesignation.Checked = True Then
+            '    If Me.textdesignation.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkpostname.Checked = True Then
+            '    If Me.textpostname.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkdep.Checked = True Then
+            '    If Me.textdep.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkdoj.Checked = True Then
+            '    If Me.textdoj.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkoffmail.Checked = True Then
+            '    If Me.textoffmail.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checktlm.Checked = True Then
+            '    If Me.texttlm.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkpc.Checked = True Then
+            '    If Me.textpc.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checksts.Checked = True Then
+            '    If Me.textsts.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            If Me.Checkbpay.Checked = True Then
+                If Me.textbpay.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill check box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkctcadj.Checked = True Then
+                If Me.textctcadj.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checklvl.Checked = True Then
+                If Me.textlvl.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkesino.Checked = True Then
+                If Me.textesino.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkuan.Checked = True Then
+                If Me.Textuan.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkpan.Checked = True Then
+                If Me.Textpan.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkbkname.Checked = True Then
+                If Me.textname.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkbkaccont.Checked = True Then
+                If Me.Textbkaccont.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            If Me.Checkifsc.Checked = True Then
+                If Me.textifsc.Text = "" Then
+
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("        alert('Please fill text box!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+            End If
+            'If Me.Checkexit.Checked = True Then
+            '    If Me.textexit.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkrfr.Checked = True Then
+            '    If Me.textrfr.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkdrs.Checked = True Then
+            '    If Me.Checkdrs.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkskils.Checked = True Then
+            '    If Me.Checkskils.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkoec.Checked = True Then
+            '    If Me.Checkoec.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkincrement.Checked = True Then
+            '    If Me.Checkincrement.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkpos.Checked = True Then
+            '    If Me.Checkpos.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checkofdoj.Checked = True Then
+            '    If Me.Checkofdoj.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+            'If Me.Checksource.Checked = True Then
+            '    If Me.Textsource.Text = "" Then
+
+            '        Dim cl_script021 As New System.Text.StringBuilder
+            '        cl_script021.Append("        alert('Please fill check box!!');")
+            '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+            '        Exit Sub
+            '    End If
+            'End If
+
+            If Me.Checkname.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "1" + "%" + textname.Text
+                Else
+                    datas = datas + "$" + "1" + "%" + textname.Text
+                End If
+            End If
+
+
+
+            If Me.Checkhouse.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+
+                    datas = "2" + "%" + texthouse.Text
+                Else
+                    datas = datas + "$" + "2" + "%" + texthouse.Text
+                End If
+            End If
+            If Me.Checkpin.Checked = True Then
+                Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "3" + "%" + mystr(3)
+                Else
+                    datas = datas + "$" + "3" + "%" + mystr(3)
+                End If
+            End If
+            If Me.Checland.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "4" + "%" + textland.Text
+                Else
+                    datas = datas + "$" + "4" + "%" + textland.Text
+                End If
+            End If
+            If Me.Checkdob.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "5" + "%" + Format(CDate(textdob.Text), "dd-MMM-yyyy")
+                Else
+                    datas = datas + "$" + "5" + "%" + Format(CDate(textdob.Text), "dd-MMM-yyyy")
+                End If
+            End If
+            If Me.Checkcontno.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "6" + "%" + txtcontno.Text
+                Else
+                    datas = datas + "$" + "6" + "%" + txtcontno.Text
+                End If
+            End If
+            If Me.Checkblood.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "7" + "%" + dropblood.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "7" + "%" + dropblood.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkgender.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "8" + "%" + dropgender.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "8" + "%" + dropgender.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkmarital.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "9" + "%" + dropmari.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "9" + "%" + dropmari.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkidpoorf.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "10" + "%" + textidpoorf.Text
+                Else
+                    datas = datas + "$" + "10" + "%" + textidpoorf.Text
+                End If
+            End If
+            If Me.Checkepmail.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "11" + "%" + textepmail.Text
+                Else
+                    datas = datas + "$" + "11" + "%" + textepmail.Text
+                End If
+            End If
+            If Me.Checkidname.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "12" + "%" + dropid.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "12" + "%" + dropid.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkdesignation.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "13" + "%" + dropdesig.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "13" + "%" + dropdesig.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkpostname.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "14" + "%" + Droppost.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "14" + "%" + Droppost.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkdep.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "15" + "%" + DropDep.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "15" + "%" + DropDep.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkdoj.Checked = True Then
+                If CDate(Me.Textdoj1.Text) > CDate(Me.textdoj.Text) Then
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("         alert('macom join date must be greater than other firm join date');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "16" + "%" + Format(CDate(textdoj.Text), "dd-MMM-yyyy")
+                Else
+                    datas = datas + "$" + "16" + "%" + Format(CDate(textdoj.Text), "dd-MMM-yyyy")
+                End If
+            End If
+            If Me.Checktlm.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "17" + "%" + Droptlm.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "17" + "%" + Droptlm.SelectedValue.ToString
+                End If
+            End If
+            If Me.Checkpc.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "18" + "%" + textpc.Text
+                Else
+                    datas = datas + "$" + "18" + "%" + textpc.Text
+                End If
+            End If
+            If Me.Checkoffmail.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "19" + "%" + textoffmail.Text
+                Else
+                    datas = datas + "$" + "19" + "%" + textoffmail.Text
+                End If
+            End If
+            If Me.Checkbpay.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "20" + "%" + textbpay.Text
+                Else
+                    datas = datas + "$" + "20" + "%" + textbpay.Text
+                End If
+            End If
+            If Me.Checkctcadj.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "21" + "%" + textctcadj.Text
+                Else
+                    datas = datas + "$" + "21" + "%" + textctcadj.Text
+                End If
+            End If
+            If Me.Checklvl.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "22" + "%" + datas + textlvl.Text
+                Else
+                    datas = datas + "$" + "22" + "%" + textlvl.Text
+                End If
+            End If
+            If Me.Checkesino.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "23" + "%" + textesino.Text
+                Else
+                    datas = datas + "$" + "23" + "%" + textesino.Text
+                End If
+            End If
+            If Me.Checkuan.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "24" + "%" + Textuan.Text
+                Else
+                    datas = datas + "$" + "24" + "%" + Textuan.Text
+                End If
+            End If
+            If Me.Checkpan.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "25" + "%" + Textpan.Text
+                Else
+                    datas = datas + "$" + "25" + "%" + Textpan.Text
+                End If
+            End If
+            If Me.Checkbkname.Checked = True Or Me.Checkbkaccont.Checked = True Or Me.Checkifsc.Checked = True Then
+                Dim arr() As String = {")", "(", "!", "@", "#", "$", "%", "^", "&", "*", "<", ">", "/", "\"}
+                Dim pass As String = Me.textifsc.Text
+                For Each gh As String In arr
+                    If pass.Contains(gh) Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("         alert('Special Characters Are Not Allowed In IFSC!!!');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    End If
+                Next
+                If Me.Checkbkname.Checked = True Then
+                    textbkname.Text = textbkname.Text + "+"
+                ElseIf Me.Checkbkaccont.Checked = True Then
+                    Me.Textbkaccont.Text = Textbkaccont.Text + "+"
+                ElseIf Me.Checkifsc.Checked = True Then
+                    Me.textifsc.Text = textifsc.Text + "+"
+                End If
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "26" + "%" + textbkname.Text + "^" + Me.Textbkaccont.Text + "^" + Me.textifsc.Text
+                Else
+                    datas = datas + "$" + "26" + "%" + textbkname.Text + "^" + Me.Textbkaccont.Text + "^" + Me.textifsc.Text
+
+                End If
+            End If
+            'If Me.Checkbkaccont.Checked = True Then
+            '    If IsDBNull(datas) Or datas = "" Then
+            '        datas = "27" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+            '    Else
+            '        datas = datas + "$" + "27" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+            '    End If
+            'End If
+            'If Me.Checkifsc.Checked = True Then
+            '    If IsDBNull(datas) Or datas = "" Then
+            '        datas = "28" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+            '    Else
+            '        datas = datas + "$" + "28" + "%" + textbkname.Text + "!" + Me.Textbkaccont.Text + "!" + Me.textifsc.Text
+            '    End If
+            'End If
+            If Me.Checkexit.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "29" + "%" + Format(CDate(textexit.Text), "dd-MMM-yyyy")
+                Else
+                    datas = datas + "$" + "29" + "%" + Format(CDate(textexit.Text), "dd-MMM-yyyy")
+                End If
+            End If
+            If Me.Checkrfr.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "30" + "%" + textrfr.Text
+                Else
+                    datas = datas + "$" + "30" + "%" + textrfr.Text
+                End If
+            End If
+            If Me.Checkdrs.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "31" + "%" + Format(CDate(Textdrs.Text), "dd-MMM-yyyy")
+                Else
+                    datas = datas + "$" + "31" + "%" + Format(CDate(Textdrs.Text), "dd-MMM-yyyy")
+                End If
+            End If
+            If Me.Checkskils.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "32" + "%" + Textskils.Text
+                Else
+                    datas = datas + "$" + "32" + "%" + Textskils.Text
+                End If
+            End If
+            If Me.Checkoec.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "33" + "%" + Textoec.Text
+                Else
+                    datas = datas + "$" + "33" + "%" + Textoec.Text
+                End If
+            End If
+            If Me.Checkincrement.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "34" + "%" + Textincrement.Text
+                Else
+                    datas = datas + "$" + "34" + "%" + Textincrement.Text
+                End If
+            End If
+            If Me.Checkpos.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "35" + "%" + Textpos.Text
+                Else
+                    datas = datas + "$" + "35" + "%" + Textpos.Text
+                End If
+            End If
+            If Me.Checkofdoj.Checked = True Then
+                If CDate(Me.Textdoj1.Text) > CDate(Me.textdoj.Text) Then
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("         alert('other firm join date must be less than macom join date');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                End If
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "36" + "%" + Textdoj1.Text
+                Else
+                    datas = datas + "$" + "36" + "%" + Textdoj1.Text
+                End If
+            End If
+            If Me.Checksource.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "37" + "%" + Textsource.Text
+                Else
+                    datas = datas + "$" + "37" + "%" + Textsource.Text
+                End If
+            End If
+
+
+            If Me.cjstdte.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "41" + "%" + cjsdte.Text
+                Else
+                    datas = datas + "$" + "41" + "%" + cjsdte.Text
+                End If
+            End If
+
+
+            If Me.checksclma.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "42" + "%" + DropDownList1.SelectedValue.ToString
+                Else
+                    datas = datas + "$" + "42" + "%" + DropDownList1.SelectedValue.ToString
+                End If
+            End If
+
+
+
+            If Me.Checkres.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "39" + "%" + Textres.Text
+                Else
+                    datas = datas + "$" + "39" + "%" + Textres.Text
+                End If
+            End If
+            If Me.Checkqul.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "40" + "%" + Textqul.Text
+                Else
+                    datas = datas + "$" + "40" + "%" + Textqul.Text
+                End If
+            End If
+
+            If Me.checkcategory.Checked = True Then
+                If IsDBNull(datas) Or datas = "" Then
+                    datas = "43" + "%" + Textcategory.Text
+                Else
+                    datas = datas + "$" + "43" + "%" + Textcategory.Text
+                End If
+            End If
+
+
+
+            If Me.cjstdte.Checked = True Then
+
+
+
+                If CDate(cjsdte.Text) > CDate(Date.Now) Or CDate(cjsdte.Text) > CDate(Date.Now) Then
+                    Dim cl_script1 As New System.Text.StringBuilder
+                    cl_script1.Append("         alert('Future Date Not Allowed for Current Job Role Start Date!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script1.ToString, True)
+                    Exit Sub
+
+
+                End If
+
+            End If
+
+
+
+
+
+            If Me.Checksts.Checked = True Then
+                If Me.textsts.Text = "" Or IsDBNull(Me.textsts.Text) Or Me.Dropsts.SelectedValue = 0 Then
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("         alert('Please Select Status Of Employee!!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+                Else
+                    dt2 = oh.ExecuteDataSet("select nvl(sum(status),0) from hrm_emp_status fg where fg.emp_code=" & Request.QueryString("code") & " and fg.enter_dt=(select max(tr.enter_dt) from mactech.hrm_emp_status tr where tr.emp_code=" & Request.QueryString("code") & ")").Tables(0)
+                    If Dropsts.SelectedValue = 2 And (Me.resig_sub_dt.Text = "" Or Me.prop_exit_dt.Text.ToString = "" Or Me.reason.Text = "") Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("         alert('You Must Enter Resignation submit Date, Proposed or Exit Date And Also Reason');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 2 And Me.resig_sub_dt.Text <> "" And Me.prop_exit_dt.Text.ToString <> "" And Me.reason.Text <> "" Then
+                        If (CDate(Me.resig_sub_dt.Text) > CDate(Me.prop_exit_dt.Text.ToString)) Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("         alert('Proposed or Exit Date Must Be Greater Than Resgination Submitted Date');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        End If
+                    ElseIf Dropsts.SelectedValue = 1 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("mywin=window.open('rec_res_ho.aspx?code=" & Request.QueryString("code") & "', 'WinC', 'width=300,height=300,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=no,copyhistory=no');")
+                        cl_script021.Append("mywin.moveTo(200,300);")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 2 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("mywin=window.open('rec_res_ho.aspx?code=" & Request.QueryString("code") & "', 'WinC', 'width=300,height=300,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=no,copyhistory=no');")
+                        cl_script021.Append("mywin.moveTo(200,300);")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+
+                    ElseIf Dropsts.SelectedValue = 3 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        If dt2.Rows(0)(0) = 3 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("         alert('The employee already in long leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        ElseIf dt2.Rows(0)(0) = 4 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("         alert('The employee already in maternity leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        End If
+                    ElseIf Dropsts.SelectedValue = 4 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        If dt2.Rows(0)(0) = 3 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("         alert('The employee already in long leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        ElseIf dt2.Rows(0)(0) = 4 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("         alert('The employee already in maternity leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        End If
+                    ElseIf Dropsts.SelectedValue = 5 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("mywin=window.open('rec_res_ho.aspx?code=" & Request.QueryString("code") & "', 'WinC', 'width=300,height=300,toolbar=no,location=no,directories=no,status=no,menubar=no, scrollbars=no,resizable=no,copyhistory=no');")
+                        cl_script021.Append("mywin.moveTo(200,300);")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                        '-----------
+                    ElseIf Dropsts.SelectedValue = 3 And (Me.startdt.Text = "") Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("         alert('You Must Enter Start Date');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 4 And (Me.startdt.Text = "") Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("          alert('You Must Enter Start Date');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 5 And (Me.resig_sub_dt.Text = "" Or Me.prop_exit_dt.Text.ToString = "" Or Me.reason.Text = "") Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("         alert('You Must Enter Resignation submit Date, Proposed or Exit Date And Also Reason');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 5 And Me.resig_sub_dt.Text <> "" And Me.prop_exit_dt.Text.ToString <> "" And Me.reason.Text <> "" Then
+                        If (CDate(Me.resig_sub_dt.Text) > CDate(Me.prop_exit_dt.Text.ToString)) Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("         alert('Proposed or Exit Date Must Be Greater Than Resgination Submitted Date');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        End If
+                    End If
+                End If
+
+
+                If IsDBNull(datas) Or datas = "" Then
+                    If Dropsts.SelectedValue = 1 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + ""
+                    ElseIf Dropsts.SelectedValue = 2 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+                    ElseIf Dropsts.SelectedValue = 3 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+                    ElseIf Dropsts.SelectedValue = 4 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+                    ElseIf Dropsts.SelectedValue = 5 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+                    End If
+                Else
+                    If Dropsts.SelectedValue = 1 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + ""
+                    ElseIf Dropsts.SelectedValue = 2 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+                    ElseIf Dropsts.SelectedValue = 3 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+                    ElseIf Dropsts.SelectedValue = 4 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + ""
+                    ElseIf Dropsts.SelectedValue = 5 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text
+                    End If
+                End If
+            End If
+            'If Me.Checkres.Checked = True Then
+            '    If IsDBNull(datas) Or datas = "" Then
+            '        datas = "39" + "%" + Textres.Text
+            '    Else
+            '        datas = datas + "$" + "39" + "%" + Textres.Text
+            '    End If
+            'End If
+            'If Me.Checkqul.Checked = True Then
+            '    If IsDBNull(datas) Or datas = "" Then
+            '        datas = "40" + "%" + Textqul.Text
+            '    Else
+            '        datas = datas + "$" + "40" + "%" + Textqul.Text
+            '    End If
+            'End If
+            Dim dts() As String = datas.Split("$")
+            If datas = "" Then
+                Dim cl_script021 As New System.Text.StringBuilder
+                cl_script021.Append("         alert('Please Select Any Category!!!');")
+                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                Exit Sub
+            End If
+            For Each elem In dts
+                Dim opt As String = elem.Split("%")(0)
+                Dim str As String = elem.Split("%")(1)
+                tr(0) = New OracleParameter("ecode", OracleType.VarChar, 500)
+                tr(0).Direction = ParameterDirection.Input
+                tr(0).Value = Request.QueryString("code")
+                tr(1) = New OracleParameter("options", OracleType.Number, 500)
+                tr(1).Direction = ParameterDirection.Input
+                tr(1).Value = opt
+                tr(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+                tr(2).Direction = ParameterDirection.Input
+                tr(2).Value = str.ToString
+                tr(3) = New OracleParameter("userid", OracleType.Number, 500)
+                tr(3).Direction = ParameterDirection.Input
+                tr(3).Value = user(0)
+                tr(4) = New OracleParameter("msg", OracleType.Char, 500)
+                tr(4).Direction = ParameterDirection.Output
+                oh.ExecuteNonQuery("master_update_maker", tr)
+            Next
+            Dim cl_script01 As New System.Text.StringBuilder
+            cl_script01.Append("         alert('" & tr(4).Value & "');")
+            cl_script01.Append("       window.open('repo.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+        Catch ex As Exception
+            Response.Write(ex.ToString)
+        End Try
+    End Sub
+
+    Protected Sub Checkname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkname.CheckedChanged
+        If Me.Checkname.Checked = True Then
+            Me.textname.ReadOnly = False
+            'Me.textname.Text = ""
+        Else
+            Me.textname.ReadOnly = True
+        End If
+    End Sub
+    Protected Sub Checkres_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkres.CheckedChanged
+        If Me.Checkres.Checked = True Then
+            Me.Textres.ReadOnly = False
+            'Me.textname.Text = ""
+        Else
+            Me.Textres.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkhouse_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkhouse.CheckedChanged
+        If Me.Checkhouse.Checked = True Then
+            Me.texthouse.ReadOnly = False
+            'Me.texthouse.Text = ""
+        Else
+            Me.texthouse.ReadOnly = True
+        End If
+
+    End Sub
+
+
+    Protected Sub Checland_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checland.CheckedChanged
+        If Me.Checland.Checked = True Then
+            Me.textland.ReadOnly = False
+            'Me.textland.Text = ""
+        Else
+            Me.textland.ReadOnly = True
+        End If
+    End Sub
+
+
+    Protected Sub Checkpin_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpin.CheckedChanged
+        If Me.Checkpin.Checked = True Then
+            Me.textpin.ReadOnly = False
+            'Me.textpin.Text = ""
+            Me.Button1.Visible = True
+        Else
+            Me.textpin.ReadOnly = True
+            Me.Button1.Visible = False
+        End If
+    End Sub
+
+    Protected Sub Checkdob_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdob.CheckedChanged
+        If Me.Checkdob.Checked = True Then
+            Me.textdob.ReadOnly = False
+            Me.caldob.Enabled = True
+        Else
+            Me.textdob.ReadOnly = True
+            Me.caldob.Enabled = False
+        End If
+    End Sub
+
+    Protected Sub Checkdoj_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdoj.CheckedChanged
+        If Me.Checkdoj.Checked = True Then
+            Me.textdoj.ReadOnly = False
+            Me.caldoj.Enabled = True
+        Else
+            Me.textdoj.ReadOnly = True
+            Me.caldoj.Enabled = False
+        End If
+    End Sub
+    Protected Sub Checkqul_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkqul.CheckedChanged
+        If Me.Checkqul.Checked = True Then
+            Me.Textqul.ReadOnly = False
+        Else
+            Me.Textqul.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkgender_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkgender.CheckedChanged
+        If Me.Checkgender.Checked = True Then
+            Me.textgender.ReadOnly = False
+            dropgender.Visible = True
+        Else
+            Me.textgender.ReadOnly = True
+            dropgender.Visible = False
+        End If
+    End Sub
+    Protected Sub Checksts_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checksts.CheckedChanged
+        If Me.Checksts.Checked = True Then
+            Me.textsts.ReadOnly = False
+            Dropsts.Visible = True
+            Me.textsts.Text = "---SELECT---"
+        Else
+            Me.textgender.ReadOnly = True
+            Dropsts.Visible = False
+            Me.textsts.Text = ""
+        End If
+    End Sub
+
+    Protected Sub Checkmarital_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkmarital.CheckedChanged
+        If Me.Checkmarital.Checked = True Then
+            Me.textmarital.ReadOnly = False
+            dropmari.Visible = True
+        Else
+            Me.textmarital.ReadOnly = True
+            dropmari.Visible = False
+        End If
+    End Sub
+
+    Protected Sub Checkblood_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkblood.CheckedChanged
+        If Me.Checkblood.Checked = True Then
+            dropblood.Visible = True
+            Me.txtblood.ReadOnly = True
+            bloodfill()
+        Else
+            Me.txtblood.ReadOnly = True
+            dropblood.Visible = False
+        End If
+    End Sub
+
+    Protected Sub Checkdesignation_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdesignation.CheckedChanged
+        If Me.Checkdesignation.Checked = True Then
+            Me.textdesignation.ReadOnly = False
+            dropdesig.Visible = True
+            desigfill()
+        Else
+            Me.textdesignation.ReadOnly = True
+            dropdesig.Visible = False
+        End If
+    End Sub
+
+    Protected Sub Checkpostname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpostname.CheckedChanged
+        If Me.Checkpostname.Checked = True Then
+            Me.textpostname.ReadOnly = False
+            'droppost.Visible = True
+            Droppost.Visible = True
+
+            postfill()
+        Else
+            Me.textpostname.ReadOnly = True
+            'droppost.Visible = False
+            Droppost.Visible = False
+        End If
+    End Sub
+
+    Protected Sub Checkdep_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdep.CheckedChanged
+        If Me.Checkdep.Checked = True Then
+            Me.textdep.ReadOnly = False
+            'dropdep.Visible = True
+            DropDep.Visible = True
+
+            depfill()
+        Else
+            Me.textdep.ReadOnly = True
+            'dropDep.Visible = False
+            DropDep.Visible = False
+        End If
+    End Sub
+
+
+    Protected Sub Checktlm_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checktlm.CheckedChanged
+        If Me.Checktlm.Checked = True Then
+            Me.texttlm.ReadOnly = False
+            Droptlm.Visible = True
+            tlmfill()
+        Else
+            Me.texttlm.ReadOnly = True
+            Droptlm.Visible = False
+        End If
+    End Sub
+    Protected Sub Checksclm_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checksclma.CheckedChanged
+        If Me.checksclma.Checked = True Then
+            Me.textsclm.ReadOnly = False
+            DropDownList1.Visible = True
+            sclmfill()
+        Else
+            Me.textsclm.ReadOnly = True
+            DropDownList1.Visible = False
+        End If
+    End Sub
+
+
+    Protected Sub Checkepmail_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkepmail.CheckedChanged
+        If Me.Checkepmail.Checked = True Then
+            Me.textepmail.ReadOnly = False
+            'Me.textepmail.Text = ""
+        Else
+            Me.textepmail.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkoffmail_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkoffmail.CheckedChanged
+        If Me.Checkoffmail.Checked = True Then
+            Me.textoffmail.ReadOnly = False
+            'Me.textoffmail.Text = ""
+        Else
+            Me.textoffmail.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkcontno_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkcontno.CheckedChanged
+        If Me.Checkcontno.Checked = True Then
+            Me.txtcontno.ReadOnly = False
+            'Me.txtcontno.Text = ""
+        Else
+            Me.txtcontno.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkbpay_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkbpay.CheckedChanged
+        If Me.Checkbpay.Checked = True Then
+            Me.textbpay.ReadOnly = False
+            'Me.textbpay.Text = ""
+        Else
+            Me.textbpay.ReadOnly = True
+        End If
+
+
+    End Sub
+    Protected Sub Checkbkname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkbkname.CheckedChanged
+        If Me.Checkbkname.Checked = True Then
+            Me.textbkname.ReadOnly = False
+            'Me.textbkname.Text = ""
+        Else
+            Me.textbkname.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkifsc_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkifsc.CheckedChanged
+        If Me.Checkifsc.Checked = True Then
+            Me.textifsc.ReadOnly = False
+            'Me.textifsc.Text = ""
+        Else
+            Me.textifsc.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkesino_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkesino.CheckedChanged
+        If Me.Checkesino.Checked = True Then
+            Me.textesino.ReadOnly = False
+            'Me.textesino.Text = ""
+        Else
+            Me.textesino.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkuan_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkuan.CheckedChanged
+        If Me.Checkuan.Checked = True Then
+            'Me.textuan.ReadOnly = False
+            Me.Textuan.ReadOnly = False
+            'Me.textuan.Text = ""
+        Else
+            'Me.textuan.ReadOnly = True
+
+            Me.Textuan.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checklvl_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checklvl.CheckedChanged
+        If Me.Checklvl.Checked = True Then
+            Me.textlvl.ReadOnly = False
+            'Me.textlvl.Text = ""
+        Else
+            Me.textlvl.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkidpoorf_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkidpoorf.CheckedChanged
+        If Me.Checkidpoorf.Checked = True Then
+            Me.textidpoorf.ReadOnly = False
+            'Me.textidpoorf.Text = ""
+        Else
+            Me.textidpoorf.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkidname_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkidname.CheckedChanged
+        If Me.Checkidname.Checked = True Then
+            Me.textidname.ReadOnly = False
+            idfill()
+            dropid.Visible = True
+        Else
+            Me.textidname.ReadOnly = True
+            dropid.Visible = False
+        End If
+    End Sub
+
+    Protected Sub Checkpan_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpan.CheckedChanged
+        If Me.Checkpan.Checked = True Then
+            'Me.textpan.ReadOnly = False
+            Me.Textpan.ReadOnly = False
+            'Me.textpan.Text = ""
+        Else
+            'Me.textpan.ReadOnly = True
+
+            Me.Textpan.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkdrs_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkdrs.CheckedChanged
+        If Me.Checkdrs.Checked = True Then
+            'Me.textdrs.ReadOnly = False
+            Me.Textdrs.ReadOnly = False
+            caldrs.Enabled = True
+        Else
+            Me.Textdrs.ReadOnly = True
+            caldrs.Enabled = False
+        End If
+    End Sub
+
+    Protected Sub Checkbkaccont_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkbkaccont.CheckedChanged
+        If Me.Checkbkaccont.Checked = True Then
+            Me.Textbkaccont.ReadOnly = False
+            'Me.textbkaccount.Text = ""
+        Else
+            Me.Textbkaccont.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkpc_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpc.CheckedChanged
+        If Me.Checkpc.Checked = True Then
+            Me.textpc.ReadOnly = False
+            'Me.textpc.Text = ""
+        Else
+            Me.textpc.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkexit_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkexit.CheckedChanged
+        If Me.Checkexit.Checked = True Then
+            Me.textexit.ReadOnly = False
+            Me.calepd.Enabled = True
+        Else
+            Me.textexit.ReadOnly = True
+            Me.calepd.Enabled = False
+        End If
+    End Sub
+
+    Protected Sub Checkrfr_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkrfr.CheckedChanged
+        If Me.Checkrfr.Checked = True Then
+            Me.textrfr.ReadOnly = False
+            'Me.textkfr.Text = ""
+        Else
+            Me.textrfr.ReadOnly = True
+        End If
+    End Sub
+
+    Protected Sub Checkctcadj_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkctcadj.CheckedChanged
+        If Me.Checkctcadj.Checked = True Then
+            Me.textctcadj.ReadOnly = False
+            'Me.textctcadj.Text = ""
+        Else
+            Me.textctcadj.ReadOnly = True
+        End If
+    End Sub
+    Protected Sub Checkskils_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkskils.CheckedChanged
+        If Me.Checkskils.Checked = True Then
+            Me.Textskils.ReadOnly = False
+            'Me.textctcadj.Text = ""
+        Else
+            Me.Textskils.ReadOnly = True
+        End If
+    End Sub
+    Protected Sub Checkoec_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkoec.CheckedChanged
+        If Me.Checkoec.Checked = True Then
+            Me.Textoec.ReadOnly = False
+            'Me.textctcadj.Text = ""
+        Else
+            Me.Textoec.ReadOnly = True
+        End If
+    End Sub
+    Protected Sub Checkincrement_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkincrement.CheckedChanged
+        If Me.Checkincrement.Checked = True Then
+            Me.Textincrement.ReadOnly = False
+            Me.CalendarExtender2.Enabled = True
+        Else
+            Me.Textincrement.ReadOnly = True
+            Me.CalendarExtender2.Enabled = False
+        End If
+    End Sub
+
+    Protected Sub Checkpos_Checkepos(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkpos.CheckedChanged
+        If Me.Checkpos.Checked = True Then
+            Me.Textpos.ReadOnly = False
+            'Me.textctcadj.Text = ""
+        Else
+            Me.Textpos.ReadOnly = True
+        End If
+    End Sub
+    Protected Sub Checkofdoj_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkofdoj.CheckedChanged
+        If Me.Checkofdoj.Checked = True Then
+            Me.Textdoj1.ReadOnly = False
+            Me.CalendarExtender1.Enabled = True
+        Else
+            Me.Textdoj1.ReadOnly = True
+            Me.CalendarExtender1.Enabled = False
+        End If
+    End Sub
+    Protected Sub Checksource_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checksource.CheckedChanged
+        If Me.Checksource.Checked = True Then
+            Me.Textsource.ReadOnly = False
+            'Me.textctcadj.Text = ""
+        Else
+            Me.Textsource.ReadOnly = True
+        End If
+    End Sub
+
+
+    Protected Sub Checkcurrentjbstrtdte_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkincrement.CheckedChanged
+        If Me.cjstdte.Checked = True Then
+            Me.cjsdte.ReadOnly = False
+            Me.CalendarExtender3.Enabled = True
+        Else
+            Me.cjsdte.ReadOnly = True
+            Me.CalendarExtender3.Enabled = False
+        End If
+    End Sub
+
+
+    Protected Sub Checkcategory_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkmarital.CheckedChanged
+        If Me.Checkcategory.Checked = True Then
+            Me.Textcategory.ReadOnly = False
+            dropcategory.Visible = True
+        Else
+            Me.Textcategory.ReadOnly = True
+            dropcategory.Visible = False
+        End If
+    End Sub
+
+    
+    'Protected Sub Checkstate_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Checkstate.CheckedChanged
+    '    If Me.Checkstate.Checked = True Then
+    '        Me.Textstate.ReadOnly = False
+    '        'Me.Textstate.Text = ""
+    '    Else
+    '        Me.Textstate.ReadOnly = True
+    '    End If
+    'End Sub
+
+    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        If Me.textpin.Text = "" Then
+            'mylabel.Text = "Please enter a valid pincode"
+            Me.textpost.Text = ""
+            Me.textdistrict.Text = ""
+            Me.Textstate.Text = ""
+            'mylabel.ForeColor = Drawing.Color.Red
+            Exit Sub
+        End If
+        Dim dt As DataTable
+        dt = oh.ExecuteDataSet("select po.post_office||', '||dst.district_name||', '||st.state_name||', '||po.sr_number  from mactech.post_master po, mactech.district_master dst, mactech.state_master st where po.district_id = dst.district_id and dst.state_id = st.state_id and po.pin_code=" & Me.textpin.Text & "").Tables(0)
+        If dt.Rows.Count = 1 Then
+            Me.pnl.Visible = False
+            'mylabel.Text = ""
+            Me.cmb_dist_select.DataSource = dt
+            Me.cmb_dist_select.DataTextField = dt.Columns(0).ColumnName
+            Me.cmb_dist_select.DataBind()
+            Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+            Me.textpost.Text = Trim(mystr(0))
+            Me.textdistrict.Text = Trim(mystr(1))
+            Me.Textstate.Text = Trim(mystr(2))
+            'Me.HiddenField1.Value = Trim(mystr(3))
+        ElseIf dt.Rows.Count = 0 Then
+            'mylabel.Text = "Invalid Pin"
+            'mylabel.ForeColor = Drawing.Color.Red
+            Me.textpost.Text = ""
+            Me.textdistrict.Text = ""
+            Me.Textstate.Text = ""
+            Exit Sub
+        ElseIf dt.Rows.Count > 1 Then
+            Me.pnl.Visible = True
+            'mylabel.Text = ""
+            Me.cmb_dist_select.DataSource = dt
+            Me.cmb_dist_select.DataTextField = dt.Columns(0).ColumnName
+            Me.cmb_dist_select.DataBind()
+            Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+            Me.textpost.Text = Trim(mystr(0))
+            Me.textdistrict.Text = Trim(mystr(1))
+            Me.Textstate.Text = Trim(mystr(2))
+            'Me.HiddenField1.Value = Trim(mystr(3))
+        End If
+    End Sub
+    Protected Sub cmb_dist_select_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmb_dist_select.SelectedIndexChanged
+        Dim mystr() As String = Me.cmb_dist_select.SelectedItem.Text.Split(",")
+        Me.textpost.Text = Trim(mystr(0))
+        Me.textdistrict.Text = Trim(mystr(1))
+        Me.Textstate.Text = Trim(mystr(2))
+    End Sub
+    Sub bloodfill()
+        dt = oh.ExecuteDataSet("select blood_type,blood_id from bloodgroup_master order by blood_id").Tables(0)
+        Me.dropblood.DataSource = dt
+        Me.dropblood.DataTextField = dt.Columns(0).ColumnName
+        Me.dropblood.DataValueField = dt.Columns(1).ColumnName
+        Me.dropblood.DataBind()
+    End Sub
+    Sub idfill()
+        dt = oh.ExecuteDataSet("select identity_name,identity_id,mass_length from identity_gl4 t where t.identity_id in (8,1,2,3)").Tables(0)
+        Me.dropid.DataSource = dt
+        Me.dropid.DataTextField = dt.Columns(0).ColumnName
+        Me.dropid.DataValueField = dt.Columns(1).ColumnName
+        Me.dropid.DataBind()
+    End Sub
+    Sub desigfill()
+        dt = oh.ExecuteDataSet("select designation,designation_id from designation_master order by designation").Tables(0)
+        Me.dropdesig.DataSource = dt
+        Me.dropdesig.DataTextField = dt.Columns(0).ColumnName
+        Me.dropdesig.DataValueField = dt.Columns(1).ColumnName
+        Me.dropdesig.DataBind()
+    End Sub
+    Sub postfill()
+        dt = oh.ExecuteDataSet("select post_name,post_id from post_mst order by post_name").Tables(0)
+        Me.Droppost.DataSource = dt
+        Me.Droppost.DataTextField = dt.Columns(0).ColumnName
+        Me.Droppost.DataValueField = dt.Columns(1).ColumnName
+        Me.Droppost.DataBind()
+    End Sub
+    Sub depfill()
+        dt = oh.ExecuteDataSet("select dep_name,dep_id from department_mst order by dep_name").Tables(0)
+        Me.DropDep.DataSource = dt
+        Me.DropDep.DataTextField = dt.Columns(0).ColumnName
+        Me.DropDep.DataValueField = dt.Columns(1).ColumnName
+        Me.DropDep.DataBind()
+    End Sub
+    Sub tlmfill()
+        dt = oh.ExecuteDataSet("select '---SELECT EMPLOYEE---', -1 emp_code FROM DUAL UNION select h.emp_code || ' --- ' || s.emp_name,s.emp_code from employ_firm h, employee_master s where h.emp_code = s.emp_code and h.firm_id = 8 and s.status_id = 1 order by emp_code").Tables(0)
+        Me.Droptlm.DataSource = dt
+        Me.Droptlm.DataTextField = dt.Columns(0).ColumnName
+        Me.Droptlm.DataValueField = dt.Columns(1).ColumnName
+        Me.Droptlm.DataBind()
+    End Sub
+    Sub sclmfill()
+        dt = oh.ExecuteDataSet("select '---SELECT EMPLOYEE---', -1 emp_code FROM DUAL UNION select h.emp_code || ' --- ' || s.emp_name,s.emp_code from employ_firm h, employee_master s where h.emp_code = s.emp_code and h.firm_id = 8 and s.status_id = 1 order by emp_code").Tables(0)
+        Me.DropDownList1.DataSource = dt
+        Me.DropDownList1.DataTextField = dt.Columns(0).ColumnName
+        Me.DropDownList1.DataValueField = dt.Columns(1).ColumnName
+        Me.DropDownList1.DataBind()
+    End Sub
+
+
+    'Sub category()
+    '    dt = oh.ExecuteDataSet("select '----SELECT CATEGORY----' as emp FROM DUAL UNION select h.emp_code||' -- '||h.category from TL_TRSFR_LEVEL h, employee_master s where h.emp_code = s.emp_code and s.firm_id = 8 and s.status_id = 1 order by emp asc").Tables(0)
+    '    Me.dropcategory.DataSource = dt
+    '    Me.dropcategory.DataTextField = dt.Columns(0).ColumnName
+    '    'Me.dropcategory.DataValueField = dt.Columns(1).ColumnName
+    '    Me.dropcategory.DataBind()
+    'End Sub
+
+
+    'Sub departmenthead()
+    '    dt = oh.ExecuteDataSet("select dep_name from department_mst order by dep_name").Tables(0)
+    '    Me.dropdphd.DataSource = dt
+    '    Me.dropdphd.DataTextField = dt.Columns(0).ColumnName
+    '    'Me.dropdphd.DataValueField = dt.Columns(1).ColumnName
+    '    Me.dropdphd.DataBind()
+    'End Sub
+
+    Protected Sub dropcategory_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropcategory.SelectedIndexChanged
+        Me.Textcategory.Text = dropcategory.SelectedItem.Text
+        Me.dropcategory.Visible = False
+    End Sub
+    Protected Sub dropblood_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropblood.SelectedIndexChanged
+        Me.txtblood.Text = dropblood.SelectedItem.Text
+        Me.dropblood.Visible = False
+    End Sub
+    Protected Sub dropgender_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropgender.SelectedIndexChanged
+        Me.textgender.Text = dropgender.SelectedItem.Text
+        Me.dropgender.Visible = False
+    End Sub
+    Protected Sub dropmari_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropmari.SelectedIndexChanged
+        Me.textmarital.Text = dropmari.SelectedItem.Text
+        Me.dropmari.Visible = False
+    End Sub
+    Protected Sub dropid_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropid.SelectedIndexChanged
+        Me.textidname.Text = dropid.SelectedItem.Text
+        Me.dropid.Visible = False
+    End Sub
+    Protected Sub dropdesig_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles dropdesig.SelectedIndexChanged
+        Me.textdesignation.Text = dropdesig.SelectedItem.Text
+        Me.dropdesig.Visible = False
+    End Sub
+    Protected Sub droppost_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Droppost.SelectedIndexChanged
+        Me.textpostname.Text = Droppost.SelectedItem.Text
+        Me.Droppost.Visible = False
+    End Sub
+    Protected Sub dropdep_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDep.SelectedIndexChanged
+        Me.textdep.Text = DropDep.SelectedItem.Text
+        Me.DropDep.Visible = False
+    End Sub
+    Protected Sub droptlm_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Droptlm.SelectedIndexChanged
+        Me.texttlm.Text = Droptlm.SelectedItem.Text
+        Me.Droptlm.Visible = False
+    End Sub
+    Protected Sub dropsts_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Dropsts.SelectedIndexChanged
+        Me.textsts.Text = Dropsts.SelectedItem.Text
+        Me.resig_sub_dt.Visible = False
+        Me.prop_exit_dt.Visible = False
+        Me.startdt.Visible = False
+        Me.enddt.Visible = False
+        Me.reason.Visible = False
+        Me.mylab1.Visible = False
+        Me.mylab2.Visible = False
+        Me.mylab3.Visible = False
+        Me.mylab4.Visible = False
+        Me.mylab5.Visible = False
+        Calenstart.Enabled = False
+        Calenresub.Enabled = False
+        Calend.Enabled = False
+        Calenproex.Enabled = False
+        If Dropsts.SelectedValue = 1 Then
+            Me.resig_sub_dt.Visible = False
+            Me.prop_exit_dt.Visible = False
+            Me.startdt.Visible = False
+            Me.enddt.Visible = False
+            Me.reason.Visible = False
+            Me.mylab1.Visible = False
+            Me.mylab2.Visible = False
+            Me.mylab3.Visible = False
+            Me.mylab4.Visible = False
+            Me.mylab5.Visible = False
+            Calenstart.Enabled = False
+            Calenresub.Enabled = False
+            Calend.Enabled = False
+            Calenproex.Enabled = False
+        ElseIf Dropsts.SelectedValue = 2 Then
+            Me.resig_sub_dt.Visible = True
+            Me.prop_exit_dt.Visible = True
+            Me.reason.Visible = True
+            Me.mylab2.Visible = True
+            Me.mylab4.Visible = True
+            Me.mylab5.Visible = True
+            Calenresub.Enabled = True
+            Calenproex.Enabled = True
+        ElseIf Dropsts.SelectedValue = 3 Then
+            Me.startdt.Visible = True
+            'Me.enddt.Visible = True
+            Me.mylab1.Visible = True
+            'Me.mylab3.Visible = True
+            Calend.Enabled = True
+            Calenstart.Enabled = True
+        ElseIf Dropsts.SelectedValue = 4 Then
+            Me.startdt.Visible = True
+            'Me.enddt.Visible = True
+            Me.mylab1.Visible = True
+            'Me.mylab3.Visible = True
+            Calend.Enabled = True
+            Calenstart.Enabled = True
+        ElseIf Dropsts.SelectedValue = 5 Then
+            Me.resig_sub_dt.Visible = True
+            Me.prop_exit_dt.Visible = True
+            Me.reason.Visible = True
+            Me.mylab2.Visible = True
+            Me.mylab4.Visible = True
+            Me.mylab5.Visible = True
+            Calenresub.Enabled = True
+            Calenproex.Enabled = True
+        Else
+            Me.resig_sub_dt.Visible = False
+            Me.prop_exit_dt.Visible = False
+            Me.startdt.Visible = False
+            Me.enddt.Visible = False
+            Me.reason.Visible = False
+            Me.mylab1.Visible = False
+            Me.mylab2.Visible = False
+            Me.mylab3.Visible = False
+            Me.mylab4.Visible = False
+            Me.mylab5.Visible = False
+            Calenstart.Enabled = False
+            Calenresub.Enabled = False
+            Calend.Enabled = False
+            Calenproex.Enabled = False
+        End If
+    End Sub
+
+    Protected Sub cmd_confirm1_ServerClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_confirm1.ServerClick
+        Dim st As New StringBuilder
+        Dim datas As String = ""
+        Dim item As String = ""
+        Dim elem As String = ""
+        Dim tr(3) As OracleParameter
+        Dim user() As String
+        user = Session("user_id").ToString.Split("!")
+        Try
+
+
+            '' Assume selectedDate is the date picked by the user
+            'Dim selectedDate As DateTime = DateTime.Parse(cjsdte.Text) ' Example selected date
+            '' Get the current system date
+            'Dim sysdate As DateTime = DateTime.Now
+
+            '' Compare the selected date with the system date
+            'If selectedDate > sysdate Then
+            '    ' The selected date is greater than the system date
+            '    MsgBox("The selected date is greater than the system date.")
+
+            'End If
+
+
+
+            If CDate(cjsdte.Text) > CDate(Date.Now) Or CDate(cjsdte.Text) > CDate(Date.Now) Then
+                Dim cl_script1 As New System.Text.StringBuilder
+                cl_script1.Append("         alert('Future Date Not Allowed');")
+                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script1.ToString, True)
+
+
+            End If
+
+
+            If Me.Checkname.Checked = True Then
+
+                Dim cl_script021 As New System.Text.StringBuilder
+                cl_script021.Append("        alert('Please fill all Reason details!!');")
+                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                Exit Sub
+            End If
+
+            If Me.Checksts.Checked = True Then
+                If Me.textsts.Text = "" Or IsDBNull(Me.textsts.Text) Or Me.Dropsts.SelectedValue = 0 Then
+                    Dim cl_script021 As New System.Text.StringBuilder
+                    cl_script021.Append("alert('Please Select Status Of Employee!!!');")
+                    Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                    Exit Sub
+
+
+
+
+                Else
+                    dt2 = oh.ExecuteDataSet("select status from hrm_emp_status fg where fg.emp_code=" & Me.hid_rej.Value & " and fg.enter_dt=(select max(tr.enter_dt) from mactech.hrm_emp_status tr where tr.emp_code=" & Me.hid_rej.Value & ")").Tables(0)
+                    If Dropsts.SelectedValue = 1 And Me.Hiddate.Value = "" Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("alert('End Date Couldn't Found');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 2 And Me.Hiddate.Value = "" Then
+                        Dim cl_script021 As New System.Text.StringBuilder
+                        cl_script021.Append("End Date Couldn't Found');")
+                        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                        Exit Sub
+                    ElseIf Dropsts.SelectedValue = 3 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        If dt2.Rows(0)(0) = 3 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("alert('The employee already in long leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        ElseIf dt2.Rows(0)(0) = 4 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("alert('The employee already in maternity leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+
+                        End If
+                    ElseIf Dropsts.SelectedValue = 4 And (dt2.Rows(0)(0) = 3 Or dt2.Rows(0)(0) = 4) Then
+                        If dt2.Rows(0)(0) = 3 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("alert('The employee already in long leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        ElseIf dt2.Rows(0)(0) = 4 Then
+                            Dim cl_script021 As New System.Text.StringBuilder
+                            cl_script021.Append("alert('The employee already in maternity leave');")
+                            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                            Exit Sub
+                        End If
+                    End If
+                End If
+                If IsDBNull(datas) Or datas = "" Then
+                    If Dropsts.SelectedValue = 1 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 2 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 3 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 4 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 5 Then
+                        datas = "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+                    End If
+                Else
+                    If Dropsts.SelectedValue = 1 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 2 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 3 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 4 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + Me.startdt.Text + "!" + Me.enddt.Text.ToString + "!" + "" + "!" + "" + "!" + "" + "!" + Me.Hiddate.Value
+                    ElseIf Dropsts.SelectedValue = 5 Then
+                        datas = datas + "$" + "38" + "%" + Dropsts.SelectedValue + "!" + "" + "!" + "" + "!" + Me.resig_sub_dt.Text + "!" + Me.prop_exit_dt.Text.ToString + "!" + Me.reason.Text + "!" + Me.Hiddate.Value
+                    End If
+                End If
+            End If
+            Dim dts() As String = datas.Split("$")
+            If datas = "" Then
+                Dim cl_script021 As New System.Text.StringBuilder
+                cl_script021.Append("alert('Please Select Any Category!!!');")
+                Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script021.ToString, True)
+                Exit Sub
+            End If
+            For Each elem In dts
+                Dim opt As String = elem.Split("%")(0)
+                Dim str As String = elem.Split("%")(1)
+                tr(0) = New OracleParameter("ecode", OracleType.Number, 500)
+                tr(0).Direction = ParameterDirection.Input
+                tr(0).Value = Me.hid_rej.Value
+                tr(1) = New OracleParameter("options", OracleType.Number, 500)
+                tr(1).Direction = ParameterDirection.Input
+                tr(1).Value = opt
+                tr(2) = New OracleParameter("datas", OracleType.VarChar, 500)
+                tr(2).Direction = ParameterDirection.Input
+                tr(2).Value = str
+                tr(3) = New OracleParameter("userid", OracleType.Number, 500)
+                tr(3).Direction = ParameterDirection.Input
+                'tr(3).Value = User(0)
+                tr(3).Value = user(0)
+                tr(4) = New OracleParameter("msg", OracleType.Char, 500)
+                tr(4).Direction = ParameterDirection.Output
+                oh.ExecuteNonQuery("master_update_maker", tr)
+            Next
+            Dim cl_script01 As New System.Text.StringBuilder
+            cl_script01.Append("         alert('" & tr(4).Value & "');")
+            cl_script01.Append("       window.open('repo.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+            Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+        Catch ex As Exception
+            Response.Write(ex.ToString)
+        End Try
+    End Sub
+
+    Protected Sub cmd_exit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_exit.Click
+        Response.Redirect("../../../home.aspx")
+    End Sub
+
+    'Protected Sub textidpoorf_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles textidpoorf.TextChanged
+    '    Dim a As Integer
+    '    Dim i As String = dropid.SelectedValue.ToString
+    '    Dim qry As String = "select g.mass_length from identity_gl4 g where g.identity_id=" + i
+    '    Dim q As String
+    '    dt = oh.ExecuteDataSet(qry).Tables(0)
+    '    a = Int32.Parse(dt.Rows(0)(0).ToString())
+    '    If Me.textidpoorf.Text.Length > a Then
+    '        Dim cl_script01 As New System.Text.StringBuilder
+    '        cl_script01.Append("         alert('Please enter Correct Id Proof');")
+    '        cl_script01.Append("       window.open('repo.aspx?code=" & Request.QueryString("code") & "&pin=" & Request.QueryString("pin") & "','_self');")
+    '        Page.ClientScript.RegisterClientScriptBlock(Me.GetType, "client script", cl_script01.ToString, True)
+
+    '    End If
+    'End Sub
+    Protected Sub dropsclm_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
+
+        Me.textsclm.Text = DropDownList1.SelectedItem.Text
+        Me.DropDownList1.Visible = False
+
+    End Sub
+
+    
+    
+    
+ 
+End Class

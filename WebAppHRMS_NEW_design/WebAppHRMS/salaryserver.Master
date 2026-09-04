@@ -1,0 +1,453 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="salaryserver.master.vb" Inherits="WebAppHRMS.mailserverw" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Untitled Page</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function show() {
+            debugger;
+            var msg = "******Please Ensure All Pending Approvals And Notes(Promotion, Transfer, Increment...etc) Regarding Employee(s) Salary Is Completed On Before Processing*******"
+            var disp = "<MARQUEE scrollamount=5 scrolldelay=100 style=WIDTH: 6px; HEIGHT: 3px bgColor=antiquewhite><STRONG><FONT color=darkred>" + msg + "</FONT></STRONG></MARQUEE>"
+            document.getElementById("mysp").innerHTML = disp
+        }
+        var disp = "";
+        $(function () {
+            debugger;
+            $(".MyMenu a").each(function (index) {
+                var msg = "******Please Ensure All Pending Approvals And Notes Regarding Promotion, Transfer, Increment...etc Is Completed On Before Processing*******"
+                var dispw = "<MARQUEE scrollamount=5 scrolldelay=100 style=WIDTH: 6px; HEIGHT: 3px bgColor=antiquewhite><STRONG><FONT color=darkred>" + msg + "</FONT></STRONG></MARQUEE>"
+                document.getElementById("mysp").innerHTML = disp
+            });
+        });
+
+        function dothis(b) {
+            debugger;
+            if (b == 1)
+                window.open("salary_master.aspx?mid=0", "_self");
+            if (b == 2)
+                window.open("../home.aspx", "_self");
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /*font-family: Arial, sans-serif;*/
+            overflow: hidden; /* Prevent vertical scrollbar */
+            background-color: antiquewhite;
+        }
+
+        .center-menu {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        .menu-item {
+            position: relative;
+            flex: 1;
+            padding: 5px 10px;
+            background-color: darkred;
+            border: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            /*font-weight: bold;*/
+        }
+
+        .modal {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        .menu-item:hover > .modal {
+            display: block;
+        }
+
+        .modal-content a {
+            display: block;
+            padding: 10px;
+            background-color: antiquewhite;
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+            .modal-content a:hover {
+                background-color: darkred;
+                color: white;
+            }
+
+        /* 🛠 Fix the Reports submenu - Fully Escape Parent */
+        .submenu {
+            display: none;
+            position: fixed;
+            background-color: antiquewhite;
+            border: 1px solid black;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            min-width: 150px;
+            /*max-height: 300px;  Limit height */
+            overflow-y: auto; /* Enable scrolling */
+            z-index: 9999;
+            /*padding-bottom: 20px;*/
+        }
+
+
+            /* 🔥 Make sure the submenu stays visible */
+            .reports-menu:hover > .submenu,
+            .submenu:hover {
+                display: block;
+            }
+
+        /* Apply hover effect to "Weekly Off" and similar menu items under HRM */
+        .menu-item.reports-menu:hover {
+            background-color: darkred !important;
+            color: white !important;
+        }
+
+        .menu-item.reports-menu {
+            background-color: antiquewhite !important;
+            color: black !important;
+            text-align: left;
+        }
+
+            .menu-item.reports-menu a {
+                text-align: left;
+            }
+
+        /* 🚀 Fix scrolling issue */
+        .modal-content {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .scroll-box {
+            display: none;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #555;
+            user-select: none;
+        }
+
+            .scroll-box:hover {
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .scroll-box[data-direction="-1"] {
+                top: 0;
+            }
+
+            .scroll-box[data-direction="1"] {
+                bottom: 0px;
+            }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".reports-menu").forEach(menu => {
+                const submenu = menu.querySelector(".submenu");
+
+                menu.addEventListener("mouseenter", function () {
+                    debugger;
+                    const rect = menu.getBoundingClientRect();
+                    submenu.style.display = "block";
+
+                    let availableSpaceBelow = window.innerHeight - rect.bottom;
+                    let availableSpaceAbove = rect.top;
+                    let submenuHeight = submenu.scrollHeight;
+                    let modalContent = submenu.querySelector(".modal-content");
+                    let scrollBoxes = submenu.querySelectorAll(".scroll-box");
+                    let totalScrollBoxHeight = 0;
+
+                    scrollBoxes.forEach(box => {
+                        totalScrollBoxHeight += box.offsetHeight; // Use offsetHeight to get the visible height
+                    });
+                    submenuHeight = submenuHeight - totalScrollBoxHeight;
+                    if (submenuHeight > availableSpaceBelow && availableSpaceAbove > submenuHeight) {
+                        // Open submenu upwards
+                        submenu.style.top = `${rect.top - submenuHeight}px`;
+                    } else {
+                        // Default to opening downwards
+                        submenu.style.top = `${rect.top}px`;
+
+                    }
+
+                    // Prevent submenu from overflowing the viewport horizontally
+                    let availableSpaceRight = window.innerWidth - rect.right;
+                    if (availableSpaceRight < submenu.offsetWidth) {
+                        submenu.style.left = `${rect.left - submenu.offsetWidth}px`; // Move left if needed
+                    } else {
+                        submenu.style.left = `${rect.right}px`; // Default position
+                    }
+
+                    //let topScrollBox = submenu.querySelector('.scroll-box[data-direction="-1"]');
+                    //let bottomScrollBox = submenu.querySelector('.scroll-box[data-direction="1"]');
+
+                    //if (modalContent.scrollHeight > modalContent.clientHeight) {
+                    //    // Enable scroll boxes when scrolling is needed
+                    //    topScrollBox.style.display = "block";
+                    //    bottomScrollBox.style.display = "block";
+                    //} else {
+                    //    // Hide scroll boxes if no scrolling is required
+                    //    topScrollBox.style.display = "none";
+                    //    bottomScrollBox.style.display = "none";
+                    //}
+
+                    if (modalContent.scrollHeight > modalContent.clientHeight) {
+                        scrollBoxes.forEach(box => box.style.display = "block");
+                    } else {
+                        scrollBoxes.forEach(box => box.style.display = "none");
+                    }
+                });
+
+                menu.addEventListener("mouseleave", function () {
+                    setTimeout(() => {
+                        if (!submenu.matches(":hover")) {
+                            submenu.style.display = "none";
+                        }
+                    }, 200);
+                });
+
+                submenu.addEventListener("mouseleave", function () {
+                    submenu.style.display = "none";
+                });
+            });
+        });
+
+
+
+
+        function showModal(modal, parent) {
+            debugger;
+            modal.style.display = "block";
+            let rect = parent.getBoundingClientRect();
+            let modalRect = modal.getBoundingClientRect();
+            let windowWidth = window.innerWidth;
+            let windowHeight = window.innerHeight;
+            modal.style.top = `${rect.bottom}px`;
+            if (rect.top - modalRect.height < 0) {
+                modal.style.top = "0";
+            }
+
+
+            let modalContent = modal.querySelector(".modal-content");
+            let availableHeight = windowHeight - rect.bottom; // Space from menu to bottom
+            modalContent.style.maxHeight = `${availableHeight}px`;
+            modalContent.style.overflowY = "auto"; // Enable scrolling if needed
+
+            // Adjust bottom scroll-box position
+            let bottomScrollBox = modal.querySelector('.scroll-box[data-direction="1"]');
+            if (bottomScrollBox) {
+                bottomScrollBox.style.position = "absolute";
+                bottomScrollBox.style.bottom = "0px"; // Fix it at the bottom
+                bottomScrollBox.style.width = "100%";
+                bottomScrollBox.style.display = modalContent.scrollHeight > modalContent.clientHeight ? "block" : "none";
+            }
+
+            // Add padding to prevent overlap with last menu item
+            let lastMenuItem = modalContent.lastElementChild;
+            if (lastMenuItem) {
+                lastMenuItem.style.marginBottom = bottomScrollBox.style.display === "block" ? "0px" : "0px";
+            }
+
+            let scrollBoxes = modal.querySelectorAll(".scroll-box");
+            if (modalContent.scrollHeight > modalContent.clientHeight) {
+                scrollBoxes.forEach(box => box.style.display = "block");
+            } else {
+                scrollBoxes.forEach(box => box.style.display = "none");
+            }
+        }
+
+        function closeModal(modal) {
+            modal.style.display = "none";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".menu-item").forEach(menuItem => {
+                let modal = menuItem.querySelector(".modal");
+                if (modal) {
+                    menuItem.addEventListener("mouseenter", function () {
+                        showModal(modal, menuItem);
+                    });
+                    menuItem.addEventListener("mouseleave", function () {
+                        setTimeout(() => {
+                            if (!menuItem.matches(":hover") && !modal.matches(":hover")) {
+                                closeModal(modal);
+                            }
+                        }, 200);
+                    });
+                    modal.addEventListener("mouseleave", function () {
+                        closeModal(modal);
+                    });
+
+                }
+            });
+            document.querySelectorAll(".scroll-box").forEach(scrollBox => {
+                let interval;
+                function startScrolling(modalContent, direction, speed) {
+                    stopScrolling();
+                    interval = setInterval(() => {
+                        modalContent.scrollTop += direction * speed;
+                    }, 50);
+                }
+                function stopScrolling() {
+                    clearInterval(interval);
+                }
+                scrollBox.addEventListener("mouseenter", function () {
+                    let modalContent = this.parentElement.querySelector(".modal-content");
+                    if (modalContent) {
+                        startScrolling(modalContent, parseInt(this.dataset.direction), 5);
+                    }
+                });
+                scrollBox.addEventListener("mouseleave", stopScrolling);
+                scrollBox.addEventListener("mousedown", function () {
+                    let modalContent = this.parentElement.querySelector(".modal-content");
+                    if (modalContent) {
+                        startScrolling(modalContent, parseInt(this.dataset.direction), 5);
+                    }
+                });
+                scrollBox.addEventListener("mouseup", stopScrolling);
+            });
+        });
+    </script>
+</head>
+<body onload="show()">
+    <form id="form1" runat="server">
+        <div>
+            <div style="text-align: center">
+                <table width="100%">
+                    <tr>
+                        <td colspan="4" style="background-color: DarkRed">
+                            <strong><em><span style="font-size: 18pt; color: #fff; font-family: Tunga; background-color: DarkRed">
+                                <asp:ScriptManager ID="mail_master_script_mng" runat="server">
+                                </asp:ScriptManager>
+                                Manappuram Comptech &amp; Consultants Ltd.</span></em></strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: DarkRed">
+                            <strong><span style="font-size: 15pt; color: white; font-family: @Microsoft JhengHei; background-color: DarkRed">Payroll Salary Processing Tool</span></strong></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="left" style="background-color: antiquewhite;">
+                            <asp:Label ID="Label2" ForeColor="darkred" Font-Bold="true" runat="server" Text="User:"></asp:Label>
+                            <asp:Label ID="lbl_user_name" ForeColor="darkred" runat="server"></asp:Label></td>
+
+                        <td colspan="2" style="background-color: antiquewhite;" align="right">
+                            <asp:Label ID="Label1" ForeColor="darkred" runat="server" Font-Bold="true" Text="Quick Links:"></asp:Label>
+
+                            <a id="a1" onclick="dothis(1)" style="width: 72px; color: Blue; cursor: pointer;">Home&#127968;</a>&nbsp;&nbsp;
+                        <a id="a2" onclick="dothis(2)" style="width: 72px; color: Blue; cursor: pointer;">Sign Out&#x276C;</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left" style="background-color: antiquewhite;">
+                            <asp:Label ID="Label3" ForeColor="darkred" runat="server" Font-Bold="true" Text=" Date:"></asp:Label><asp:Label ID="lbl_date" ForeColor="darkred" runat="server"></asp:Label></td>
+
+                        <td colspan="2" align="right" style="background-color: antiquewhite; color: darkred;">
+                            <b>Time:</b>
+                            <asp:Label ID="lbl_time" ForeColor="darkred" runat="server" Height="18px"></asp:Label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><span id="mysp"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: antiquewhite" colspan="4">
+                            <div class="center-menu">
+                                <div class="menu-item">
+                                    <span style="font-weight: bold;">PROCESS</span>
+                                    <div class="modal">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="salary_master.aspx?mid=8">Run Salary</a>
+                                            <a href="salary_master.aspx?mid=9">Consolidate Allowances</a>
+                                            <a href="salary_master.aspx?mid=10">Deduct LOP</a>
+                                            <a href="salary_master.aspx?mid=20">Outstation After Batta</a>
+                                            <a href="salary_master.aspx?mid=11">Merge Allowance</a>
+                                            <a href="salary_master.aspx?mid=12">Run PF</a>
+                                            <a href="salary_master.aspx?mid=13">Run ESI</a>
+                                            <a href="salary_master.aspx?mid=15">Pass Ledger Entry</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="menu-item">
+                                    <span style="font-weight: bold;">DOWNLOADS</span>
+                                    <div class="modal">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="salary_master.aspx?mid=5">Salary Data</a>
+                                            <a href="salary_master.aspx?mid=6">Initial Allowance Data</a>
+                                            <a href="salary_master.aspx?mid=7">Final Allowance Data</a>
+                                            <a href="salary_master.aspx?mid=22">Leave Availed Report</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-item">
+                                    <span style="font-weight: bold;">EDIT</span>
+                                    <div class="modal">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="salary_master.aspx?mid=16">Delete PF</a>
+                                            <a href="salary_master.aspx?mid=17">Add PF</a>
+                                            <a href="salary_master.aspx?mid=18">Delete ESI</a>
+                                            <a href="salary_master.aspx?mid=19">Add ESI</a>
+                                            <%--                    <a href="salary_master.aspx?mid=23">Arrear/Deduction</a>--%>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-item">
+                                    <span style="font-weight: bold;">VIEW</span>
+                                    <div class="modal">
+                                        <div class="scroll-box" data-direction="-1">▼</div>
+                                        <div class="modal-content">
+                                            <a href="salary_master.aspx?mid=2">Current Month Process Report</a>
+                                            <a href="salary_master.aspx?mid=3">Previous Month Process Report</a>
+                                            <a href="salary_master.aspx?mid=21">Show Check List</a>
+                                            <a href="salary_master.aspx?mid=24">Basic Pay Variant Employees</a>
+                                        </div>
+                                        <div class="scroll-box" data-direction="1">▲</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: white">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: DarkRed" colspan="4">
+                            <i><b><span style="color: White;">&#169; MACOM, Version 1.0</span></b></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

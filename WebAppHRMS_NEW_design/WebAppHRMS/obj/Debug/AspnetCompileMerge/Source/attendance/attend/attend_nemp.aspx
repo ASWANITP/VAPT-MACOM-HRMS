@@ -1,0 +1,36 @@
+<%@ Page Language="VB" AutoEventWireup="false" CodeBehind="attend_nemp.aspx.vb" Inherits="WebAppHRMS.attend_attend_emp_5a3dba759337" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+            <script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function Button1_onclick() 
+{
+  window.open("../../home.aspx",'_self');
+}
+function demo()
+{
+ document.getElementById('Button1').style.display='none'
+ document.getElementById('submit').style.display='none'
+ window.print();
+ document.getElementById('Button1').style.display='inline'
+ document.getElementById('submit').style.display='inline'
+}
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <input type="button"  style="width: 113px" value="Print" id="submit"  onclick="return demo()"/>
+            <input id="Button1" style="width: 105px" type="button" value="Exit" onclick="return Button1_onclick()" />
+         <asp:Panel ID="pnl_attedemp" runat="server" Height="50px" Width="794px">
+        </asp:Panel>
+    
+    </div>
+    </form>
+</body>
+</html>

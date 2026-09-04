@@ -1,0 +1,676 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\leave\\compensatory\\compensat_cancel.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\compensat_cancel.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\leave\\compensatory\\comp_new_add.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\comp_new_add.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\leave\\compensatory\\comp_application_report.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\comp_application_report.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\leave\\depthead_report.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\depthead_report.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\leave\\department_updation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\department_updation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_appli_to.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_appli_to.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\script\\maben.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\script\\maben.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_appli_to.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_appli_to.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\script\\leave_applied_to.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\script\\leave_applied_to.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|d:\\hrms\\hrmsp\\webapphrms_new_design\\webapphrms\\global.asax.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\global.asax.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\main.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\main.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\sessionhandler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\sessionhandler.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\script\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\script\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\sessionexpired.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\sessionexpired.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\edp.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\edp.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\encryptionservice.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\encryptionservice.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\home.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\home.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\removeoraclecookiemodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\removeoraclecookiemodule.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_applied_status.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_applied_status.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_applied_status.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_applied_status.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\edp.master.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\edp.master.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\hr_master.master.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\hr_master.master.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\hr_master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\hr_master.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_appli_to.aspx.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_appli_to.aspx.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_applied_status_indi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_applied_status_indi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\rpt_leave_applied_status.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\rpt_leave_applied_status.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\sessionexpired.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\sessionexpired.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\ta\\ta_new.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\ta\\ta_new.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\compensatory\\comp_application_report.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\comp_application_report.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\compensatory\\compenastory_date.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\compenastory_date.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\compensatory\\compensatory_apply.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\compensatory_apply.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\compensatory\\compensatory_display.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\compensatory\\compensatory_display.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\ta\\ta_new.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\ta\\ta_new.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\attendance\\leave_sele.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\attendance\\leave_sele.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\webapphrms\\leave\\leave_applied_status_indi.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25486EE5-1CD9-44B4-AD16-158AFB9F4899}|WebAppHRMS\\WebAppHRMS.vbproj|solutionrelative:webapphrms\\leave\\leave_applied_status_indi.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Main.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Main.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\Main.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Main.aspx",
+              "RelativeToolTip": "WebAppHRMS\\Main.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-08T06:38:45.433Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Main.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Main.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\Main.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Main.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\Main.aspx.vb",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAswDgBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T05:00:16.426Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "leave_appli_to.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_appli_to.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_appli_to.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_appli_to.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_appli_to.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-08T03:57:41.408Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "leave_appli_to.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_appli_to.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_appli_to.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_appli_to.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_appli_to.aspx.vb",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T03:58:39.739Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "leave_applied_to.js",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\script\\leave_applied_to.js",
+              "RelativeDocumentMoniker": "WebAppHRMS\\script\\leave_applied_to.js",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\script\\leave_applied_to.js",
+              "RelativeToolTip": "WebAppHRMS\\script\\leave_applied_to.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAIBJwCAAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-12T04:39:18.744Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "compensat_cancel.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\compensat_cancel.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\compensat_cancel.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\compensat_cancel.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\compensat_cancel.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-09-04T05:59:49.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "comp_new_add.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\comp_new_add.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\comp_new_add.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\comp_new_add.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\comp_new_add.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-09-04T05:59:46.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "comp_application_report.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-09-04T05:59:43.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeptHead_Report.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\DeptHead_Report.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\DeptHead_Report.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\DeptHead_Report.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\DeptHead_Report.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-09-04T05:59:22.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "department_updation.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\department_updation.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\department_updation.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\department_updation.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\department_updation.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-09-04T05:59:13.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "maben.js",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\script\\maben.js",
+              "RelativeDocumentMoniker": "WebAppHRMS\\script\\maben.js",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\script\\maben.js",
+              "RelativeToolTip": "WebAppHRMS\\script\\maben.js",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-04T05:58:21.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Web.config",
+              "RelativeDocumentMoniker": "WebAppHRMS\\Web.config",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Web.config",
+              "RelativeToolTip": "WebAppHRMS\\Web.config",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-03T03:57:53.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Global.asax.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Global.asax.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\Global.asax.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\Global.asax.vb",
+              "RelativeToolTip": "WebAppHRMS\\Global.asax.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-16T05:59:45.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SessionHandler.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\SessionHandler.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\SessionHandler.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\SessionHandler.vb",
+              "RelativeToolTip": "WebAppHRMS\\SessionHandler.vb",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwBIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-10T05:10:24.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "main.js",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\script\\main.js",
+              "RelativeDocumentMoniker": "WebAppHRMS\\script\\main.js",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\script\\main.js",
+              "RelativeToolTip": "WebAppHRMS\\script\\main.js",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAYwKEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-12T04:30:25.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SessionExpired.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\SessionExpired.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\SessionExpired.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\SessionExpired.aspx",
+              "RelativeToolTip": "WebAppHRMS\\SessionExpired.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-10T04:13:51.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "edp.Master",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\edp.Master",
+              "RelativeDocumentMoniker": "WebAppHRMS\\edp.Master",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\edp.Master",
+              "RelativeToolTip": "WebAppHRMS\\edp.Master",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-14T06:49:29.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EncryptionService.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\EncryptionService.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\EncryptionService.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\EncryptionService.vb",
+              "RelativeToolTip": "WebAppHRMS\\EncryptionService.vb",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-14T06:24:58.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "home.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\home.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\home.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\home.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\home.aspx.vb",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-10T10:40:13.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "home.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\home.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\home.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\home.aspx",
+              "RelativeToolTip": "WebAppHRMS\\home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-14T07:23:03.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RemoveOracleCookieModule.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\RemoveOracleCookieModule.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\RemoveOracleCookieModule.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\RemoveOracleCookieModule.vb",
+              "RelativeToolTip": "WebAppHRMS\\RemoveOracleCookieModule.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-16T05:59:22.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "hr_master.Master.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\hr_master.Master.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\hr_master.Master.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\hr_master.Master.vb",
+              "RelativeToolTip": "WebAppHRMS\\hr_master.Master.vb",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-14T07:28:01.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "hr_master.Master",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\hr_master.Master",
+              "RelativeDocumentMoniker": "WebAppHRMS\\hr_master.Master",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\hr_master.Master",
+              "RelativeToolTip": "WebAppHRMS\\hr_master.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-14T07:27:23.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "edp.Master.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\edp.Master.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\edp.Master.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\edp.Master.vb",
+              "RelativeToolTip": "WebAppHRMS\\edp.Master.vb",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-14T06:49:35.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "leave_appli_to.aspx.designer.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_appli_to.aspx.designer.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_appli_to.aspx.designer.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_appli_to.aspx.designer.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_appli_to.aspx.designer.vb",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-12T03:52:15.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "rpt_leave_applied_status.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\rpt_leave_applied_status.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\rpt_leave_applied_status.aspx.vb",
+              "ViewState": "AgIAADMAAAAAAAAAAIBJwB4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-12T03:33:44.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SessionExpired.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\SessionExpired.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\SessionExpired.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\SessionExpired.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\SessionExpired.aspx.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-10T04:34:39.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "rpt_leave_applied_status_new.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx.vb",
+              "ViewState": "AgIAALABAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-10T03:59:13.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "rpt_leave_applied_status_new.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\rpt_leave_applied_status_new.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-10T03:59:04.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "comp_application_report.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\comp_application_report.aspx.vb",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T06:10:54.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Compenastory_date.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\Compenastory_date.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\Compenastory_date.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\Compenastory_date.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\Compenastory_date.aspx.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T05:49:46.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "compensatory_apply.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\compensatory_apply.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\compensatory_apply.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\compensatory_apply.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\compensatory_apply.aspx.vb",
+              "ViewState": "AgIAAGEAAAAAAAAAAIBZwBQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T05:49:14.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Compensatory_display.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\Compensatory_display.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\Compensatory\\Compensatory_display.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\Compensatory\\Compensatory_display.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\Compensatory\\Compensatory_display.aspx.vb",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T05:48:52.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TA_new.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\TA\\TA_new.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\TA\\TA_new.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\TA\\TA_new.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\TA\\TA_new.aspx.vb",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-08T04:45:34.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TA_new.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\TA\\TA_new.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\TA\\TA_new.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\TA\\TA_new.aspx",
+              "RelativeToolTip": "WebAppHRMS\\TA\\TA_new.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-08T04:42:14.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "leave_sele.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\attendance\\leave_sele.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\attendance\\leave_sele.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\attendance\\leave_sele.aspx",
+              "RelativeToolTip": "WebAppHRMS\\attendance\\leave_sele.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-08T04:33:33.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "leave_applied_status.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_applied_status.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_applied_status.aspx.vb",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwEEAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-07T03:32:10.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "leave_applied_status.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_applied_status.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_applied_status.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-07T03:31:26.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "leave_applied_status_indi.aspx.vb",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status_indi.aspx.vb",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_applied_status_indi.aspx.vb",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status_indi.aspx.vb",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_applied_status_indi.aspx.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-01-07T03:29:20.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "leave_applied_status_indi.aspx",
+              "DocumentMoniker": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status_indi.aspx",
+              "RelativeDocumentMoniker": "WebAppHRMS\\leave\\leave_applied_status_indi.aspx",
+              "ToolTip": "D:\\HRMS\\hrmsP\\WebAppHRMS_NEW_design\\WebAppHRMS\\leave\\leave_applied_status_indi.aspx",
+              "RelativeToolTip": "WebAppHRMS\\leave\\leave_applied_status_indi.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-07T03:29:16.219Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

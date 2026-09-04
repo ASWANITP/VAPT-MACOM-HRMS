@@ -1,0 +1,2239 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebAppHRMS
+</name>
+</assembly>
+<members>
+<member name="T:WebAppHRMS.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WebAppHRMS.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WebAppHRMS.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:WebAppHRMS.uc_date._Text1">
+<summary>
+Text1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.DateFiller._CalendarExtender1">
+<summary>
+CalendarExtender1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.DateFiller._CalendarExtender2">
+<summary>
+CalendarExtender2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.DateFiller._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.DateFiller._txt_from">
+<summary>
+txt_from control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.DateFiller._txt_to">
+<summary>
+txt_to control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.branch.datefiller._hid_date">
+<summary>
+hid_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.branch.datefiller._hid_date1">
+<summary>
+hid_date1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.branch.datefiller._Uc_date1">
+<summary>
+Uc_date1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.branch.datefiller._Uc_date2">
+<summary>
+Uc_date2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._txt_user">
+<summary>
+txt_user control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._txt_oldpass">
+<summary>
+txt_oldpass control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._txt_newpass">
+<summary>
+txt_newpass control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._txt_confpass">
+<summary>
+txt_confpass control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._cmd_confirm">
+<summary>
+cmd_confirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._PasswordStrength1">
+<summary>
+PasswordStrength1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.change_passwding._RegularExpressionValidator1">
+<summary>
+RegularExpressionValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._emcde">
+<summary>
+emcde control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._txt_empcde">
+<summary>
+txt_empcde control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._RegularExpressionValidator1">
+<summary>
+RegularExpressionValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._RdoRecommendation">
+<summary>
+RdoRecommendation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._RdoSanction">
+<summary>
+RdoSanction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._ButnExcel">
+<summary>
+ButnExcel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._ButnExit">
+<summary>
+ButnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.LeaveList_c56207c69507._GrvLeave">
+<summary>
+GrvLeave control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._lbl_head">
+<summary>
+lbl_head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._lbl_user">
+<summary>
+lbl_user control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._lbl_date">
+<summary>
+lbl_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._lbl_time">
+<summary>
+lbl_time control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._lbl_news">
+<summary>
+lbl_news control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._lbl_subhead">
+<summary>
+lbl_subhead control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._cph_edp">
+<summary>
+cph_edp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.hr_master._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._mydrop">
+<summary>
+mydrop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._mypanel">
+<summary>
+mypanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._Upload">
+<summary>
+Upload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._btnUpload">
+<summary>
+btnUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._lblError">
+<summary>
+lblError control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._pnlCrop">
+<summary>
+pnlCrop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._imgCrop">
+<summary>
+imgCrop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._X">
+<summary>
+X control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._Y">
+<summary>
+Y control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._W">
+<summary>
+W control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._H">
+<summary>
+H control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._btnCrop">
+<summary>
+btnCrop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._pnlCropped">
+<summary>
+pnlCropped control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._imgCropped">
+<summary>
+imgCropped control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._retry">
+<summary>
+retry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._Default._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._mail_master_script_mng">
+<summary>
+mail_master_script_mng control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._lbl_user_name">
+<summary>
+lbl_user_name control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._lbl_date">
+<summary>
+lbl_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._lbl_time">
+<summary>
+lbl_time control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mailserverw._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Timeout._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Timeout._LinkButton1">
+<summary>
+LinkButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._hdnPost">
+<summary>
+hdnPost control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._hdnEcode">
+<summary>
+hdnEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._hdnDate">
+<summary>
+hdnDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._hdnRm">
+<summary>
+hdnRm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._hdnDay">
+<summary>
+hdnDay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._hid_zonal">
+<summary>
+hid_zonal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._ddlDay">
+<summary>
+ddlDay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._ddlPost">
+<summary>
+ddlPost control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._ddlEcode">
+<summary>
+ddlEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._txtName">
+<summary>
+txtName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._txtBranch">
+<summary>
+txtBranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._txtPost">
+<summary>
+txtPost control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._txtDept">
+<summary>
+txtDept control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._txtDate">
+<summary>
+txtDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._txtReason">
+<summary>
+txtReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._btnConfirm">
+<summary>
+btnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrmWeeklyOffAmAssignBH_2ed9e8923190._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._rdb_Change">
+<summary>
+rdb_Change control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._rdb_Exchange">
+<summary>
+rdb_Exchange control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._cmb_Code">
+<summary>
+cmb_Code control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._txt_Off">
+<summary>
+txt_Off control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._txt_Date">
+<summary>
+txt_Date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._cmb_Code1">
+<summary>
+cmb_Code1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._txt_Off1">
+<summary>
+txt_Off1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._cmb_Code2">
+<summary>
+cmb_Code2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._txt_Off2">
+<summary>
+txt_Off2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._hid_branch">
+<summary>
+hid_branch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._hdn_sysdate">
+<summary>
+hdn_sysdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Change_6416ae436365._hid_post">
+<summary>
+hid_post control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_s2">
+<summary>
+hid_s2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._cmb_Employee">
+<summary>
+cmb_Employee control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._cmb_Day">
+<summary>
+cmb_Day control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._cmb_DayBH">
+<summary>
+cmb_DayBH control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._txt_Date">
+<summary>
+txt_Date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._LinkButton1">
+<summary>
+LinkButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Panel1">
+<summary>
+Panel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Panel2">
+<summary>
+Panel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hdn_sysdate">
+<summary>
+hdn_sysdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_Em">
+<summary>
+hid_Em control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_dep">
+<summary>
+hid_dep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_data">
+<summary>
+hid_data control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._HiddenField1">
+<summary>
+HiddenField1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button4">
+<summary>
+Button4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button7">
+<summary>
+Button7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button3">
+<summary>
+Button3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button5">
+<summary>
+Button5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Button6">
+<summary>
+Button6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Hidden1">
+<summary>
+Hidden1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_Counter">
+<summary>
+hid_Counter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_branch">
+<summary>
+hid_branch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Hidden2">
+<summary>
+Hidden2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_s">
+<summary>
+hid_s control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._hid_count">
+<summary>
+hid_count control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Emp_Off_Updt_a762d4196657._Hidden4">
+<summary>
+Hidden4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._cmb_Select">
+<summary>
+cmb_Select control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._txt_date">
+<summary>
+txt_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._Panel1">
+<summary>
+Panel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._btn_reject">
+<summary>
+btn_reject control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._Hidden1">
+<summary>
+Hidden1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._hid_emp">
+<summary>
+hid_emp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS._7DaysWorking_hrm_Seven_AM_Recomm_e05ab3dc8499._hid_area">
+<summary>
+hid_area control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._hdnEcode">
+<summary>
+hdnEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._ddlEcode">
+<summary>
+ddlEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._txtEcode">
+<summary>
+txtEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._txtEname">
+<summary>
+txtEname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._txtBranch">
+<summary>
+txtBranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._txtPost">
+<summary>
+txtPost control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._txtOffday">
+<summary>
+txtOffday control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._txtChday">
+<summary>
+txtChday control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._btnConfirm">
+<summary>
+btnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.WeeklyOff_hrm_WeekoffImmedchange_cancel_487a6e2f9687._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._hdnEcode">
+<summary>
+hdnEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._hdnBranch">
+<summary>
+hdnBranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._hid_zonal">
+<summary>
+hid_zonal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._hdnDay">
+<summary>
+hdnDay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._ddlBranch">
+<summary>
+ddlBranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._ddlEcode">
+<summary>
+ddlEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtEcode">
+<summary>
+txtEcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtEname">
+<summary>
+txtEname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtBranch">
+<summary>
+txtBranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtPost">
+<summary>
+txtPost control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtDep">
+<summary>
+txtDep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtDay">
+<summary>
+txtDay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._ddlDay">
+<summary>
+ddlDay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._txtReason">
+<summary>
+txtReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._btnConfirm">
+<summary>
+btnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._btnViewDtl">
+<summary>
+btnViewDtl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._btnEmployee">
+<summary>
+btnEmployee control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.week_off_Change_hrm_weekof_Change_6e54092f5216._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_bb422d926143._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_bb422d926143._hiddn1">
+<summary>
+hiddn1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_bb422d926143._ddlbranch">
+<summary>
+ddlbranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_bb422d926143._btncnfrm">
+<summary>
+btncnfrm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_bb422d926143._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Report_1d9a5bf56354._cryst1">
+<summary>
+cryst1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Status_7a8e7a395996._crys1">
+<summary>
+crys1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._tfr_td">
+<summary>
+tfr_td control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._txt_cash">
+<summary>
+txt_cash control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._txt_cheque">
+<summary>
+txt_cheque control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._txt_tfr">
+<summary>
+txt_tfr control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._txt_total">
+<summary>
+txt_total control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._pnl_bank">
+<summary>
+pnl_bank control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._hdn_branchdtl">
+<summary>
+hdn_branchdtl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._hdn_branch">
+<summary>
+hdn_branch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._hdn_bank">
+<summary>
+hdn_bank control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.paydtl._hdn_bankdtl">
+<summary>
+hdn_bankdtl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="P:WebAppHRMS.home.Master">
+<summary>
+Master property.
+</summary>
+<remarks>
+Auto-generated property.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._login_form">
+<summary>
+login_form control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._txt_user_id">
+<summary>
+txt_user_id control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._txt_password">
+<summary>
+txt_password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._cmb_firm">
+<summary>
+cmb_firm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._cmd_login">
+<summary>
+cmd_login control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._lbl_err">
+<summary>
+lbl_err control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._hdn_key">
+<summary>
+hdn_key control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._lbl_key">
+<summary>
+lbl_key control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._hdnMnID">
+<summary>
+hdnMnID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._hdnBrID">
+<summary>
+hdnBrID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Main._hdnBrNm">
+<summary>
+hdnBrNm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Misc_HOHome._mnu_main">
+<summary>
+mnu_main control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.Misc_MISHome._mnu_main">
+<summary>
+mnu_main control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._lbl_head">
+<summary>
+lbl_head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._lbl_user">
+<summary>
+lbl_user control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._lbl_date">
+<summary>
+lbl_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._lbl_time">
+<summary>
+lbl_time control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.mis_hrm._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._lbl_head">
+<summary>
+lbl_head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._lbl_user">
+<summary>
+lbl_user control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._lbl_date">
+<summary>
+lbl_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._lbl_time">
+<summary>
+lbl_time control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._lbl_news">
+<summary>
+lbl_news control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._lbl_subhead">
+<summary>
+lbl_subhead control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._cph_edp">
+<summary>
+cph_edp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.edp._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Default_e84cd19b5889._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Default_e84cd19b5889._txtecode">
+<summary>
+txtecode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Default_e84cd19b5889._btnConfrm">
+<summary>
+btnConfrm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Default_e84cd19b5889._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchang_d85b5c4b8123._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchang_d85b5c4b8123._hiddn1">
+<summary>
+hiddn1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchang_d85b5c4b8123._ddlbranch">
+<summary>
+ddlbranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchang_d85b5c4b8123._BtnConfirm">
+<summary>
+BtnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchang_d85b5c4b8123._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_d9be2bab1649._Content1">
+<summary>
+Content1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_d9be2bab1649._hiddn1">
+<summary>
+hiddn1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_d9be2bab1649._ddlbranch">
+<summary>
+ddlbranch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_d9be2bab1649._btncnfrm">
+<summary>
+btncnfrm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_WEEK_OFF_d9be2bab1649._btnExit">
+<summary>
+btnExit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchg_Report_de93d0cc6977._hiddn1">
+<summary>
+hiddn1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Exchg_Report_de93d0cc6977._cryst1">
+<summary>
+cryst1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Report_ff859f6e4833._cryst1">
+<summary>
+cryst1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.HRM_Week_Off_Status_74549ed74074._crys1">
+<summary>
+crys1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:WebAppHRMS.show_err._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

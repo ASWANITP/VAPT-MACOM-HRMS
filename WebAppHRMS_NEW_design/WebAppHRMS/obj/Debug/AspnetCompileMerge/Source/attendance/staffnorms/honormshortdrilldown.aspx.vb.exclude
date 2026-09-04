@@ -1,0 +1,305 @@
+Imports System.Data
+Imports System.Data.OracleClient
+Partial Class honormshortsurplus_honormshortdrilldown
+    Inherits System.Web.UI.Page
+    Dim dt, dt1 As New DataTable
+    Dim str, str1 As String
+    Dim oh As New Helper.Oracle.OracleHelper
+    Dim dr, dr1 As DataRow
+    Dim normid As Integer
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim hodetailtable As New Table
+        Dim header As New TableRow
+        header.BackColor = Drawing.Color.Gold
+        header.ForeColor = Drawing.Color.Red
+        header.Width = 8
+        Dim headercell As New TableCell
+        headercell.ColumnSpan = 8
+        headercell.Text = "<b><font size=3>" & Session("firm_name") & "</font></b>"
+        headercell.HorizontalAlign = HorizontalAlign.Center
+        header.Controls.Add(headercell)
+        hodetailtable.Controls.Add(header)
+
+        Dim sheader As New TableRow
+        sheader.Width = 8
+        sheader.BackColor = Drawing.Color.Gainsboro
+        Dim sheadercell1 As New TableCell
+        sheadercell1.ColumnSpan = 8
+        sheadercell1.HorizontalAlign = HorizontalAlign.Center
+        sheadercell1.Text = "<b><font size=2>Branch ID=" & Session("branch_id") & " ,Branch Name=" & Session("branch_name") & "</font></b>"
+        sheader.Controls.Add(sheadercell1)
+        hodetailtable.Controls.Add(sheader)
+        Dim tt As New TableRow
+        tt.BackColor = Drawing.Color.SeaShell
+        tt.Width = 8
+        Dim tt1 As New TableCell
+        tt1.ColumnSpan = 8
+        tt1.HorizontalAlign = HorizontalAlign.Center
+        tt1.Text = "<b><font size=2>Departmentwise&nbsp;&nbsp;Number&nbsp;&nbsp;Of&nbsp;&nbsp;Staffs&nbsp;&nbsp;Now&nbsp;&nbsp;Working&nbsp;&nbsp;in&nbsp;&nbsp;HO&nbsp;&nbsp;</font></b>"
+        tt.Controls.Add(tt1)
+        hodetailtable.Controls.Add(tt)
+
+        Dim subh As New TableRow
+        subh.BackColor = Drawing.Color.Cornsilk
+        Dim subcell1 As New TableCell
+        Dim subcell2 As New TableCell
+        Dim subcell3 As New TableCell
+        subh.Width = 8
+
+        subcell1.Text = "<b><font size=2> Date:" & Format(Date.Now, "dd/MMM/yyyy") & "</font></b>"
+        subcell1.ColumnSpan = 2
+        subcell1.HorizontalAlign = HorizontalAlign.Left
+        subh.Controls.Add(subcell1)
+
+        subcell2.ColumnSpan = 4
+        subcell2.HorizontalAlign = HorizontalAlign.Center
+        subh.Controls.Add(subcell2)
+        subcell3.ColumnSpan = 2
+        subcell3.HorizontalAlign = HorizontalAlign.Left
+        'subcell3.Text = "<b><font size=2.5>Time:" & Format(Date.Now, "hh:mm:ss tt") & "</font></b>"
+        subcell3.Text = "<font size=2><b><div id= txt align= right></div></b></font></div>"
+        subcell3.HorizontalAlign = HorizontalAlign.Right
+        subh.Controls.Add(subcell3)
+        hodetailtable.Controls.Add(subh)
+
+
+        Dim linea As New TableRow
+        linea.Width = 8
+        linea.BackColor = Drawing.Color.SeaShell
+        Dim linecella As New TableCell
+        linecella.ColumnSpan = 8
+        linecella.Text = "<hr>"
+        linea.Controls.Add(linecella)
+        hodetailtable.Controls.Add(linea)
+
+        Dim colors As String
+        colors = "#fff7ff"
+
+
+        Dim field As New TableRow
+        field.Width = 8
+        field.Attributes.Add("bgcolor", colors)
+        Dim f1, f2, f3, f4 As New TableCell
+
+        f1.ColumnSpan = 2
+        f1.HorizontalAlign = HorizontalAlign.Center
+        f1.Text = "<b><font size=2>&nbsp;&nbsp;SI No&nbsp;&nbsp;</font></b>"
+        field.Controls.Add(f1)
+
+        f2.ColumnSpan = 3
+        f2.HorizontalAlign = HorizontalAlign.Center
+        f2.Text = "<b><font size=2>&nbsp;&nbsp;&nbsp;Department&nbsp;&nbsp;Name&nbsp;</font></b>"
+        field.Controls.Add(f2)
+
+
+        f4.ColumnSpan = 3
+        f4.HorizontalAlign = HorizontalAlign.Center
+        f4.Text = "<b><font size=2>No&nbsp;&nbsp;Of&nbsp;&nbsp;Employees&nbsp;&nbsp;Presently&nbsp;&nbsp;&nbsp;Working&nbsp;&nbsp;</font></b>"
+        field.Controls.Add(f4)
+
+
+        hodetailtable.Controls.Add(field)
+
+        Dim line1 As New TableRow
+        line1.Width = 8
+        line1.BackColor = Drawing.Color.SeaShell
+        Dim linecell1 As New TableCell
+        linecell1.ColumnSpan = 8
+        linecell1.Text = "<hr>"
+        line1.Controls.Add(linecell1)
+        hodetailtable.Controls.Add(line1)
+
+
+        normid = Request.QueryString("norm_id")
+        'If normid = 1 Then
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=118 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=122 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=61 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=24 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=136 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=147 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=120 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=151 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=139 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=127 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=133 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+        'ElseIf normid = 7 Then
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=10 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=31 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=124 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=126 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name "
+        'ElseIf normid = 8 Then
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=108 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=123 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name "
+        'ElseIf normid = 13 Then
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=70 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=3 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=51 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=49 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+        'ElseIf normid = 20 Then
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=100 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=92 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=111 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=112 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=90 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=91 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=93 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name "
+        'ElseIf normid = 23 Then
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=105 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=21 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=143 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+        'Else
+        '    str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=" & normid & " and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+        'End If
+        'dt = oh.ExecuteDataSet(str).Tables(0)
+
+        Select Case normid
+            Case 1
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=118 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=122 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=61 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=24 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=136 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=147 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=120 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=151 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=139 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=127 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=133 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 2
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=150 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 3
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=27 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 4
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=6 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 5
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=9 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 6
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=5 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 7
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=10 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=31 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=124 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=126 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name "
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 8
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=108 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=123 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name "
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 9
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=28 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 10
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=101 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 11
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=18 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 12
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=134 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 13
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=70 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=3 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=51 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=49 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 14
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=50 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 15
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=54 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 16
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=12 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 17
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=4 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 18
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=23 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 19
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=13 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 20
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=100 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=92 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=111 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=112 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=90 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=91 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=93 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name "
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 21
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=149 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 22
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=110 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 23
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=105 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=21 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name union all select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=143 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 24
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=66 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 25
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=2 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 26
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=20 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 27
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=26 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 28
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=7 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 29
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=152 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 30
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=155 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 31
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=156 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 33
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=153 and e.emp_code>9999 and e.department_id=d.dep_id group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+            Case 34
+                str = "select d.dep_name,nvl(count(e.emp_code),0) from employee_master e,department_mst d where e.branch_id=0 and e.status_id=1 and e.department_id=100 and e.emp_code>9999 and e.department_id=d.dep_id and e.post_id=173 group by d.dep_name"
+                dt = oh.ExecuteDataSet(str).Tables(0)
+
+
+        End Select
+
+        Dim i As Integer = 0
+        Dim c1 As Integer = 0
+
+        For Each dr In dt.Rows
+            If colors.Equals("#fff7ff") = True Then
+                colors = "#eef9ff"
+            Else
+                colors = "#fff7ff"
+            End If
+
+            Dim value As New TableRow
+            value.Width = 8
+            value.Attributes.Add("bgcolor", colors)
+
+            Dim v1, v2, v3, v4, v5, v6 As New TableCell
+            i = i + 1
+
+            v1.ColumnSpan = 2
+            v1.HorizontalAlign = HorizontalAlign.Center  '"<a href=DrilldownShort.aspx?area_id=" & dr(4) & "&hw=" & dr(12) & ">
+            v1.Text = "<font size=2>" & i & "</font>"
+            value.Controls.Add(v1)
+            hodetailtable.Controls.Add(value)
+
+            v2.ColumnSpan = 3
+            v2.HorizontalAlign = HorizontalAlign.Left
+            v2.Text = "<font size=2>&nbsp;" & dr(0) & "&nbsp;&nbsp;</font>"
+            value.Controls.Add(v2)
+            hodetailtable.Controls.Add(value)
+
+
+            v3.ColumnSpan = 3
+            v3.HorizontalAlign = HorizontalAlign.Right
+            v3.Text = "<font size=2>&nbsp;" & dr(1) & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+            value.Controls.Add(v3)
+            hodetailtable.Controls.Add(value)
+            c1 += dr(1)
+
+        Next
+
+        Dim line2 As New TableRow
+        line2.Width = 8
+        line2.BackColor = Drawing.Color.SeaShell
+        Dim linecell2 As New TableCell
+        linecell2.ColumnSpan = 8
+        linecell2.Text = "<hr>"
+        line2.Controls.Add(linecell2)
+        hodetailtable.Controls.Add(line2)
+
+        Dim total As New TableRow
+        total.Width = 8
+        total.Attributes.Add("bgcolor", colors)
+        Dim to1, d1, d2, d3, d4 As New TableCell
+        to1.ColumnSpan = 5
+        to1.HorizontalAlign = HorizontalAlign.Center
+        to1.Text = "<b><font size=2>Total&nbsp;&nbsp;Staffs:</font></b>"
+        total.Controls.Add(to1)
+
+        d1.ColumnSpan = 3
+        d1.HorizontalAlign = HorizontalAlign.Right
+        d1.Text = "<b><font size=2>&nbsp;" & c1 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+        total.Controls.Add(d1)
+
+
+        hodetailtable.Controls.Add(total)
+
+        PanelDetailHO.Controls.Add(hodetailtable)
+
+    End Sub
+
+    
+End Class

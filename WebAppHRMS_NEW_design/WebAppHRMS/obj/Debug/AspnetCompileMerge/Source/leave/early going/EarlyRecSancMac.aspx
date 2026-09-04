@@ -1,0 +1,523 @@
+<%@ Page Language="VB" AutoEventWireup="false" CodeBehind="EarlyRecSancMac.aspx.vb"  Inherits="WebAppHRMS.Auction_Listed_pledges_448d588b1453" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+        <script language="javascript" type="text/javascript" for="window" event="onload">
+// <!CDATA[
+            //return winonload()
+            window.onload = callback;
+            function callback() {
+                return winonload();
+            }
+// ]]>
+        </script>
+    
+    <script language="javascript" type="text/javascript">
+    //var contid=contids.split('drop');
+
+function winonload()
+{debugger;
+  if (document.getElementById("asp").value==1)
+  {
+      document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><img src='load.gif' alt='Please Wait...' />";
+      document.getElementById("Button1").style.display="none";
+      document.getElementById("Button2").style.display="inline";
+      document.getElementById("Button3").style.display="inline";
+      ToServer("1$1",1);
+  }
+  if (document.getElementById("asp").value==2)
+  {
+      document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><img src='load.gif' alt='Please Wait...' />";
+      document.getElementById("Button1").style.display="inline";
+      document.getElementById("Button2").style.display="none";
+      document.getElementById("Button3").style.display="inline";
+      ToServer("1$2",1);
+  }
+  else
+  {
+    if (document.getElementById("asp").value=="")
+    {
+         document.getElementById("loasp").innerHTML="<span style='color:red;'>*Please Select Any Authority To Display Pendings!!!</span>";
+         document.getElementById("Button1").style.display="none";
+         document.getElementById("Button2").style.display="none";
+         document.getElementById("Button3").style.display="none";
+    }
+  }
+}
+
+
+function fill_data()
+
+{debugger;
+document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><img src='load.gif' alt='Please Wait...' />";
+if(document.getElementById("drop_auth").value == 0)
+{
+ //alert("PLEASE SELECT ANY AUTHORITY!!");
+ //var cnt=document.getElementById("tbl").rows.length;
+ //for (var i = cnt - 1; i > 0; i--) {
+       //     document.getElementById("tbl").deleteRow(i);
+        //}
+            document.getElementById("rowDel").style.display='inline'; 
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>*Please Select Any Authority To Display Pendings!!!</span>";
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+ return false;
+ }
+ else
+ {
+    document.getElementById("hdnDelChange").value=document.getElementById("drop_auth").value;
+    ToServer("1$"+document.getElementById("drop_auth").value,1);
+  }
+}
+
+function FromServer(arg,context)
+
+{debugger;
+
+if(context == 1)
+{
+var Data=arg.split("@")
+  if(arg=="L")
+  {
+    document.getElementById("rowDel").style.display='inline'; 
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>Session Time Out! Please Login And Try Again</span>";
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+    return false;
+  }
+  if(arg=="E")
+  {
+    document.getElementById("rowDel").style.display='inline'; 
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>An Error Occured. Inform IT!</span>";
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+    return false;
+  }
+  //var Data=arg.split("@")
+  if ((Data[0]=="")||(Data[0]==" "))
+  {
+    document.getElementById("rowDel").style.display='inline';
+    if(document.getElementById("drop_auth").value == 1)
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>No Data Found For Recommendation!</span>";
+    if(document.getElementById("drop_auth").value == 2)
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>No Data Found For Sanction!</span>";    
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+    return false;
+  }
+  else
+  {
+  document.getElementById("asp").value=Data[1];
+     if(document.getElementById("hdnDelChange").value==0)
+      {
+               document.getElementById("rowDel").style.display='none';
+               return false;    
+      }
+      else
+      {   
+            document.getElementById("rowDel").style.display='inline';                 
+            document.getElementById("hdnDelData").value=Data[0];
+            dispe(); 
+      }
+  }
+}
+
+if(context == 2)
+{
+  if(arg=="L")
+  {
+    document.getElementById("rowDel").style.display='inline'; 
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>Session Time Out! Please Login And Try Again</span>";
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+  }
+  if(arg=="E")
+  {
+    document.getElementById("rowDel").style.display='inline'; 
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>An Error Occured. Inform IT!</span>";
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+  }
+  var Data=arg.split("#")
+  if ((Data[0]=="")||(Data[0]==" "))
+  {
+    document.getElementById("rowDel").style.display='inline'; 
+    document.getElementById("Panel2").innerHTML="<br><br><br><br><br><br><br><br><br><br><span style='color:red;'>No Data Found!</span>";
+    document.getElementById("Button1").style.display="none";
+    document.getElementById("Button2").style.display="none";
+    document.getElementById("Button3").style.display="none";
+  }
+  else
+  { 
+    var dt="An Error Occured For Following Employees;\n";
+    var str=arg.split("#");
+    var ar=str.length-1;
+    var i=1,msg="",dt1="",msg1="",j;
+    if (arg.split("@")[1]=="APP")
+    {
+        msg="Sanctioned Successfully...";
+    }
+    if (arg.split("@")[1]=="REC")
+    {
+        msg="Recommended Successfully...";
+    }
+    if (arg.split("@")[1]=="REJ")
+    {
+        msg="Rejected Successfully...";
+    }
+    j=0;
+    for(k=0;k<ar;k++)
+    {
+           if(str[k].split("~")[2].indexOf("Block")>=0)
+           {
+             //msg=arg[k].split("~")[1]+" - "+arg[k].split("~")[2];
+             i=2;
+             msg1=msg1+str[k].split("~")[2];
+           }
+        else
+        {
+           if(str[k].split("~")[0]==0)
+           {
+              i=0;
+              j=j+1;
+              dt1=dt1+"\n"+j+". "+str[k].split("~")[1]+" - Internal Exception";
+           }
+           else
+           {
+            //if((str[k].split("~")[2]!="Cancelled Successfully") && (str[k].split("~")[2]!="Reccomended Successfully") && (str[k].split("~")[2]!="Sanctioned Successfully"))
+            if((str[k].split("~")[2].indexOf("Successfully"))<0)
+            { 
+             j=j+1;
+             if(i==0)
+             i=3;
+             else
+             i=4
+             msg1=msg1+"\n\n"+j+". "+str[k].split("~")[1]+" - "+str[k].split("~")[2];
+            }
+           }
+        }
+    }
+    if(i==0)
+    {
+      alert(dt+dt1)
+      //window.open('EarlyRecSancMAc.aspx','_self');
+      return true;
+    }
+     if(i==2)
+    {
+      //alert(msg1.replace("\n\n", ""));
+      alert("Block Release Process Is Blocked for Salary");
+      return true;
+    }
+    if(i==3)
+    {
+      alert("Not Updated\n"+dt1+"\n"+msg1.replace("\n\n", ""));
+      //window.open('EarlyRecSancMAc.aspx','_self');
+      return true;
+    }
+        if(i==4)
+    {
+      alert("Not Updated\n"+dt1+"\n"+msg1.replace("\n\n", ""));
+      //window.open('EarlyRecSancMAc.aspx','_self');
+      return true;
+    }
+    else
+    { 
+        alert(msg+msg1);
+        //window.open('EarlyRecSancMAc.aspx','_self');
+        return true;
+    }
+  }
+}
+}
+
+function dispe()
+{
+    var st,st1,st2,st3,ar,ar1,tot;
+    var amt=0;
+    var days=0;
+    st1="";
+    st="";
+    tot="";
+    if (document.getElementById("hdnDelChange").value==0)
+    {  
+        document.getElementById("Panel2").innerHTML=""; 
+        document.getElementById("rowDel").style.display="none";
+        return false;
+    }
+    st2=document.getElementById("hdnDelData").value.split("!")
+    ar=st2.length-1;
+    if(document.getElementById("hdnDelData").value!="")
+    {
+        for(k=0;k<ar;k++)
+        {
+            st3=st2[k].split("*")
+            st1=st1+"<tr><td><small>"+st3[0]+"</td><td><small>"+st3[1] +"</td><td><small>"+st3[2] +"</td><td><small>"+st3[3] +"</td><td><small>"+st3[4] +"</td><td><small>"+st3[5] +"</td><td><small>"+st3[6] +"</td><td><small>"+st3[7] +"</td><td><input type='checkbox' id='chkm_"+k+"' name='txtm_"+k+"'></td></tr>"
+        }
+        st=st+"<table id='mytable' border='1'  width='600px' ><tr ><td><small><b>EMP&nbsp;CODE</b></td><td><small><b>&nbsp;&nbsp;&nbsp;EMPLOYEE&nbsp;NAME&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;DEPARTMENT&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;DESIGNATION&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;POST&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;BRANCH&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;GOING&nbsp;DATE&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;REASON&nbsp;&nbsp;&nbsp;</b></td><td><small><b>&nbsp;&nbsp;&nbsp;MARK&nbsp;ALL&nbsp;<input onclick='selectall()' type='checkbox' id='ch'/></b></td></tr>"
+        st1=st+st1+"</table>" 
+    }
+    else
+    {  
+        st1=st+"</table>";
+    }  
+    document.getElementById("rowDel").style.display="inline";  
+    document.getElementById("Panel2").innerHTML=st1;
+    document.getElementById("mystrong").style.display="inline";
+    document.getElementById("sp1").style.display="inline";
+    document.getElementById("sp1").innerHTML=ar;
+    if (document.getElementById("hdnDelChange").value==1)
+    { 
+       document.getElementById("Button2").style.display="inline";
+       document.getElementById("Button1").style.display="none";
+       document.getElementById("Button3").style.display="none";
+    }
+    if (document.getElementById("hdnDelChange").value==2)
+    { 
+       document.getElementById("Button1").style.display="inline";
+       document.getElementById("Button2").style.display="none";
+       document.getElementById("Button3").style.display="inline";
+    }
+}
+
+    function selectall()
+{debugger;
+var bool = document.getElementById('ch').checked;
+
+      st2=document.getElementById("hdnDelData").value.split("!")
+      ar=st2.length
+      for(i=0;i<ar-1;i++)
+       {
+       if(bool == true)
+         document.getElementById("chkm_"+i+"").checked=true;
+         else
+          document.getElementById("chkm_"+i+"").checked=false;
+       }
+     
+       
+}
+
+ function approve()
+{debugger;
+var num =0;
+    //if(document.getElementById(cs[0]+"rdDelete").checked==true)
+    //{
+        if(document.getElementById("drop_auth").value==0)
+        {
+            alert("Please Select Any Authority...!");
+            return false;
+        }
+        document.getElementById("hdnToSendDel").value="";
+        if (document.getElementById("hdnDelData").value!="")
+        {  
+            var st3 = "";
+            st2=document.getElementById("hdnDelData").value.split("!")
+            ar=st2.length
+            for(i=0;i<ar-1;i++)
+            {
+                st3=st2[i].split("*")
+                var Regular = "T";
+                if (document.getElementById("chkm_"+i+"").checked==false) 
+                {
+                Regular= "F";
+                }
+                else
+                {
+                    num=1;
+                    document.getElementById("hdnToSendDel").value+=st3[0] + "^" + st3[6]+"#" ;
+                }
+               // document.getElementById(con[0]+"hdnDelCon").value += st3[0] + "^" +st3[1] + "^" +Regular+"#" ; 
+                 //document.getElementById("hdnDelCon").value += st3[0] + "^" +Regular+"#" ;
+            }
+        }
+    //}
+    if (num>0)
+    {
+    ToServer("2$"+document.getElementById("hdnToSendDel").value+"$APP",2);
+    }
+    else
+    {
+     alert("Please Select Atleast One Employee For Sanction!!!")
+     return false;
+    }
+}
+
+
+function recommend()
+{debugger;
+var num =0;
+    //if(document.getElementById(cs[0]+"rdDelete").checked==true)
+    //{
+        if(document.getElementById("drop_auth").value==0)
+        {
+            alert("Please Select Any Authority...!");
+            return false;
+        }
+        document.getElementById("hdnToSendDel").value="";
+        if (document.getElementById("hdnDelData").value!="")
+        {  
+            var st3 = "";
+            st2=document.getElementById("hdnDelData").value.split("!")
+            ar=st2.length
+            for(i=0;i<ar-1;i++)
+            {
+                st3=st2[i].split("*")
+                var Regular = "T";
+                if (document.getElementById("chkm_"+i+"").checked==false) 
+                {
+                Regular= "F";
+                }
+                else
+                {
+                    num=1;
+                    document.getElementById("hdnToSendDel").value+=st3[0] + "^" + st3[6]+"#" ;
+                }
+               // document.getElementById(con[0]+"hdnDelCon").value += st3[0] + "^" +st3[1] + "^" +Regular+"#" ; 
+                 //document.getElementById("hdnDelCon").value += st3[0] + "^" +Regular+"#" ;
+            }
+        }
+    //}
+    if (num>0)
+    {
+    ToServer("2$"+document.getElementById("hdnToSendDel").value+"$REC",2);
+    }
+    else
+    {
+     alert("Please Select Atleast One Employee For Recommendation!!!")
+     return false;
+    }
+}
+
+
+function reject()
+{debugger;
+var num =0;
+    //if(document.getElementById(cs[0]+"rdDelete").checked==true)
+    //{
+        if(document.getElementById("drop_auth").value==0)
+        {
+            alert("Please Select Any Authority...!");
+            return false;
+        }
+        document.getElementById("hdnToSendDel").value="";
+        if (document.getElementById("hdnDelData").value!="")
+        {  
+            var st3 = "";
+            st2=document.getElementById("hdnDelData").value.split("!")
+            ar=st2.length
+            for(i=0;i<ar-1;i++)
+            {
+                st3=st2[i].split("*")
+                var Regular = "T";
+                if (document.getElementById("chkm_"+i+"").checked==false) 
+                {
+                Regular= "F";
+                }
+                else
+                {
+                    num=1;
+                    document.getElementById("hdnToSendDel").value+=st3[0] + "^" + st3[6]+"#" ;
+                }
+               // document.getElementById(con[0]+"hdnDelCon").value += st3[0] + "^" +st3[1] + "^" +Regular+"#" ; 
+                 //document.getElementById("hdnDelCon").value += st3[0] + "^" +Regular+"#" ;
+            }
+        }
+    //}
+    if (num>0)
+    {
+    ToServer("2$"+document.getElementById("hdnToSendDel").value+"$REJ",2);
+    }
+    else
+    {
+     alert("Please Select Atleast One Employee For Rejection!!!")
+     return false;
+    }
+}
+
+
+
+function quit()
+{debugger;
+    window.open('../home.aspx','_self');
+}
+    </script>
+ 
+</head>
+
+
+<body style="text-align: center">
+    <form id="form1" runat="server">
+    
+            <table border ="3" style="width:100%;  font-family: Courier New;">
+                <tr>
+                    <td colspan="29" style="height: 24px; text-align: center; width :100%; background-color :#ffd700;">
+                        <strong><span style=" font-size: 14pt; color :Red ; font-family: Times New Roman;">MANAPPURAM COMPTECH AND CONSULTANTS LIMITED</span></strong>
+                <br>
+                        <strong><span style=" font-size: 11pt; color :Red ; font-family: Times New Roman; background:red;color:White;"><i>EARLY GOING RECOMMEND/SANCTION</i></span></strong></td>
+                </tr>
+                <tr>
+                    <td  style=" text-align: left; background-color:Silver;height:35px;">
+                        <strong>Select Authority :</strong>
+                        <asp:DropDownList ID="drop_auth" Height="22px" runat="server" Width="180px">
+                        </asp:DropDownList>&nbsp;&nbsp;<strong id="mystrong" style="display:none;">Total Pendings :</strong> <span id='sp1' style="display:none;"></span><%--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        <strong>Select All</strong><input type="checkbox" id="ch"/>--%></td>
+                        
+                        
+                        
+                         
+                </tr>
+
+<%--            </table>
+
+            <table border ="3" style="width: 928.5px;  font-family: Courier New; ">--%>
+
+                <tr id="rowDel" style="border:none !important ;">
+                    <td colspan="29" style=" text-align: center;  background-color :#fff;border:none !important ;">
+                        <%--<span style=" font-size: 10pt; color :Red ; font-family: Times New Roman;"><i>Please Select Any Authority To Display Pendings!!!</i></span>--%>
+                         <asp:Panel Height="400px" ScrollBars="Auto" ID="Panel2" BorderStyle="None" runat="server" Width="100%">
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <span id="loasp" style=" font-size: 13pt; color :Red ;"></span>
+                    </asp:Panel>
+                        </td>
+                </tr>
+                <tr>
+                    <td  style=" text-align: center; background-color:Silver;">
+                        <asp:Button ID="Button1" BorderStyle="Solid" BorderColor="silver" OnClientClick="approve()" Font-Bold="true"  runat="server" Text="Approve" />
+                        <asp:Button ID="Button2" BorderStyle="Solid" BorderColor="silver" OnClientClick="recommend()" Font-Bold="true"  runat="server" Text="Recommend" />
+                        <asp:Button ID="Button3" BorderStyle="Solid" BorderColor="silver" OnClientClick="reject()" Font-Bold="true"  runat="server" Text="Reject" />
+                        <asp:Button ID="b1" BorderStyle="Solid" BorderColor="silver" OnClientClick="quit()" Font-Bold="true"  runat="server" Text="Exit" />
+                        </td>
+                </tr>
+        <asp:HiddenField ID="hdnToSendDel" runat="server" />
+        <asp:HiddenField ID="hdnDelChange" runat="server" />
+        <asp:HiddenField ID="hdnDelData" runat="server" />
+        <asp:HiddenField ID="asp" runat="server" />
+            </table>
+ 
+
+    </form>
+</body>
+</html>

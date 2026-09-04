@@ -1,0 +1,154 @@
+Imports System.Data
+Imports system.data.oracleclient
+Partial Class wage_slip_old_Macom_7a2002b41662
+    Inherits System.Web.UI.Page
+    Dim dt As New DataTable
+    Dim oh As New Helper.Oracle.OracleHelper
+    Dim UserAll(), usercode As String
+
+    Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmb_date.SelectedIndexChanged
+
+    End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not IsPostBack Then
+            If Session("access_id") <> 33 Then
+                Me.row1.Visible = False
+                Me.row2.Visible = False
+                Me.row3.Visible = False
+
+            End If
+
+
+            dt = oh.ExecuteDataSet("select distinct (to_char(to_date(wo.salcdt,'dd/mm/yyyy'))) as salcdt from wage_dtls_old wo where fmid=" & Session("firm_id") & " order by to_date(salcdt) ").Tables(0)
+            Me.cmb_date.DataSource = dt
+            Me.cmb_date.DataTextField = dt.Columns(0).ColumnName
+            Me.cmb_date.DataValueField = dt.Columns(0).ColumnName
+            Me.cmb_date.DataBind()
+            If (Me.chk_firm.Checked = False And Me.chk_emp.Checked = False And Me.chk_bran.Checked = False) Then
+                Me.cmb_bran.Visible = False
+                Me.cmb_emp.Visible = False
+                Me.cmb_firm.Visible = False
+            End If
+        End If
+    End Sub
+
+    Protected Sub chk_bran_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chk_bran.CheckedChanged
+        If (Me.chk_bran.Checked = True) Then
+            Me.chk_firm.Checked = False
+            Me.chk_emp.Checked = False
+            Me.cmb_bran.Visible = True
+            Me.chk_branch.Checked = False
+            Me.chk_allfirm.Checked = False
+            Me.cmb_emp.Visible = False
+            Me.cmb_firm.Visible = False
+            dt = oh.ExecuteDataSet("select b.branch_name, b.branch_id   from branch_master b where b.firm_id=" & Session("firm_id") & " union select branch_name, old_id  from before_completion where branch_id is null and firm_id=" & Session("firm_id") & " order by branch_name").Tables(0)
+            Me.cmb_bran.DataSource = dt
+            Me.cmb_bran.DataTextField = dt.Columns(0).ColumnName
+            Me.cmb_bran.DataValueField = dt.Columns(1).ColumnName
+            Me.cmb_bran.DataBind()
+        Else
+            Me.cmb_bran.Visible = False
+
+        End If
+    End Sub
+
+    Protected Sub chk_firm_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chk_firm.CheckedChanged
+        If (Me.chk_firm.Checked = True) Then
+            Me.chk_bran.Checked = False
+            Me.chk_emp.Checked = False
+            Me.cmb_firm.Visible = True
+            Me.cmb_emp.Visible = False
+            Me.cmb_bran.Visible = False
+            Me.chk_branch.Checked = False
+            Me.chk_allfirm.Checked = False
+            dt = oh.ExecuteDataSet("select firm_name,firm_id from firm_master where firm_id=" & Session("firm_id") & "  order by firm_name").Tables(0)
+            Me.cmb_firm.DataSource = dt
+            Me.cmb_firm.DataTextField = dt.Columns(0).ColumnName
+            Me.cmb_firm.DataValueField = dt.Columns(1).ColumnName
+            Me.cmb_firm.DataBind()
+        Else
+            Me.cmb_firm.Visible = False
+        End If
+
+
+
+
+    End Sub
+
+    Protected Sub chk_emp_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chk_emp.CheckedChanged
+        UserAll = Me.Session("user_id").ToString.Split("!")
+        usercode = UserAll(0)
+        If (Me.chk_emp.Checked = True) Then
+            Me.chk_bran.Checked = False
+            Me.chk_firm.Checked = False
+            Me.cmb_emp.Visible = True
+            Me.cmb_bran.Visible = False
+            Me.cmb_firm.Visible = False
+            Me.chk_branch.Checked = False
+            Me.chk_allfirm.Checked = False
+
+            If Session("access_id") <> 33 Then
+                dt = oh.ExecuteDataSet("select '------Select---------',0 from dual union all select e.emp_code ||'--------'||e.emp_name,e.emp_code from employee_master e,employ_firm f  where e.emp_code>9999 and e.emp_code=f.emp_code and f.emp_code=" & usercode & "").Tables(0)
+            Else
+                dt = oh.ExecuteDataSet("select e.emp_code ||'--------'||e.emp_name,e.emp_code from employee_master e,employ_firm f  where e.emp_code>9999 and e.emp_code=f.emp_code and f.firm_id=" & Session("firm_id") & " order by e.emp_code").Tables(0)
+            End If
+            Me.cmb_emp.DataSource = dt
+            Me.cmb_emp.DataTextField = dt.Columns(0).ColumnName
+            Me.cmb_emp.DataValueField = dt.Columns(1).ColumnName
+            Me.cmb_emp.DataBind()
+        Else
+            Me.cmb_emp.Visible = False
+        End If
+    End Sub
+
+    Protected Sub cmd_confirm_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_confirm.Click
+
+
+        If (Me.chk_bran.Checked = True) Then
+            Server.Transfer("wage_slip_report_ol_macom.aspx?&br=" & Me.cmb_bran.SelectedValue & "&dt='" & Me.cmb_date.SelectedValue & "'&a=" & 1)
+        End If
+        If (Me.chk_firm.Checked = True) Then
+            Server.Transfer("wage_slip_report_ol_macom.aspx?&fr=" & Me.cmb_firm.SelectedValue & "&dt='" & Me.cmb_date.SelectedValue & "'&a=" & 2)
+        End If
+        If (Me.chk_emp.Checked = True) Then
+            Server.Transfer("wage_slip_report_ol_macom.aspx?&em=" & Me.cmb_emp.SelectedValue & "&dt='" & Me.cmb_date.SelectedValue & "'&a=" & 3)
+        End If
+        If (Me.chk_branch.Checked = True) Then
+            Server.Transfer("wage_slip_report_ol_macom.aspx?&dt='" & Me.cmb_date.SelectedValue & "'&a=" & 4)
+        End If
+        If (Me.chk_allfirm.Checked = True) Then
+            Server.Transfer("wage_slip_report_ol_macom.aspx?&dt='" & Me.cmb_date.SelectedValue & "'&a=" & 5)
+        End If
+    End Sub
+
+    Protected Sub chk_branch_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chk_branch.CheckedChanged
+        If (Me.chk_branch.Checked = True) Then
+            Me.chk_bran.Checked = False
+            Me.chk_allfirm.Checked = False
+            Me.chk_emp.Checked = False
+            Me.chk_firm.Checked = False
+            Me.cmb_emp.Visible = False
+            Me.cmb_bran.Visible = False
+            Me.cmb_firm.Visible = False
+        End If
+    End Sub
+
+    Protected Sub chk_allfirm_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles chk_allfirm.CheckedChanged
+        If (Me.chk_allfirm.Checked = True) Then
+            Me.chk_bran.Checked = False
+            Me.chk_branch.Checked = False
+            Me.chk_emp.Checked = False
+            Me.chk_firm.Checked = False
+            Me.cmb_emp.Visible = False
+            Me.cmb_bran.Visible = False
+            Me.cmb_firm.Visible = False
+        End If
+    End Sub
+
+    Protected Sub cmd_exit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmd_exit.Click
+        Response.Redirect("../home.aspx")
+    End Sub
+
+
+End Class

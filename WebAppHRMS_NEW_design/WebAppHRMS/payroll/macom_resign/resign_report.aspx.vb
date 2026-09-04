@@ -1,0 +1,367 @@
+Imports System.Data
+Imports System.Data.OracleClient
+Partial Class Employee_Punching_myreport_8810e6063322
+    Inherits System.Web.UI.Page
+    Dim dt, dts As New DataTable
+    Dim dr As DataRow
+    Dim str, strs, sf() As String
+    Dim frm As Integer
+    Dim oh As New Helper.Oracle.OracleHelper
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        frm = Session("Firm_id").ToString
+        Dim User() As String
+        User = Session("user_id").ToString.Split("!")
+        Dim dep1 As String = " "
+        'Dim fid As Integer = Session("firm_id")
+
+
+
+        If Not IsPostBack Then
+            dt = oh.ExecuteDataSet("select count(*) from form_accessibility s where s.form_id=2830 and s.emp_id=" & User(0) & "").Tables(0)
+
+            If dt.Rows(0)(0) = 0 Then
+                Me.Server.Transfer("../../show_err.aspx")
+
+            Else
+                Dim dts1 As DataTable = oh.ExecuteDataSet("select query from hrm_report_master where firm_id=99 and query_id=175").Tables(0)
+                Dim strd() As String = dts1.Rows(0)(0).ToString.Split("#")
+                Dim hotable As New Table
+                Dim header As New TableRow
+                header.BackColor = Drawing.Color.Gold
+                header.ForeColor = Drawing.Color.Red
+                header.Width = 15
+                Dim headercell As New TableCell
+                headercell.ColumnSpan = 15
+                headercell.Text = "<b><font size=3>" & Session("firm_name") & "</font></b>"
+                headercell.HorizontalAlign = HorizontalAlign.Center
+                header.Controls.Add(headercell)
+                hotable.Controls.Add(header)
+
+                Dim sheader As New TableRow
+                sheader.Width = 15
+                sheader.BackColor = Drawing.Color.LightGray
+                Dim sheadercell1 As New TableCell
+                sheadercell1.ColumnSpan = 15
+                sheadercell1.HorizontalAlign = HorizontalAlign.Center
+                'sheadercell1.Text = "<b><font size=2>Branch ID=" & Session("branch_id") & " ,Branch Name=" & Session("branch_name") & "</font></b>"
+                sheader.Controls.Add(sheadercell1)
+                hotable.Controls.Add(sheader)
+                Dim tt As New TableRow
+                ' tt.BackColor = Drawing.Color.LightSkyBlue
+                tt.Width = 15
+                Dim tt1 As New TableCell
+                tt1.ColumnSpan = 15
+                tt1.HorizontalAlign = HorizontalAlign.Center
+                tt1.Text = "<b><font size=2>&nbsp;&nbsp;&nbsp;EMPLOYEE&nbsp;RESIGNATION &nbsp;REPORT&nbsp;</font></b>"
+                tt.Controls.Add(tt1)
+                hotable.Controls.Add(tt)
+
+                Dim subh As New TableRow
+                Dim subcell1 As New TableCell
+                Dim subcell2 As New TableCell
+                Dim subcell3 As New TableCell
+                subh.Width = 15
+
+                subcell1.Text = "<b><font size=2> Date:" & Format(Date.Now, "dd/MMM/yyyy") & "</font></b>"
+                subcell1.ColumnSpan = 4
+                subcell1.HorizontalAlign = HorizontalAlign.Left
+                subh.Controls.Add(subcell1)
+
+                subcell2.ColumnSpan = 2
+                subcell2.HorizontalAlign = HorizontalAlign.Center
+                subh.Controls.Add(subcell2)
+                subcell3.ColumnSpan = 2
+                subcell3.HorizontalAlign = HorizontalAlign.Left
+                'subcell3.Text = "<b><font size=2.5>Time:" & Format(Date.Now, "hh:mm:ss tt") & "</font></b>"
+                subcell3.Text = "<font size=2><b><div id= txt align= right></div></b></font></div>"
+                subcell3.HorizontalAlign = HorizontalAlign.Right
+                subh.Controls.Add(subcell3)
+                hotable.Controls.Add(subh)
+
+
+                Dim linea As New TableRow
+                Dim linecella As New TableCell
+                linecella.ColumnSpan = 15
+                linecella.Text = "<hr>"
+                linea.Controls.Add(linecella)
+                hotable.Controls.Add(linea)
+
+                Dim colors As String
+                colors = "#fff7ff"
+
+
+                Dim field As New TableRow
+                field.Width = 3
+                field.Attributes.Add("bgcolor", colors)
+                Dim f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10 As New TableCell
+
+                f0.ColumnSpan = 1
+                f0.HorizontalAlign = HorizontalAlign.Center
+                f0.Text = "<b><font size=2>&nbsp;&nbsp;SL.NO </font></b>"
+                field.Controls.Add(f0)
+
+
+
+                'f1.ColumnSpan = 1
+                'f1.HorizontalAlign = HorizontalAlign.Center
+                'f1.Text = "<b><font size=2>&nbsp;&nbsp;DATE</font></b>"
+                'field.Controls.Add(f1)
+
+                f2.ColumnSpan = 1
+                f2.HorizontalAlign = HorizontalAlign.Center
+                f2.Text = "<b><font size=2>&nbsp;EMPCODE&nbsp;</font></b>"
+                field.Controls.Add(f2)
+
+                f3.ColumnSpan = 1
+                f3.HorizontalAlign = HorizontalAlign.Center
+                f3.Text = "<b><font size=2>&nbsp;&nbsp;EMPNAME&nbsp;&nbsp;</font></b>"
+                field.Controls.Add(f3)
+
+                f4.ColumnSpan = 1
+                f4.HorizontalAlign = HorizontalAlign.Center
+                f4.Text = "<b><font size=2>&nbsp;&nbsp;EXIT DATE&nbsp;&nbsp;</font></b>"
+                field.Controls.Add(f4)
+
+                f5.ColumnSpan = 1
+                f5.HorizontalAlign = HorizontalAlign.Center
+                f5.Text = "<b><font size=2>&nbsp;&nbsp;RESIGNATION&nbsp; ENTERD &nbsp;DATE &nbsp;&nbsp;</font></b>"
+                field.Controls.Add(f5)
+
+                f6.ColumnSpan = 1
+                f6.HorizontalAlign = HorizontalAlign.Center
+                f6.Text = "<b><font size=2>&nbsp;&nbsp;EXTENDED &nbsp;UP &nbsp;TO&nbsp; DATE&nbsp;&nbsp;</font></b>"
+                field.Controls.Add(f6)
+
+                'f7.ColumnSpan = 1
+                'f7.HorizontalAlign = HorizontalAlign.Center
+                'f7.Text = "<b><font size=2>&nbsp;&nbsp;TYPE&nbsp;&nbsp;</font></b>"
+                'field.Controls.Add(f7)
+
+                f8.ColumnSpan = 1
+                f8.HorizontalAlign = HorizontalAlign.Center
+                f8.Text = "<b><font size=2>&nbsp;&nbsp; ATTACHMENT&nbsp;&nbsp;</font></b>"
+                field.Controls.Add(f8)
+
+
+                'f9.ColumnSpan = 1
+                'f9.HorizontalAlign = HorizontalAlign.Center
+                'f9.Text = "<b><font size=2>&nbsp;&nbsp;APPROVER&nbsp;&nbsp;</font></b>"
+                'field.Controls.Add(f9)
+
+                'f10.ColumnSpan = 1
+                'f10.HorizontalAlign = HorizontalAlign.Center
+                'f10.Text = "<b><font size=2>&nbsp;&nbsp;STATUS&nbsp;&nbsp;</font></b>"
+                'field.Controls.Add(f10)
+
+
+
+                hotable.Controls.Add(field)
+
+                Dim line1 As New TableRow
+                Dim linecell1 As New TableCell
+                linecell1.ColumnSpan = 15
+                linecell1.Text = "<hr>"
+                line1.Controls.Add(linecell1)
+                hotable.Controls.Add(line1)
+                '                   0            1            2          3       ---------------------------4---------------------------------------------    -----------------------------------------5----------------------------------------    eliminated Boerd of Directors...norm id=32 on 06-12-08           
+                'str = "select distinct sn.norm_id,  sn.dept_name,  sn.requirement,  sn.actual,  case  when sn.requirement - sn.actual > 0 then  sn.requirement - sn.actual  else  0  end as short,  case  when sn.actual - sn.requirement > 0 then  sn.actual - sn.requirement  else  0  end as surplus  from staff_norm_ho sn,employee_master e,employ_firm f  where sn.norm_id <> 32  and e.department_id=sn.dep_id  and e.status_id=1  and e.emp_code=f.emp_code  and f.firm_id=" & Session("firm_id") & "  order by sn.dept_name"
+                'str = strd(3).Replace("mybranch", 0)
+                'dt = oh.ExecuteDataSet(str).Tables(0)
+
+                sf = Session("user_id").ToString.Split("!")
+                strs = strd(0)
+                'dt = oh.ExecuteDataSet("select t.emp_code as EMPCODE, d.emp_name as EMPNAME, r.resign_dt as EXITDATE, t.enter_date as RES_END_DATE, t.new_res_date as RES_EXT_DATE from M_RESIGN_EXTENSION t , employee_master d, m_resign_appl r where t.emp_code =d.emp_code and r.emp_code=d.emp_code and to_date(r.enter_dt) =to_date(t.enter_date) ORDER BY t.emp_code DESC").Tables(0)
+                dt = oh.ExecuteDataSet(strs).Tables(0)
+
+                Dim i As Integer = 0
+
+                Dim c0 As Integer = 0
+                Dim c1 As Integer = 0
+                Dim c2 As Double = 0
+                Dim c3 As Integer = 0
+                Dim c4 As Integer = 0
+                Dim c5 As Integer = 0
+                Dim c6 As Integer = 0
+                Dim c7 As Integer = 0
+                Dim c8 As Integer = 0
+                Dim c9 As Integer = 0
+                Dim c10 As Integer = 0
+
+
+
+
+                For Each dr In dt.Rows
+                    If colors.Equals("#fff7ff") = True Then
+                        colors = "#eef9ff"
+                    Else
+                        colors = "#fff7ff"
+                    End If
+
+                    Dim value As New TableRow
+                    value.Width = 8
+                    value.Attributes.Add("bgcolor", colors)
+
+                    Dim v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11 As New TableCell
+                    i = i + 1
+
+                    v0.ColumnSpan = 1
+                    'v1.ColumnSpan = 1
+
+
+
+                    v0.ColumnSpan = 1
+                    v0.HorizontalAlign = HorizontalAlign.Center
+                    v0.Text = "<font size=2>&nbsp;" & i & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+                    value.Controls.Add(v0)
+                    hotable.Controls.Add(value)
+
+                    v1.ColumnSpan = 1
+                    v1.HorizontalAlign = HorizontalAlign.Center
+                    v1.Text = "<font size=2>&nbsp;" & dr(0) & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+                    value.Controls.Add(v1)
+                    hotable.Controls.Add(value)
+                    'c1 += dr(1)
+
+
+                    v2.ColumnSpan = 1
+                    v2.HorizontalAlign = HorizontalAlign.Center
+                    v2.Text = "<font size=2>&nbsp;" & dr(1) & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+                    value.Controls.Add(v2)
+                    hotable.Controls.Add(value)
+                    'c2 += dr(2)
+
+                    v3.ColumnSpan = 1
+                    v3.HorizontalAlign = HorizontalAlign.Center
+                    v3.Text = "<font size=2>&nbsp;" & dr(2) & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+                    value.Controls.Add(v3)
+                    hotable.Controls.Add(value)
+                    'c3 += dr(3)
+
+                    v4.ColumnSpan = 1
+                    v4.HorizontalAlign = HorizontalAlign.Center
+                    v4.Text = "<font size=2>&nbsp;" & dr(3) & "&nbsp;&nbsp;</font>"
+                    value.Controls.Add(v4)
+                    hotable.Controls.Add(value)
+                    'c4 += dr(4)
+
+                    v5.ColumnSpan = 1
+                    v5.HorizontalAlign = HorizontalAlign.Center
+                    v5.Text = "<font size=2>&nbsp;" & dr(4) & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+                    'v5.Text() = "<font size=2;font color=green>&nbsp;-<a href='print_movment.aspx? '>Download</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"""
+                    value.Controls.Add(v5)
+                    hotable.Controls.Add(value)
+                    ' c5 += dr(5)
+
+                    v6.ColumnSpan = 1
+                    v6.HorizontalAlign = HorizontalAlign.Center
+                    v6.Text = "<font size=2;font color=green>&nbsp;<a href='print_resgin_ltr.aspx?c=" & dr(0) & "'>View Attachment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>"
+                    value.Controls.Add(v6)
+                    hotable.Controls.Add(value)
+                    ''c6 += dr(6)
+
+
+
+
+
+
+                    '------------------------------------
+
+                    Dim dF1 As Date = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
+                    Dim dF As Date = dF1.AddDays(-1)
+                    Dim time As DateTime = TimeOfDay
+                    'Dim str = dr(0) + " " + dr(4)
+                    Dim entrytime As DateTime = Convert.ToDateTime(str)
+                    Dim dF2 As Date = Date.Today
+                    Dim dF3 As Date = dF1.AddDays(-1)
+
+
+
+
+
+
+
+                Next
+
+                Dim line2 As New TableRow
+                Dim linecell2 As New TableCell
+                linecell2.ColumnSpan = 15
+                linecell2.Text = "<hr>"
+                line2.Controls.Add(linecell2)
+                hotable.Controls.Add(line2)
+
+                Dim total As New TableRow
+                total.Width = 8
+                total.Attributes.Add("bgcolor", colors)
+                Dim to1, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10 As New TableCell
+                to1.ColumnSpan = 4
+                to1.HorizontalAlign = HorizontalAlign.Center
+                to1.Text = "<b><font size=2>Total:</font></b>"
+                total.Controls.Add(to1)
+
+                d0.ColumnSpan = 1
+                d0.HorizontalAlign = HorizontalAlign.Center
+                d0.Text = "<b><font size=2>&nbsp;" & c0 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d0)
+
+                d1.ColumnSpan = 1
+                d1.HorizontalAlign = HorizontalAlign.Center
+                d1.Text = "<b><font size=2>&nbsp;" & c1 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d1)
+
+                d2.ColumnSpan = 1
+                d2.HorizontalAlign = HorizontalAlign.Center
+                d2.Text = "<b><font size=2>&nbsp;" & c2 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d2)
+
+                d3.ColumnSpan = 1
+                d3.HorizontalAlign = HorizontalAlign.Center
+                d3.Text = "<b><font size=2>&nbsp;" & c3 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d3)
+
+                d4.ColumnSpan = 1
+                d4.HorizontalAlign = HorizontalAlign.Center
+                d4.Text = "<b><font size=2>&nbsp;" & c4 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d4)
+
+                d5.ColumnSpan = 1
+                d5.HorizontalAlign = HorizontalAlign.Center
+                d5.Text = "<b><font size=2>&nbsp;" & c5 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d5)
+
+                d6.ColumnSpan = 1
+                d6.HorizontalAlign = HorizontalAlign.Center
+                d6.Text = "<b><font size=2>&nbsp;" & c6 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d6)
+
+                d7.ColumnSpan = 1
+                d7.HorizontalAlign = HorizontalAlign.Center
+                d7.Text = "<b><font size=2>&nbsp;" & c7 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d7)
+
+                d8.ColumnSpan = 1
+                d8.HorizontalAlign = HorizontalAlign.Center
+                d8.Text = "<b><font size=2>&nbsp;" & c8 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d8)
+
+                d9.ColumnSpan = 1
+                d9.HorizontalAlign = HorizontalAlign.Center
+                d9.Text = "<b><font size=2>&nbsp;" & c9 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d9)
+
+                d10.ColumnSpan = 1
+                d10.HorizontalAlign = HorizontalAlign.Center
+                d10.Text = "<b><font size=2>&nbsp;" & c10 & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b>"
+                total.Controls.Add(d10)
+
+
+                PanelHoNSS.Controls.Add(hotable)
+            End If
+        End If
+    End Sub
+
+End Class
+
+
+
